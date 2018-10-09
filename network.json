@@ -65,8 +65,11 @@
         {
             "desc": "Explore the relationships amongst the various variables, using visualization to determine which variables affect the customer satisfaction.",
             "name": "Explore.R"
+        },
+        {
+            "name": "histogram.png"
         }
     ],
-    "updated_at": "2018-10-09 20:35:13",
+    "updated_at": "2018-10-09 20:37:08",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
