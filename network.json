@@ -9,9 +9,6 @@
     "edges": [],
     "nodes": [
         {
-            "name": "data.csv"
-        },
-        {
             "desc": "Histogram model number of flights to likelihood to recommend",
             "name": "flights_histogram.R"
         },
@@ -24,6 +21,6 @@
             "name": "travel_reason_histogram.R"
         }
     ],
-    "updated_at": "2018-10-09 20:16:35",
+    "updated_at": "2018-10-09 20:16:41",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
