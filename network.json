@@ -45,8 +45,12 @@
         {
             "desc": "Histogram - departure & arrival delay vs likelihood to recommend",
             "name": "delays_histogram.R"
+        },
+        {
+            "desc": "Histogram model various travel types compared to likelihood to recommend to determine which has the most weight",
+            "name": "travel_reason_histogram.R"
         }
     ],
-    "updated_at": "2018-10-09 20:14:32",
+    "updated_at": "2018-10-09 20:15:09",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
