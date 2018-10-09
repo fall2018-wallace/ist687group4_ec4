@@ -3,7 +3,8 @@
         "tshetty",
         "",
         "abhishek27297",
-        "rhfrench"
+        "rhfrench",
+        "zefeng"
     ],
     "created_at": "2018-10-09 20:02:59",
     "edges": [
@@ -37,8 +38,11 @@
         },
         {
             "name": "cleaned_data.csv"
+        },
+        {
+            "name": "airlines.csv"
         }
     ],
-    "updated_at": "2018-10-09 20:18:17",
+    "updated_at": "2018-10-09 20:26:24",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
