@@ -1,0 +1,43 @@
+{
+    "collaborators": [
+        "tshetty",
+        "",
+        "abhishek27297",
+        "rhfrench"
+    ],
+    "created_at": "2018-10-09 20:02:59",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "output": "clean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "clean.R"
+        },
+        {
+            "name": "data.csv"
+        },
+        {
+            "desc": "Histogram model number of flights to likelihood to recommend",
+            "name": "flights_histogram.R"
+        },
+        {
+            "desc": "Histogram - departure & arrival delay vs likelihood to recommend",
+            "name": "delays_histogram.R"
+        },
+        {
+            "desc": "Histogram model various travel types compared to likelihood to recommend to determine which has the most weight",
+            "name": "travel_reason_histogram.R"
+        }
+    ],
+    "updated_at": "2018-10-09 20:16:28",
+    "url": "https://github.com/fall2018-saltz/ist687group4"
+}
