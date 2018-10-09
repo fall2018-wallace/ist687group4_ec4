@@ -71,8 +71,11 @@
         },
         {
             "name": "scatterplot.png"
+        },
+        {
+            "name": "boxplot.png"
         }
     ],
-    "updated_at": "2018-10-09 20:37:32",
+    "updated_at": "2018-10-09 20:37:53",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
