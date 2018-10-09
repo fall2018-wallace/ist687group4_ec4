@@ -23,8 +23,11 @@
         {
             "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
             "name": "clean_data.R"
+        },
+        {
+            "name": "cleaned_data.csv"
         }
     ],
-    "updated_at": "2018-10-09 20:17:43",
+    "updated_at": "2018-10-09 20:18:01",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
