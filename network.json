@@ -67,6 +67,17 @@
             ],
             "source": "Explore.R",
             "target": "boxplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "Explore.R",
+            "target": "validate.R"
         }
     ],
     "nodes": [
@@ -110,6 +121,6 @@
             "name": "validate.R"
         }
     ],
-    "updated_at": "2018-10-09 20:44:16",
+    "updated_at": "2018-10-09 20:45:45",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
