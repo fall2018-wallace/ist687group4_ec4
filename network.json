@@ -27,6 +27,16 @@
             ],
             "source": "airlines.csv",
             "target": "clean_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleaned_data.csv",
+            "target": "Explore.R"
         }
     ],
     "nodes": [
@@ -57,6 +67,6 @@
             "name": "Explore.R"
         }
     ],
-    "updated_at": "2018-10-09 20:34:33",
+    "updated_at": "2018-10-09 20:35:13",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
