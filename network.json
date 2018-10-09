@@ -37,6 +37,16 @@
             ],
             "source": "cleaned_data.csv",
             "target": "Explore.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "histogram.png",
+                    "type": "png"
+                }
+            ],
+            "source": "Explore.R",
+            "target": "histogram.png"
         }
     ],
     "nodes": [
@@ -76,6 +86,6 @@
             "name": "boxplot.png"
         }
     ],
-    "updated_at": "2018-10-09 20:37:53",
+    "updated_at": "2018-10-09 20:38:39",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
