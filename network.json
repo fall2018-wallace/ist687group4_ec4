@@ -19,8 +19,12 @@
         {
             "desc": "Histogram model various travel types compared to likelihood to recommend to determine which has the most weight",
             "name": "travel_reason_histogram.R"
+        },
+        {
+            "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
+            "name": "clean_data.R"
         }
     ],
-    "updated_at": "2018-10-09 20:16:41",
+    "updated_at": "2018-10-09 20:17:43",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
