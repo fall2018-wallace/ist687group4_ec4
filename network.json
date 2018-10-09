@@ -104,8 +104,12 @@
         },
         {
             "name": "boxplot.png"
+        },
+        {
+            "desc": "Using the insights from the explore phase, we create a model to predict customer satisfaction and thus validate our analysis.",
+            "name": "validate.R"
         }
     ],
-    "updated_at": "2018-10-09 20:39:15",
+    "updated_at": "2018-10-09 20:44:16",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
