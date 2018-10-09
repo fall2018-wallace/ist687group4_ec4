@@ -1,0 +1,48 @@
+{
+    "collaborators": [
+        "tshetty",
+        "",
+        "abhishek27297",
+        "rhfrench"
+    ],
+    "created_at": "2018-10-09 20:02:59",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "raw_data.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "clean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "raw_data.csv"
+        },
+        {
+            "name": "clean.R"
+        },
+        {
+            "name": "data.csv"
+        },
+        {
+            "desc": "Histogram model number of flights to likelihood to recommend",
+            "name": "flights_histogram.R"
+        }
+    ],
+    "updated_at": "2018-10-09 20:13:40",
+    "url": "https://github.com/fall2018-saltz/ist687group4"
+}
