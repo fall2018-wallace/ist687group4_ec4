@@ -57,6 +57,16 @@
             ],
             "source": "Explore.R",
             "target": "scatterplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "boxplot.png",
+                    "type": "png"
+                }
+            ],
+            "source": "Explore.R",
+            "target": "boxplot.png"
         }
     ],
     "nodes": [
@@ -96,6 +106,6 @@
             "name": "boxplot.png"
         }
     ],
-    "updated_at": "2018-10-09 20:38:59",
+    "updated_at": "2018-10-09 20:39:15",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
