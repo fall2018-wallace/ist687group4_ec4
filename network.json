@@ -26,16 +26,6 @@
                     "type": "csv"
                 }
             ],
-            "source": "airlines.csv",
-            "target": "clean_data.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "type": "csv"
-                }
-            ],
             "source": "cleaned_data.csv",
             "target": "Explore.R"
         },
@@ -90,9 +80,6 @@
             "name": "cleaned_data.csv"
         },
         {
-            "name": "airlines.csv"
-        },
-        {
             "desc": "Explore the relationships amongst the various variables, using visualization to determine which variables affect the customer satisfaction.",
             "name": "Explore.R"
         },
@@ -129,6 +116,6 @@
             "name": "satisfaction_survey.csv"
         }
     ],
-    "updated_at": "2018-10-11 15:39:50",
+    "updated_at": "2018-10-11 15:40:00",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
