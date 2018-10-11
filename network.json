@@ -28,6 +28,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "clean_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "flight_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "flight_information.R"
         }
     ],
     "nodes": [
@@ -63,6 +73,6 @@
             "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-11 17:18:46",
+    "updated_at": "2018-10-11 17:19:05",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
