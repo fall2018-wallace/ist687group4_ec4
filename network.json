@@ -120,10 +120,15 @@
             "name": "flights_histogram.R"
         },
         {
+            "assigned_to": "not assigned",
             "desc": "Histogram model various travel types (business, vacation) compared to likelihood to recommend to determine which has the most weight",
-            "name": "script548.R"
+            "name": "travel_types_histogram.R",
+            "task_status": "proposed"
+        },
+        {
+            "name": "satisfaction_survey.csv"
         }
     ],
-    "updated_at": "2018-10-11 15:32:30",
+    "updated_at": "2018-10-11 15:39:50",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
