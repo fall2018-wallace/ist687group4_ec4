@@ -110,8 +110,12 @@
             "desc": "Using the insights from the explore phase, we create a model to predict customer satisfaction and thus validate our analysis.",
             "name": "model.R",
             "task_status": "proposed"
+        },
+        {
+            "desc": "Histogram model both departure delay and arrival delay compared to likelihood to recommend to determine which has more weight",
+            "name": "delays_histogram.R"
         }
     ],
-    "updated_at": "2018-10-11 15:07:46",
+    "updated_at": "2018-10-11 15:31:44",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
