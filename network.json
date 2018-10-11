@@ -69,6 +69,16 @@
             ],
             "source": "Explore.R",
             "target": "model.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfaction_survey.csv",
+            "target": "clean_data.R"
         }
     ],
     "nodes": [
@@ -116,6 +126,6 @@
             "name": "satisfaction_survey.csv"
         }
     ],
-    "updated_at": "2018-10-11 15:40:00",
+    "updated_at": "2018-10-11 15:40:13",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
