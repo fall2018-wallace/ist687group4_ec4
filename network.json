@@ -55,8 +55,12 @@
         {
             "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
             "name": "airline_analysis.R"
+        },
+        {
+            "desc": " Day of Month, Flight date, Flight time in minutes, Flight Distance",
+            "name": "flight_information.R"
         }
     ],
-    "updated_at": "2018-10-11 16:21:51",
+    "updated_at": "2018-10-11 17:17:12",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
