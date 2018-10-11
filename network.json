@@ -86,10 +86,6 @@
             "name": "flights_histogram.R"
         },
         {
-            "desc": "Histogram - departure & arrival delay vs likelihood to recommend",
-            "name": "delays_histogram.R"
-        },
-        {
             "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
             "name": "clean_data.R"
         },
@@ -119,6 +115,6 @@
             "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-11 02:24:22",
+    "updated_at": "2018-10-11 02:24:26",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
