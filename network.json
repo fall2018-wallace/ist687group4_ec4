@@ -126,8 +126,12 @@
         },
         {
             "name": "satisfactionSurvey.csv"
+        },
+        {
+            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
+            "name": "airline_analysis.R"
         }
     ],
-    "updated_at": "2018-10-11 15:44:21",
+    "updated_at": "2018-10-11 16:20:57",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
