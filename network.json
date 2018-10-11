@@ -1,0 +1,124 @@
+{
+    "collaborators": [
+        "tshetty",
+        "",
+        "abhishek27297",
+        "rhfrench",
+        "zefeng"
+    ],
+    "created_at": "2018-10-09 20:02:59",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "output": "cleaned_data.csv",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "cleaned_data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "airlines.csv",
+            "target": "clean_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleaned_data.csv",
+            "target": "Explore.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "histogram.png",
+                    "type": "png"
+                }
+            ],
+            "source": "Explore.R",
+            "target": "histogram.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "scatterplot.png",
+                    "type": "png"
+                }
+            ],
+            "source": "Explore.R",
+            "target": "scatterplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "boxplot.png",
+                    "type": "png"
+                }
+            ],
+            "source": "Explore.R",
+            "target": "boxplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "Explore.R",
+            "target": "model.R"
+        }
+    ],
+    "nodes": [
+        {
+            "desc": "Histogram model number of flights to likelihood to recommend",
+            "name": "flights_histogram.R"
+        },
+        {
+            "desc": "Histogram - departure & arrival delay vs likelihood to recommend",
+            "name": "delays_histogram.R"
+        },
+        {
+            "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
+            "name": "clean_data.R"
+        },
+        {
+            "name": "cleaned_data.csv"
+        },
+        {
+            "name": "airlines.csv"
+        },
+        {
+            "desc": "Explore the relationships amongst the various variables, using visualization to determine which variables affect the customer satisfaction.",
+            "name": "Explore.R"
+        },
+        {
+            "name": "histogram.png"
+        },
+        {
+            "name": "scatterplot.png"
+        },
+        {
+            "name": "boxplot.png"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "Using the insights from the explore phase, we create a model to predict customer satisfaction and thus validate our analysis.",
+            "name": "model.R",
+            "task_status": "proposed"
+        }
+    ],
+    "updated_at": "2018-10-11 02:24:22",
+    "url": "https://github.com/fall2018-saltz/ist687group4"
+}
