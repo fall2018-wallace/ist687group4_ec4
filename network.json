@@ -77,14 +77,16 @@
                     "type": "csv"
                 }
             ],
-            "source": "satisfaction_survey.csv",
+            "source": "satisfactionSurvey.csv",
             "target": "clean_data.R"
         }
     ],
     "nodes": [
         {
+            "assigned_to": "rncasagr",
             "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
-            "name": "clean_data.R"
+            "name": "clean_data.R",
+            "task_status": "in progress"
         },
         {
             "name": "cleaned_data.csv"
@@ -123,9 +125,9 @@
             "task_status": "proposed"
         },
         {
-            "name": "satisfaction_survey.csv"
+            "name": "satisfactionSurvey.csv"
         }
     ],
-    "updated_at": "2018-10-11 15:40:13",
+    "updated_at": "2018-10-11 15:44:21",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
