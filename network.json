@@ -114,8 +114,12 @@
         {
             "desc": "Histogram model both departure delay and arrival delay compared to likelihood to recommend to determine which has more weight",
             "name": "delays_histogram.R"
+        },
+        {
+            "desc": "Histogram model number of flights to likelihood to recommend",
+            "name": "flights_histogram.R"
         }
     ],
-    "updated_at": "2018-10-11 15:31:44",
+    "updated_at": "2018-10-11 15:32:08",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
