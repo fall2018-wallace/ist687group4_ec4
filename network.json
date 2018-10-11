@@ -82,10 +82,6 @@
     ],
     "nodes": [
         {
-            "desc": "Histogram model number of flights to likelihood to recommend",
-            "name": "flights_histogram.R"
-        },
-        {
             "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
             "name": "clean_data.R"
         },
@@ -115,6 +111,6 @@
             "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-11 02:24:26",
+    "updated_at": "2018-10-11 02:24:30",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
