@@ -26,16 +26,6 @@
                     "type": "csv"
                 }
             ],
-            "source": "airlines.csv",
-            "target": "clean_data.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "type": "csv"
-                }
-            ],
             "source": "cleaned_data.csv",
             "target": "Explore.R"
         },
@@ -79,6 +69,16 @@
             ],
             "source": "Explore.R",
             "target": "model.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfaction_survey.csv",
+            "target": "clean_data.R"
         }
     ],
     "nodes": [
@@ -88,9 +88,6 @@
         },
         {
             "name": "cleaned_data.csv"
-        },
-        {
-            "name": "airlines.csv"
         },
         {
             "desc": "Explore the relationships amongst the various variables, using visualization to determine which variables affect the customer satisfaction.",
@@ -110,8 +107,25 @@
             "desc": "Using the insights from the explore phase, we create a model to predict customer satisfaction and thus validate our analysis.",
             "name": "model.R",
             "task_status": "proposed"
+        },
+        {
+            "desc": "Histogram model both departure delay and arrival delay compared to likelihood to recommend to determine which has more weight",
+            "name": "delays_histogram.R"
+        },
+        {
+            "desc": "Histogram model number of flights to likelihood to recommend",
+            "name": "flights_histogram.R"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "Histogram model various travel types (business, vacation) compared to likelihood to recommend to determine which has the most weight",
+            "name": "travel_types_histogram.R",
+            "task_status": "proposed"
+        },
+        {
+            "name": "satisfaction_survey.csv"
         }
     ],
-    "updated_at": "2018-10-11 15:07:46",
+    "updated_at": "2018-10-11 15:40:13",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
