@@ -26,57 +26,6 @@
                     "type": "csv"
                 }
             ],
-            "source": "cleaned_data.csv",
-            "target": "Explore.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "histogram.png",
-                    "type": "png"
-                }
-            ],
-            "source": "Explore.R",
-            "target": "histogram.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "scatterplot.png",
-                    "type": "png"
-                }
-            ],
-            "source": "Explore.R",
-            "target": "scatterplot.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "boxplot.png",
-                    "type": "png"
-                }
-            ],
-            "source": "Explore.R",
-            "target": "boxplot.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "Explore.R",
-            "target": "model.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "type": "csv"
-                }
-            ],
             "source": "satisfactionSurvey.csv",
             "target": "clean_data.R"
         }
@@ -90,10 +39,6 @@
         },
         {
             "name": "cleaned_data.csv"
-        },
-        {
-            "desc": "Explore the relationships amongst the various variables, using visualization to determine which variables affect the customer satisfaction.",
-            "name": "Explore.R"
         },
         {
             "name": "histogram.png"
@@ -132,6 +77,6 @@
             "name": "airline_analysis.R"
         }
     ],
-    "updated_at": "2018-10-11 16:20:57",
+    "updated_at": "2018-10-11 16:21:10",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
