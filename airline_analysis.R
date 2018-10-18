@@ -6,8 +6,6 @@
 # but the comments are all original.
 
 #import necessary libraries
-myData <- satisfactionSurvey.csv
-satisfactionSurvey <- read.csv(myData)
 satisfactionSurvey$Satisfaction <- as.numeric(satisfactionSurvey$Satisfaction)
 
 
