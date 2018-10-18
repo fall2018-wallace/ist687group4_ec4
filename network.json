@@ -48,6 +48,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "airline_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "statusBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "statusBar.png"
         }
     ],
     "nodes": [
@@ -88,6 +98,6 @@
             "name": "statusBar.png"
         }
     ],
-    "updated_at": "2018-10-18 14:15:58",
+    "updated_at": "2018-10-18 14:16:08",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
