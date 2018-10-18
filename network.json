@@ -96,8 +96,11 @@
         },
         {
             "name": "statusBar.png"
+        },
+        {
+            "name": "otherFlightsBar.png"
         }
     ],
-    "updated_at": "2018-10-18 14:16:08",
+    "updated_at": "2018-10-18 14:17:03",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
