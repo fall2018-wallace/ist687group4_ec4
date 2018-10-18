@@ -38,6 +38,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "flight_information.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey.csv",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "airline_analysis.R"
         }
     ],
     "nodes": [
@@ -63,16 +73,18 @@
             "name": "satisfactionSurvey.csv"
         },
         {
-            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
-            "name": "airline_analysis.R"
-        },
-        {
             "assigned_to": "rncasagr",
             "desc": "Analyze correlation between satisfaction and each of the following: Day of Month, Flight date, Flight time in minutes, Flight Distance. Create an appropriate visualization to show any correlations.",
             "name": "flight_information.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
+            "name": "airline_analysis.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-11 17:19:05",
+    "updated_at": "2018-10-18 02:26:55",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
