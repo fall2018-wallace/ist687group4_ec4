@@ -136,7 +136,7 @@
             "assigned_to": "rncasagr",
             "desc": "Analyze correlation between satisfaction and each of the following: Day of Month, Flight date, Flight time in minutes, Flight Distance. Create an appropriate visualization to show any correlations.",
             "name": "flight_information.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
         },
         {
             "assigned_to": "rhfrench",
@@ -161,8 +161,11 @@
         },
         {
             "name": "travelBar.png"
+        },
+        {
+            "name": "barDayofMonth.png"
         }
     ],
-    "updated_at": "2018-10-18 14:20:16",
+    "updated_at": "2018-10-18 18:02:41",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
