@@ -148,8 +148,11 @@
         },
         {
             "name": "classBar.png"
+        },
+        {
+            "name": "travelBar.png"
         }
     ],
-    "updated_at": "2018-10-18 14:20:03",
+    "updated_at": "2018-10-18 14:20:10",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
