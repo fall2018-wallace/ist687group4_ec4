@@ -108,6 +108,16 @@
             ],
             "source": "airline_analysis.R",
             "target": "travelBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "barMean",
+                    "type": "png"
+                }
+            ],
+            "source": "flight_information.R",
+            "target": "barDayofMonth.png"
         }
     ],
     "nodes": [
@@ -166,6 +176,6 @@
             "name": "barDayofMonth.png"
         }
     ],
-    "updated_at": "2018-10-18 18:02:41",
+    "updated_at": "2018-10-18 18:02:53",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
