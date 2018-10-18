@@ -26,72 +26,99 @@
                     "type": "csv"
                 }
             ],
-            "source": "cleaned_data.csv",
-            "target": "Explore.R"
+            "source": "satisfactionSurvey.csv",
+            "target": "clean_data.R"
         },
         {
             "ports": [
                 {
-                    "output": "histogram.png",
-                    "type": "png"
-                }
-            ],
-            "source": "Explore.R",
-            "target": "histogram.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "scatterplot.png",
-                    "type": "png"
-                }
-            ],
-            "source": "Explore.R",
-            "target": "scatterplot.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "boxplot.png",
-                    "type": "png"
-                }
-            ],
-            "source": "Explore.R",
-            "target": "boxplot.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "Explore.R",
-            "target": "model.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
+                    "input": "flight_data",
                     "type": "csv"
                 }
             ],
-            "source": "satisfaction_survey.csv",
-            "target": "clean_data.R"
+            "source": "satisfactionSurvey.csv",
+            "target": "flight_information.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "airline_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "statusBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "statusBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "otherFlightsBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "otherFlightsBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "codesBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "codesBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cardsBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "cardsBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "classBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "classBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "travelBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "travelBar.png"
         }
     ],
     "nodes": [
         {
+            "assigned_to": "rncasagr",
             "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
-            "name": "clean_data.R"
+            "name": "clean_data.R",
+            "task_status": "in progress"
         },
         {
             "name": "cleaned_data.csv"
-        },
-        {
-            "desc": "Explore the relationships amongst the various variables, using visualization to determine which variables affect the customer satisfaction.",
-            "name": "Explore.R"
         },
         {
             "name": "histogram.png"
@@ -103,29 +130,39 @@
             "name": "boxplot.png"
         },
         {
-            "assigned_to": "not assigned",
-            "desc": "Using the insights from the explore phase, we create a model to predict customer satisfaction and thus validate our analysis.",
-            "name": "model.R",
+            "name": "satisfactionSurvey.csv"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Analyze correlation between satisfaction and each of the following: Day of Month, Flight date, Flight time in minutes, Flight Distance. Create an appropriate visualization to show any correlations.",
+            "name": "flight_information.R",
             "task_status": "proposed"
         },
         {
-            "desc": "Histogram model both departure delay and arrival delay compared to likelihood to recommend to determine which has more weight",
-            "name": "delays_histogram.R"
+            "assigned_to": "rhfrench",
+            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
+            "name": "airline_analysis.R",
+            "task_status": "in progress"
         },
         {
-            "desc": "Histogram model number of flights to likelihood to recommend",
-            "name": "flights_histogram.R"
+            "name": "statusBar.png"
         },
         {
-            "assigned_to": "not assigned",
-            "desc": "Histogram model various travel types (business, vacation) compared to likelihood to recommend to determine which has the most weight",
-            "name": "travel_types_histogram.R",
-            "task_status": "proposed"
+            "name": "otherFlightsBar.png"
         },
         {
-            "name": "satisfaction_survey.csv"
+            "name": "codesBar.png"
+        },
+        {
+            "name": "cardsBar.png"
+        },
+        {
+            "name": "classBar.png"
+        },
+        {
+            "name": "travelBar.png"
         }
     ],
-    "updated_at": "2018-10-11 15:40:13",
+    "updated_at": "2018-10-18 14:20:16",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
