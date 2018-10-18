@@ -83,8 +83,11 @@
             "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
             "name": "airline_analysis.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "statusBar.png"
         }
     ],
-    "updated_at": "2018-10-18 02:27:34",
+    "updated_at": "2018-10-18 14:15:58",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
