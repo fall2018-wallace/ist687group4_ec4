@@ -32,16 +32,6 @@
         {
             "ports": [
                 {
-                    "input": "flight_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "flight_information.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "satisfactionSurvey",
                     "type": "csv"
                 }
@@ -118,6 +108,16 @@
             ],
             "source": "flight_information.R",
             "target": "barDayofMonth.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "flight_information.R"
         }
     ],
     "nodes": [
@@ -176,6 +176,6 @@
             "name": "barDayofMonth.png"
         }
     ],
-    "updated_at": "2018-10-18 18:02:53",
+    "updated_at": "2018-10-18 18:18:53",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
