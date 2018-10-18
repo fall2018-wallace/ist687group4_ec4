@@ -6,6 +6,8 @@
 # but the comments are all original.
 
 #import necessary libraries
+library(ggplot2)
+
 satisfactionSurvey$Satisfaction <- as.numeric(satisfactionSurvey$Satisfaction)
 
 
