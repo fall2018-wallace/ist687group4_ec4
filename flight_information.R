@@ -8,5 +8,6 @@ mean <- data.frame(tapply(as.numeric(DayofMonth$Satisfaction), DayofMonth$Day.of
 # Add titles, columns to df necessary for plotting
 colnames(mean) <- "Satisfaction"
 mean$Day.of.Month <- rownames(mean)
+# Plot results
 barMean <- ggplot(mean, aes(x=reorder(Day.of.Month), y=Satisfaction, group = 1)) + geom_col() 
 
