@@ -58,6 +58,16 @@
             ],
             "source": "airline_analysis.R",
             "target": "statusBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "otherFlightsBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "otherFlightsBar.png"
         }
     ],
     "nodes": [
@@ -101,6 +111,6 @@
             "name": "otherFlightsBar.png"
         }
     ],
-    "updated_at": "2018-10-18 14:17:03",
+    "updated_at": "2018-10-18 14:17:08",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
