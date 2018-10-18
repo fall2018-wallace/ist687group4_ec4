@@ -3,54 +3,166 @@
         "tshetty",
         "",
         "abhishek27297",
-        "rhfrench"
+        "rhfrench",
+        "zefeng",
+        "rncasagr"
     ],
     "created_at": "2018-10-09 20:02:59",
     "edges": [
         {
             "ports": [
                 {
-                    "input": "raw_data",
+                    "output": "cleaned_data.csv",
                     "type": "csv"
                 }
             ],
-            "source": "raw_data.csv",
-            "target": "clean.R"
+            "source": "clean_data.R",
+            "target": "cleaned_data.csv"
         },
         {
             "ports": [
                 {
-                    "output": "clean_data",
+                    "input": "data",
                     "type": "csv"
                 }
             ],
-            "source": "clean.R",
-            "target": "data.csv"
+            "source": "satisfactionSurvey.csv",
+            "target": "clean_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "flight_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "flight_information.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "airline_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "statusBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "statusBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "otherFlightsBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "otherFlightsBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "codesBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "codesBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cardsBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "cardsBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "classBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "classBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "travelBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "travelBar.png"
         }
     ],
     "nodes": [
         {
-            "name": "raw_data.csv"
+            "assigned_to": "rncasagr",
+            "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
+            "name": "clean_data.R",
+            "task_status": "in progress"
         },
         {
-            "name": "clean.R"
+            "name": "cleaned_data.csv"
         },
         {
-            "name": "data.csv"
+            "name": "histogram.png"
         },
         {
-            "desc": "Histogram model number of flights to likelihood to recommend",
-            "name": "flights_histogram.R"
+            "name": "scatterplot.png"
         },
         {
-            "desc": "Histogram - departure & arrival delay vs likelihood to recommend",
-            "name": "delays_histogram.R"
+            "name": "boxplot.png"
         },
         {
-            "desc": "Histogram model various travel types compared to likelihood to recommend to determine which has the most weight",
-            "name": "travel_reason_histogram.R"
+            "name": "satisfactionSurvey.csv"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Analyze correlation between satisfaction and each of the following: Day of Month, Flight date, Flight time in minutes, Flight Distance. Create an appropriate visualization to show any correlations.",
+            "name": "flight_information.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
+            "name": "airline_analysis.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "statusBar.png"
+        },
+        {
+            "name": "otherFlightsBar.png"
+        },
+        {
+            "name": "codesBar.png"
+        },
+        {
+            "name": "cardsBar.png"
+        },
+        {
+            "name": "classBar.png"
+        },
+        {
+            "name": "travelBar.png"
         }
     ],
-    "updated_at": "2018-10-09 20:15:09",
+    "updated_at": "2018-10-18 14:20:16",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
