@@ -111,9 +111,6 @@
             "name": "cleaned_data.csv"
         },
         {
-            "name": "histogram.png"
-        },
-        {
             "name": "satisfactionSurvey.csv"
         },
         {
@@ -150,6 +147,6 @@
             "name": "barDayofMonth.png"
         }
     ],
-    "updated_at": "2018-10-23 20:09:56",
+    "updated_at": "2018-10-23 20:10:01",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
