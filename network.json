@@ -98,6 +98,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "flight_information.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssdata",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "delay_analysis.R"
         }
     ],
     "nodes": [
@@ -148,6 +158,6 @@
             "name": "delay_analysis.R"
         }
     ],
-    "updated_at": "2018-10-23 20:11:20",
+    "updated_at": "2018-10-23 20:11:47",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
