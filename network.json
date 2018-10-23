@@ -12,26 +12,6 @@
         {
             "ports": [
                 {
-                    "output": "cleaned_data.csv",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean_data.R",
-            "target": "cleaned_data.csv"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "clean_data.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "satisfactionSurvey",
                     "type": "csv"
                 }
@@ -137,9 +117,6 @@
             "name": "scatterplot.png"
         },
         {
-            "name": "boxplot.png"
-        },
-        {
             "name": "satisfactionSurvey.csv"
         },
         {
@@ -176,6 +153,6 @@
             "name": "barDayofMonth.png"
         }
     ],
-    "updated_at": "2018-10-18 18:18:53",
+    "updated_at": "2018-10-23 20:09:51",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
