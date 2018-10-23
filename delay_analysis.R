@@ -1,3 +1,3 @@
 
-df <- data.frame(ssdata,stringsasfactor = FALSE)
+df <- data.frame(ssdata,stringsAsFactors = FALSE)
 head(df)
