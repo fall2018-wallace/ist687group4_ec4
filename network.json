@@ -108,9 +108,6 @@
             "task_status": "in progress"
         },
         {
-            "name": "cleaned_data.csv"
-        },
-        {
             "name": "satisfactionSurvey.csv"
         },
         {
@@ -147,6 +144,6 @@
             "name": "barDayofMonth.png"
         }
     ],
-    "updated_at": "2018-10-23 20:10:01",
+    "updated_at": "2018-10-23 20:10:06",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
