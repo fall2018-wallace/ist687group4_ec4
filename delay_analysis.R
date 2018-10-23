@@ -9,3 +9,5 @@ delay.df <- df[,c('Satisfaction','Scheduled Departure Hour','Departure Delay in 
                 'Arrival Delay in Minutes','Flight canceled','Arrival Delay greater 5 Mins')]
 
 library(ggplot2)
+
+##Univariate Analysis
