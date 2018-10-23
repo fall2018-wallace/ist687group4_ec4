@@ -1,2 +1,2 @@
 
-typeof(ssdata)
+df <- data.frame(ssdata,stringsasfactor = FALSE)
