@@ -110,11 +110,6 @@
             "target": "delay_analysis.R"
         },
         {
-            "ports": [],
-            "source": "satisfactionSurvey.csv",
-            "target": "Geography_Zhang.R"
-        },
-        {
             "ports": [
                 {
                     "output": "h1",
@@ -146,12 +141,6 @@
         }
     ],
     "nodes": [
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
-            "name": "clean_data.R",
-            "task_status": "in progress"
-        },
         {
             "name": "satisfactionSurvey.csv"
         },
@@ -195,12 +184,6 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "rhfrench",
-            "desc": "",
-            "name": "Geography_Zhang.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "h1.png"
         },
         {
@@ -208,8 +191,14 @@
         },
         {
             "name": "h4.png"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
+            "name": "clean_data.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-25 16:08:38",
+    "updated_at": "2018-10-25 16:13:24",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
