@@ -168,6 +168,46 @@
             ],
             "source": "Geography_Zhang.R",
             "target": "dStateMap.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "numberizeSatisfaction.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cleanSatisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizeSatisfaction.R",
+            "target": "numberizedSatisfaction.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "cleanSatisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfaction.csv",
+            "target": "summaryLM.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "summaryModel",
+                    "type": "txt"
+                }
+            ],
+            "source": "summaryLM.R",
+            "target": "summaryModel.txt"
         }
     ],
     "nodes": [
@@ -235,10 +275,24 @@
             "name": "dStateMap.png"
         },
         {
+            "assigned_to": "rncasagr",
             "desc": "Remove any non-numeric numbers under the Satisfaction variable and coerce as numeric to be able to define a binary satisfaction level and do further exploratory analysis on the group of values",
-            "name": "numberizeSatisfaction.R"
+            "name": "numberizeSatisfaction.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "numberizedSatisfaction.csv"
+        },
+        {
+            "name": "summaryModel.txt"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
+            "name": "summaryLM.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-25 20:21:14",
+    "updated_at": "2018-10-25 21:14:00",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
