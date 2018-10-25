@@ -87,7 +87,7 @@
                 }
             ],
             "source": "flight_information.R",
-            "target": "barDayofMonth.png"
+            "target": "barMeanDayofMonth.png"
         },
         {
             "ports": [
@@ -151,13 +151,15 @@
             "name": "travelBar.png"
         },
         {
-            "name": "barDayofMonth.png"
+            "name": "barMeanDayofMonth.png"
         },
         {
+            "assigned_to": "abhishek27297",
             "desc": "Here we look at the variables in our data related to flight delay.\r\n",
-            "name": "delay_analysis.R"
+            "name": "delay_analysis.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-23 20:11:47",
+    "updated_at": "2018-10-25 15:12:40",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
