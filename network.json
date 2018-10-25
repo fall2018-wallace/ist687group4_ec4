@@ -138,6 +138,36 @@
             ],
             "source": "delay_analysis.R",
             "target": "h4.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "Geography_Zhang.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "oStateMap",
+                    "type": "png"
+                }
+            ],
+            "source": "Geography_Zhang.R",
+            "target": "oStateMap.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dStateMap",
+                    "type": "png"
+                }
+            ],
+            "source": "Geography_Zhang.R",
+            "target": "dStateMap.png"
         }
     ],
     "nodes": [
@@ -193,12 +223,22 @@
             "name": "h4.png"
         },
         {
-            "assigned_to": "rncasagr",
-            "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
-            "name": "clean_data.R",
+            "assigned_to": "zefeng",
+            "desc": "",
+            "name": "Geography_Zhang.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "oStateMap.png"
+        },
+        {
+            "name": "dStateMap.png"
+        },
+        {
+            "desc": "Remove any non-numeric numbers under the Satisfaction variable and coerce as numeric to be able to define a binary satisfaction level and do further exploratory analysis on the group of values",
+            "name": "numberizeSatisfaction.R"
         }
     ],
-    "updated_at": "2018-10-25 16:13:24",
+    "updated_at": "2018-10-25 20:21:14",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
