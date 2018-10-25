@@ -12,26 +12,6 @@
         {
             "ports": [
                 {
-                    "output": "cleaned_data.csv",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean_data.R",
-            "target": "cleaned_data.csv"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "clean_data.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "satisfactionSurvey",
                     "type": "csv"
                 }
@@ -107,7 +87,7 @@
                 }
             ],
             "source": "flight_information.R",
-            "target": "barDayofMonth.png"
+            "target": "barMeanDayofMonth.png"
         },
         {
             "ports": [
@@ -118,6 +98,71 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "flight_information.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssdata",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "delay_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "barMedian",
+                    "type": "png"
+                }
+            ],
+            "source": "flight_information.R",
+            "target": "barMedianDayofMonth.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "barSd",
+                    "type": "png"
+                }
+            ],
+            "source": "flight_information.R",
+            "target": "barSDDayofMonth.png"
+        },
+        {
+            "ports": [],
+            "source": "satisfactionSurvey.csv",
+            "target": "Geography_Zhang.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "h1",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "h1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "h3",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "h3.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "h4",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "h4.png"
         }
     ],
     "nodes": [
@@ -126,18 +171,6 @@
             "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
             "name": "clean_data.R",
             "task_status": "in progress"
-        },
-        {
-            "name": "cleaned_data.csv"
-        },
-        {
-            "name": "histogram.png"
-        },
-        {
-            "name": "scatterplot.png"
-        },
-        {
-            "name": "boxplot.png"
         },
         {
             "name": "satisfactionSurvey.csv"
@@ -173,9 +206,34 @@
             "name": "travelBar.png"
         },
         {
-            "name": "barDayofMonth.png"
+            "name": "barMeanDayofMonth.png"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "Here we look at the variables in our data related to flight delay.\r\n",
+            "name": "delay_analysis.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "barMedianDayofMonth.png"
+        },
+        {
+            "name": "barSDDayofMonth.png"
+        },
+        {
+            "desc": "",
+            "name": "Geography_Zhang.R"
+        },
+        {
+            "name": "h1.png"
+        },
+        {
+            "name": "h3.png"
+        },
+        {
+            "name": "h4.png"
         }
     ],
-    "updated_at": "2018-10-18 18:18:53",
+    "updated_at": "2018-10-25 15:59:41",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
