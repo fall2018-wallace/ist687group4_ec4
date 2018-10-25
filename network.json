@@ -1,0 +1,240 @@
+{
+    "collaborators": [
+        "tshetty",
+        "",
+        "abhishek27297",
+        "rhfrench",
+        "zefeng",
+        "rncasagr"
+    ],
+    "created_at": "2018-10-09 20:02:59",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "airline_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "statusBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "statusBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "otherFlightsBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "otherFlightsBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "codesBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "codesBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cardsBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "cardsBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "classBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "classBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "travelBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "travelBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "barMean",
+                    "type": "png"
+                }
+            ],
+            "source": "flight_information.R",
+            "target": "barMeanDayofMonth.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "flight_information.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssdata",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "delay_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "h1",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "h1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "h3",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "h3.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "h4",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "h4.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "Geography_Zhang.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "oStateMap",
+                    "type": "png"
+                }
+            ],
+            "source": "Geography_Zhang.R",
+            "target": "oStateMap.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dStateMap",
+                    "type": "png"
+                }
+            ],
+            "source": "Geography_Zhang.R",
+            "target": "dStateMap.png"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "satisfactionSurvey.csv"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Analyze correlation between satisfaction and each of the following: Day of Month, Flight date, Flight time in minutes, Flight Distance. Create an appropriate visualization to show any correlations.",
+            "name": "flight_information.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
+            "name": "airline_analysis.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "statusBar.png"
+        },
+        {
+            "name": "otherFlightsBar.png"
+        },
+        {
+            "name": "codesBar.png"
+        },
+        {
+            "name": "cardsBar.png"
+        },
+        {
+            "name": "classBar.png"
+        },
+        {
+            "name": "travelBar.png"
+        },
+        {
+            "name": "barMeanDayofMonth.png"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "Here we look at the variables in our data related to flight delay.\r\n",
+            "name": "delay_analysis.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "h1.png"
+        },
+        {
+            "name": "h3.png"
+        },
+        {
+            "name": "h4.png"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "",
+            "name": "Geography_Zhang.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "oStateMap.png"
+        },
+        {
+            "name": "dStateMap.png"
+        }
+    ],
+    "updated_at": "2018-10-25 18:05:10",
+    "url": "https://github.com/fall2018-saltz/ist687group4"
+}
