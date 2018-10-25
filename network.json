@@ -148,6 +148,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "Geography_Zhang.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "oStateMap",
+                    "type": "png"
+                }
+            ],
+            "source": "Geography_Zhang.R",
+            "target": "oStateMap.png"
         }
     ],
     "nodes": [
@@ -212,6 +222,6 @@
             "name": "oStateMap.png"
         }
     ],
-    "updated_at": "2018-10-25 18:02:40",
+    "updated_at": "2018-10-25 18:02:55",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
