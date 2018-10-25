@@ -138,6 +138,16 @@
             ],
             "source": "delay_analysis.R",
             "target": "h4.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "Geography_Zhang.R"
         }
     ],
     "nodes": [
@@ -193,10 +203,12 @@
             "name": "h4.png"
         },
         {
+            "assigned_to": "zefeng",
             "desc": "",
-            "name": "Geography_Zhang.R"
+            "name": "Geography_Zhang.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-25 17:59:24",
+    "updated_at": "2018-10-25 18:00:05",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
