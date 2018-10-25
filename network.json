@@ -249,8 +249,11 @@
             "desc": "Remove any non-numeric numbers under the Satisfaction variable and coerce as numeric to be able to define a binary satisfaction level and do further exploratory analysis on the group of values",
             "name": "numberizeSatisfaction.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "numberizedSatisfaction.csv"
         }
     ],
-    "updated_at": "2018-10-25 20:23:30",
+    "updated_at": "2018-10-25 20:54:58",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
