@@ -262,8 +262,12 @@
         },
         {
             "name": "numberizedSatisfaction.csv"
+        },
+        {
+            "desc": "",
+            "name": "summaryLM.R"
         }
     ],
-    "updated_at": "2018-10-25 20:55:20",
+    "updated_at": "2018-10-25 21:08:11",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
