@@ -112,16 +112,6 @@
         {
             "ports": [
                 {
-                    "output": "barMedian",
-                    "type": "png"
-                }
-            ],
-            "source": "flight_information.R",
-            "target": "barMedianDayofMonth.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "barSd",
                     "type": "png"
                 }
@@ -215,14 +205,13 @@
             "task_status": "in progress"
         },
         {
-            "name": "barMedianDayofMonth.png"
-        },
-        {
             "name": "barSDDayofMonth.png"
         },
         {
+            "assigned_to": "rhfrench",
             "desc": "",
-            "name": "Geography_Zhang.R"
+            "name": "Geography_Zhang.R",
+            "task_status": "in progress"
         },
         {
             "name": "h1.png"
@@ -234,6 +223,6 @@
             "name": "h4.png"
         }
     ],
-    "updated_at": "2018-10-25 15:59:41",
+    "updated_at": "2018-10-25 16:08:33",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
