@@ -198,6 +198,16 @@
             ],
             "source": "numberizedSatisfaction.csv",
             "target": "summaryLM.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "summaryModel",
+                    "type": "txt"
+                }
+            ],
+            "source": "summaryLM.R",
+            "target": "summaryModel.txt"
         }
     ],
     "nodes": [
@@ -283,6 +293,6 @@
             "name": "summaryModel.txt"
         }
     ],
-    "updated_at": "2018-10-25 21:09:23",
+    "updated_at": "2018-10-25 21:09:32",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
