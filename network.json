@@ -158,6 +158,16 @@
             ],
             "source": "Geography_Zhang.R",
             "target": "oStateMap.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dStateMap",
+                    "type": "png"
+                }
+            ],
+            "source": "Geography_Zhang.R",
+            "target": "dStateMap.png"
         }
     ],
     "nodes": [
@@ -225,6 +235,6 @@
             "name": "dStateMap.png"
         }
     ],
-    "updated_at": "2018-10-25 18:04:53",
+    "updated_at": "2018-10-25 18:05:10",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
