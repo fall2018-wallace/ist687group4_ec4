@@ -192,7 +192,7 @@
         {
             "ports": [
                 {
-                    "input": "numberizedSatisfaction",
+                    "input": "cleanSatisfactionSurvey",
                     "type": "csv"
                 }
             ],
@@ -278,6 +278,6 @@
             "name": "summaryLM.R"
         }
     ],
-    "updated_at": "2018-10-25 21:08:30",
+    "updated_at": "2018-10-25 21:08:48",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
