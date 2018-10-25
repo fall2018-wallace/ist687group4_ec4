@@ -108,6 +108,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "delay_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "barMedian",
+                    "type": "png"
+                }
+            ],
+            "source": "flight_information.R",
+            "target": "barMedianDayofMonth.png"
         }
     ],
     "nodes": [
@@ -163,6 +173,6 @@
             "name": "barMedianDayofMonth.png"
         }
     ],
-    "updated_at": "2018-10-25 15:12:54",
+    "updated_at": "2018-10-25 15:13:05",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
