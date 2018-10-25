@@ -171,8 +171,11 @@
         },
         {
             "name": "barMedianDayofMonth.png"
+        },
+        {
+            "name": "barSDDayofMonth.png"
         }
     ],
-    "updated_at": "2018-10-25 15:13:05",
+    "updated_at": "2018-10-25 15:14:24",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
