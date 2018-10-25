@@ -207,8 +207,11 @@
             "desc": "",
             "name": "Geography_Zhang.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "oStateMap.png"
         }
     ],
-    "updated_at": "2018-10-25 18:00:05",
+    "updated_at": "2018-10-25 18:02:40",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
