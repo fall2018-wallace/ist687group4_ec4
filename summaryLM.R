@@ -6,5 +6,7 @@ summaryModel <- summary(lm(formula = SatisfactionNumeric ~ Airline.Status + Age 
   Flight.Distance + Arrival.Delay.greater.5.Mins + Flight.time.in.minutes, data = cleanSatisfactionSurvey))
 
 # These were not applicable
-# Orgin.City + Origin.State + Destination.City + Destination.State + Flight.date + Airline.Name 
-Flight.cancelled
+# Orgin.City + Origin.State + Destination.City + Destination.State + Flight.date + Airline.Name
+
+# This produced an error that we should look into
+# Flight.cancelled
