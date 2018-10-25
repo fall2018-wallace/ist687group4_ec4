@@ -24,11 +24,11 @@ library(maps)
 us <- map_data("state")
 surveyGeo$Origin.State<- tolower(surveyGeo$Origin.State)
 
-colCoMap <- ggplot(surveyGeo, aes(map_id =Origin.State))  
-colCoMap <- colCoMap+  geom_map(map = us, aes(fill=surveyGeo$Satisfaction)) 
-colCoMap <- colCoMap + expand_limits(x = us$long, y = us$lat)
-colCoMap <- colCoMap + coord_map() +ggtitle ("Map of the Origine State")
-colCoMap 
+oStateMap <- ggplot(surveyGeo, aes(map_id =Origin.State))  
+oStateMap <- colCoMap+  geom_map(map = us, aes(fill=surveyGeo$Satisfaction)) 
+oStateMap <- colCoMap + expand_limits(x = us$long, y = us$lat)
+oStateMap <- colCoMap + coord_map() +ggtitle ("Map of the Origine State")
+oStateMap
 
 #Create a color coded map, based on the Destination State
 surveyGeo$Destination.State<- tolower(surveyGeo$Destination.State)
