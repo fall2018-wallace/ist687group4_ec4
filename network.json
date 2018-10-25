@@ -110,16 +110,6 @@
             "target": "delay_analysis.R"
         },
         {
-            "ports": [
-                {
-                    "output": "barSd",
-                    "type": "png"
-                }
-            ],
-            "source": "flight_information.R",
-            "target": "barSDDayofMonth.png"
-        },
-        {
             "ports": [],
             "source": "satisfactionSurvey.csv",
             "target": "Geography_Zhang.R"
@@ -205,9 +195,6 @@
             "task_status": "in progress"
         },
         {
-            "name": "barSDDayofMonth.png"
-        },
-        {
             "assigned_to": "rhfrench",
             "desc": "",
             "name": "Geography_Zhang.R",
@@ -223,6 +210,6 @@
             "name": "h4.png"
         }
     ],
-    "updated_at": "2018-10-25 16:08:33",
+    "updated_at": "2018-10-25 16:08:38",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
