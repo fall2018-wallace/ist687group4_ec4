@@ -18,3 +18,14 @@ surveyGeo$Satisfaction<-as.numeric(surveyGeo$Satisfaction)
 library(ggplot2)
 library(ggmap)
 library(maps)
+
+#Generate a color coded map
+#Create a color coded map, based on the Origin State
+us <- map_data("state")
+surveyGeo$Origin.State<- tolower(surveyGeo$Origin.State)
+
+colCoMap <- ggplot(surveyGeo, aes(map_id =Origin.State))  
+colCoMap <- colCoMap+  geom_map(map = us, aes(fill=surveyGeo$Satisfaction)) 
+colCoMap <- colCoMap + expand_limits(x = us$long, y = us$lat)
+colCoMap <- colCoMap + coord_map() +ggtitle ("Map of the Origine State")
+colCoMap 
