@@ -284,15 +284,15 @@
             "name": "numberizedSatisfaction.csv"
         },
         {
-            "assigned_to": "rncasagr",
-            "desc": "",
-            "name": "summaryLM.R",
-            "task_status": "in progress"
+            "name": "summaryModel.txt"
         },
         {
-            "name": "summaryModel.txt"
+            "assigned_to": "rncasagr",
+            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
+            "name": "summaryLM.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-25 21:09:32",
+    "updated_at": "2018-10-25 21:14:00",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
