@@ -158,8 +158,11 @@
             "desc": "Here we look at the variables in our data related to flight delay.\r\n",
             "name": "delay_analysis.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "barMedianDayofMonth.png"
         }
     ],
-    "updated_at": "2018-10-25 15:12:40",
+    "updated_at": "2018-10-25 15:12:54",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
