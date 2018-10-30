@@ -1,18 +1,12 @@
 
 #Load the datasets
 getwd() 
-satisfactionSurvey <-read.csv("satisfactionSurvey.csv",TRUE,",") #read in the file
-str(satisfactionSurvey)
-
-#
-# Remove the rows with non-numeric satisfaction ratings 
-sSurvey <- satisfactionSurvey[(satisfactionSurvey$Satisfaction!="4.00.2.00"&satisfactionSurvey$Satisfaction!="4.00.5"),]
-
-# Coerce satisfaction ratings into a new (numeric) column
-sSurvey <- as.numeric(as.character(sSurvey$Satisfaction))
-
-
-
+sSurvey <-read.csv("satisfactionSurvey.csv",TRUE,",") #read in the file
+str(sSurvey)
+#create new dataframe satisfaction surveyGep with 5 variables 
+#surveyGeo<-sSurvey [,-c(2:17,22:28)] 
+surveyGeo<-sSurvey [,c("Satisfaction","Orgin.City","Origin.State","Destination.City","Destination.State")]
+str(surveyGeo)
 
 
 #Explore the Satisfaction Variable 
