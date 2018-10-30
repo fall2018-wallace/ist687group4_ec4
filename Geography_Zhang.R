@@ -8,6 +8,11 @@ str(sSurvey)
 surveyGeo<-sSurvey [,c("Satisfaction","Orgin.City","Origin.State","Destination.City","Destination.State")]
 str(surveyGeo)
 
+cleanSatisfactionSurvey <- satisfactionSurvey[(satisfactionSurvey$Satisfaction!="4.00.2.00"&satisfactionSurvey$Satisfaction!="4.00.5"),]
+
+# Coerce satisfaction ratings into a new (numeric) column
+cleanSatisfactionSurvey$SatisfactionNumeric <- as.numeric(as.character(cleanSatisfactionSurvey$Satisfaction))
+
 
 #Explore the Satisfaction Variable 
 length(surveyGeo$Satisfaction)
