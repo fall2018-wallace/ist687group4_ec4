@@ -33,8 +33,8 @@ oStateMap
 #Create a color coded map, based on the Destination State
 surveyGeo$Destination.State<- tolower(surveyGeo$Destination.State)
 dStateMap <- ggplot(surveyGeo, aes(map_id =Destination.State))  
-dStateMap <- colCoMap +  geom_map(map = us, aes(fill=surveyGeo$Satisfaction)) 
-dStateMap <- colCoMap + expand_limits(x = us$long, y = us$lat)
-dStateMap <- colCoMap + coord_map() + ggtitle("Map of Destination State")
+dStateMap <- dStateMap +  geom_map(map = us, aes(fill=surveyGeo$Satisfaction)) 
+dStateMap <- dStateMap + expand_limits(x = us$long, y = us$lat)
+dStateMap <- dStateMap + coord_map() + ggtitle("Map of Destination State")
 dStateMap
 
