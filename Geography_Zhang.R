@@ -6,18 +6,18 @@ str(sSurvey)
 #create new dataframe satisfaction surveyGep with 5 variables 
 #surveyGeo<-sSurvey [,-c(2:17,22:28)] 
 surveyGeo<-sSurvey [,c("Satisfaction","Orgin.City","Origin.State","Destination.City","Destination.State")]
-
+str(surveyGeo)
 
 #data cleaning 
 surveyGeo <- surveyGeo[(surveyGeo$Satisfaction!="4.00.2.00"&surveyGeo$Satisfaction!="4.00.5"),]
 str(surveyGeo)
 
-unique(surveyGeo$Satisfaction)
+
 #Explore the Satisfaction Variable 
 length(surveyGeo$Satisfaction)
 class(surveyGeo$Satisfaction)
 surveyGeo$Satisfaction<-as.numeric(surveyGeo$Satisfaction)
-
+unique(surveyGeo$Satisfaction)
 #Insgtall ggplot packages 
 library(ggplot2)
 library(ggmap)
