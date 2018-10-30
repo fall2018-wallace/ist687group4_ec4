@@ -1,23 +1,22 @@
 
+#Group Project Zefeng Zhang Geography  
+
 #Load the datasets
 getwd() 
 sSurvey <-read.csv("satisfactionSurvey.csv",TRUE,",") #read in the file
-str(sSurvey)
+str(sSurvey) 
+
 #create new dataframe satisfaction surveyGep with 5 variables 
-#surveyGeo<-sSurvey [,-c(2:17,22:28)] 
 surveyGeo<-sSurvey [,c("Satisfaction","Orgin.City","Origin.State","Destination.City","Destination.State")]
 str(surveyGeo)
-summary(surveyGeo$Satisfaction)
-unique()
-#data cleaning 
-surveyGeo <- surveyGeo[(surveyGeo$Satisfaction!="4.00.2.00"&surveyGeo$Satisfaction!="4.00.5"),]
-str(surveyGeo)
 
-#Explore the Satisfaction Variable 
+#Clean the satisfaction coloum 
+typeof(surveyGeo$Satisfaction) 
 surveyGeo$Satisfaction<-as.numeric(as.character(surveyGeo$Satisfaction))
-length(surveyGeo$Satisfaction)
-class(surveyGeo$Satisfaction)
+summary(surveyGeo$Satisfaction)
 unique(surveyGeo$Satisfaction)
+#Remove 3 NAs 
+surveyGeo <- surveyGeo[!is.na(surveyGeo$Satisfaction),]  
 
 #Insgtall ggplot packages 
 library(ggplot2)
@@ -42,4 +41,3 @@ dStateMap <- dStateMap +  geom_map(map = us, aes(fill=surveyGeo$Satisfaction))
 dStateMap <- dStateMap + expand_limits(x = us$long, y = us$lat)
 dStateMap <- dStateMap + coord_map() + ggtitle("Map of Destination State")
 dStateMap
-
