@@ -4,113 +4,295 @@
         "",
         "abhishek27297",
         "rhfrench",
-        "zefeng"
+        "zefeng",
+        "rncasagr"
     ],
     "created_at": "2018-10-09 20:02:59",
     "edges": [
         {
             "ports": [
                 {
-                    "output": "cleaned_data.csv",
+                    "input": "satisfactionSurvey",
                     "type": "csv"
                 }
             ],
-            "source": "clean_data.R",
-            "target": "cleaned_data.csv"
+            "source": "satisfactionSurvey.csv",
+            "target": "airline_analysis.R"
         },
         {
             "ports": [
                 {
-                    "input": "data",
+                    "output": "statusBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "statusBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "otherFlightsBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "otherFlightsBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "codesBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "codesBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cardsBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "cardsBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "classBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "classBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "travelBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "travelBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "barMean",
+                    "type": "png"
+                }
+            ],
+            "source": "flight_information.R",
+            "target": "barMeanDayofMonth.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
                     "type": "csv"
                 }
             ],
-            "source": "airlines.csv",
-            "target": "clean_data.R"
+            "source": "satisfactionSurvey.csv",
+            "target": "flight_information.R"
         },
         {
             "ports": [
                 {
-                    "input": "data",
+                    "input": "ssdata",
                     "type": "csv"
                 }
             ],
-            "source": "cleaned_data.csv",
-            "target": "Explore.R"
+            "source": "satisfactionSurvey.csv",
+            "target": "delay_analysis.R"
         },
         {
             "ports": [
                 {
-                    "output": "histogram.png",
+                    "output": "h1",
                     "type": "png"
                 }
             ],
-            "source": "Explore.R",
-            "target": "histogram.png"
+            "source": "delay_analysis.R",
+            "target": "h1.png"
         },
         {
             "ports": [
                 {
-                    "output": "scatterplot.png",
+                    "output": "h3",
                     "type": "png"
                 }
             ],
-            "source": "Explore.R",
-            "target": "scatterplot.png"
+            "source": "delay_analysis.R",
+            "target": "h3.png"
         },
         {
             "ports": [
                 {
-                    "output": "boxplot.png",
+                    "output": "h4",
                     "type": "png"
                 }
             ],
-            "source": "Explore.R",
-            "target": "boxplot.png"
+            "source": "delay_analysis.R",
+            "target": "h4.png"
         },
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
                 }
             ],
-            "source": "Explore.R",
-            "target": "model.R"
+            "source": "satisfactionSurvey.csv",
+            "target": "Geography_Zhang.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "oStateMap",
+                    "type": "png"
+                }
+            ],
+            "source": "Geography_Zhang.R",
+            "target": "oStateMap.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dStateMap",
+                    "type": "png"
+                }
+            ],
+            "source": "Geography_Zhang.R",
+            "target": "dStateMap.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "numberizeSatisfaction.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cleanSatisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizeSatisfaction.R",
+            "target": "numberizedSatisfaction.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "cleanSatisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfaction.csv",
+            "target": "summaryLM.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "summaryModel",
+                    "type": "txt"
+                }
+            ],
+            "source": "summaryLM.R",
+            "target": "summaryModel.txt"
         }
     ],
     "nodes": [
         {
-            "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
-            "name": "clean_data.R"
+            "name": "satisfactionSurvey.csv"
         },
         {
-            "name": "cleaned_data.csv"
+            "assigned_to": "rncasagr",
+            "desc": "Analyze correlation between satisfaction and each of the following: Day of Month, Flight date, Flight time in minutes, Flight Distance. Create an appropriate visualization to show any correlations.",
+            "name": "flight_information.R",
+            "task_status": "in progress"
         },
         {
-            "name": "airlines.csv"
+            "assigned_to": "rhfrench",
+            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
+            "name": "airline_analysis.R",
+            "task_status": "in progress"
         },
         {
-            "desc": "Explore the relationships amongst the various variables, using visualization to determine which variables affect the customer satisfaction.",
-            "name": "Explore.R"
+            "name": "statusBar.png"
         },
         {
-            "name": "histogram.png"
+            "name": "otherFlightsBar.png"
         },
         {
-            "name": "scatterplot.png"
+            "name": "codesBar.png"
         },
         {
-            "name": "boxplot.png"
+            "name": "cardsBar.png"
         },
         {
-            "assigned_to": "not assigned",
-            "desc": "Using the insights from the explore phase, we create a model to predict customer satisfaction and thus validate our analysis.",
-            "name": "model.R",
-            "task_status": "proposed"
+            "name": "classBar.png"
+        },
+        {
+            "name": "travelBar.png"
+        },
+        {
+            "name": "barMeanDayofMonth.png"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "Here we look at the variables in our data related to flight delay.\r\n",
+            "name": "delay_analysis.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "h1.png"
+        },
+        {
+            "name": "h3.png"
+        },
+        {
+            "name": "h4.png"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "",
+            "name": "Geography_Zhang.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "oStateMap.png"
+        },
+        {
+            "name": "dStateMap.png"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Remove any non-numeric numbers under the Satisfaction variable and coerce as numeric to be able to define a binary satisfaction level and do further exploratory analysis on the group of values",
+            "name": "numberizeSatisfaction.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "numberizedSatisfaction.csv"
+        },
+        {
+            "name": "summaryModel.txt"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
+            "name": "summaryLM.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-11 02:24:30",
+    "updated_at": "2018-10-25 21:14:00",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
