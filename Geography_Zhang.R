@@ -25,9 +25,9 @@ us <- map_data("state")
 surveyGeo$Origin.State<- tolower(surveyGeo$Origin.State)
 
 oStateMap <- ggplot(surveyGeo, aes(map_id =Origin.State))  
-oStateMap <- colCoMap+  geom_map(map = us, aes(fill=surveyGeo$Satisfaction)) 
-oStateMap <- colCoMap + expand_limits(x = us$long, y = us$lat)
-oStateMap <- colCoMap + coord_map() +ggtitle ("Map of the Origine State")
+oStateMap <- oStateMap+  geom_map(map = us, aes(fill=surveyGeo$Satisfaction)) 
+oStateMap <- oStateMap + expand_limits(x = us$long, y = us$lat)
+oStateMap <- oStateMap + coord_map() +ggtitle ("Map of the Origine State")
 oStateMap
 
 #Create a color coded map, based on the Destination State
