@@ -7,7 +7,8 @@ str(sSurvey)
 #surveyGeo<-sSurvey [,-c(2:17,22:28)] 
 surveyGeo<-sSurvey [,c("Satisfaction","Orgin.City","Origin.State","Destination.City","Destination.State")]
 str(surveyGeo)
-
+summary(surveyGeo$Satisfaction)
+unique()
 #data cleaning 
 surveyGeo <- surveyGeo[(surveyGeo$Satisfaction!="4.00.2.00"&surveyGeo$Satisfaction!="4.00.5"),]
 str(surveyGeo)
