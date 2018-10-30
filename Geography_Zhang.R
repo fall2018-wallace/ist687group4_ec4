@@ -34,6 +34,10 @@ oStateMap <- oStateMap + expand_limits(x = us$long, y = us$lat)
 oStateMap <- oStateMap + coord_map() +ggtitle ("Map of the Origine State")
 oStateMap
 
+
+#1.Among origine states, States in the West Coast and MidWest have a better satisfacgtion level than States in the South and the Easte Coast 
+#2.States: including Arizona, North Dakoda, Minnesoda, New York and New Jersery have the lowest satisfaction level. 
+
 #Create a color coded map, based on the Destination State
 surveyGeo$Destination.State<- tolower(surveyGeo$Destination.State)
 dStateMap <- ggplot(surveyGeo, aes(map_id =Destination.State))  
@@ -41,3 +45,5 @@ dStateMap <- dStateMap +  geom_map(map = us, aes(fill=surveyGeo$Satisfaction))
 dStateMap <- dStateMap + expand_limits(x = us$long, y = us$lat)
 dStateMap <- dStateMap + coord_map() + ggtitle("Map of Destination State")
 dStateMap
+#1.Among destination States, Arizona, Nevada,Utah, Wyoming, Kansas, Geogia, North Carolina, Massachusetts and Ohio have the higest satisfaction level.
+#2.However, States including Florida, South Carolina, West Virgenia, Iowa and South Dakota have the lowerest satisfaction level. 
