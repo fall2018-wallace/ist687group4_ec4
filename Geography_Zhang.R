@@ -15,6 +15,7 @@ str(surveyGeo)
 #Explore the Satisfaction Variable 
 length(surveyGeo$Satisfaction)
 class(surveyGeo$Satisfaction)
+
 surveyGeo$Satisfaction<-as.numeric(surveyGeo$Satisfaction)
 str(surveyGeo)
 
