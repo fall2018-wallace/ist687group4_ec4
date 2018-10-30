@@ -11,6 +11,8 @@ surveyGeo<-sSurvey [,c("Satisfaction","Orgin.City","Origin.State","Destination.C
 #data cleaning 
 surveyGeo <- surveyGeo[(surveyGeo$Satisfaction!="4.00.2.00"&surveyGeo$Satisfaction!="4.00.5"),]
 str(surveyGeo)
+
+unique 
 #Explore the Satisfaction Variable 
 length(surveyGeo$Satisfaction)
 class(surveyGeo$Satisfaction)
