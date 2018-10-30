@@ -16,6 +16,7 @@ str(surveyGeo)
 length(surveyGeo$Satisfaction)
 class(surveyGeo$Satisfaction)
 surveyGeo$Satisfaction<-as.numeric(surveyGeo$Satisfaction)
+str(surveyGeo)
 unique(surveyGeo$Satisfaction)
 
 #Insgtall ggplot packages 
