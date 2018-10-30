@@ -17,7 +17,6 @@ length(surveyGeo$Satisfaction)
 class(surveyGeo$Satisfaction)
 
 surveyGeo$Satisfaction<-as.numeric(as.character(surveyGeo$Satisfaction))
-str(surveyGeo)
 
 unique(surveyGeo$Satisfaction)
 
