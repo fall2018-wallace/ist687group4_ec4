@@ -25,6 +25,7 @@ library(maps)
 
 #Generate a color coded map
 #Create a color coded map, based on the Origin State
+
 us <- map_data("state")
 surveyGeo$Origin.State<- tolower(surveyGeo$Origin.State)
 
@@ -35,8 +36,8 @@ oStateMap <- oStateMap + coord_map() +ggtitle ("Map of the Origine State")
 oStateMap
 
 
-#1.Among origine states, States in the West Coast and MidWest have a better satisfacgtion level than States in the South and the Easte Coast 
-#2.States: including Arizona, North Dakoda, Minnesoda, New York and New Jersery have the lowest satisfaction level. 
+#1.Among origine States, States in the West Coast and MidWest have a better satisfacgtion level than the States in the South and the Easte Coast 
+#2.States including Arizona, North Dakoda, Minnesoda, New York and New Jersery have the lowest satisfaction level. 
 
 #Create a color coded map, based on the Destination State
 surveyGeo$Destination.State<- tolower(surveyGeo$Destination.State)
