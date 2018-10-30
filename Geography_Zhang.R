@@ -13,11 +13,11 @@ surveyGeo <- surveyGeo[(surveyGeo$Satisfaction!="4.00.2.00"&surveyGeo$Satisfacti
 str(surveyGeo)
 
 #Explore the Satisfaction Variable 
-length(surveyGeo$Satisfaction)
-class(surveyGeo$Satisfaction)
+
 
 surveyGeo$Satisfaction<-as.numeric(as.character(surveyGeo$Satisfaction))
-
+length(surveyGeo$Satisfaction)
+class(surveyGeo$Satisfaction)
 unique(surveyGeo$Satisfaction)
 
 #Insgtall ggplot packages 
