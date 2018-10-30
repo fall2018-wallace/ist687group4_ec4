@@ -12,12 +12,12 @@ str(surveyGeo)
 surveyGeo <- surveyGeo[(surveyGeo$Satisfaction!="4.00.2.00"&surveyGeo$Satisfaction!="4.00.5"),]
 str(surveyGeo)
 
-
 #Explore the Satisfaction Variable 
 length(surveyGeo$Satisfaction)
 class(surveyGeo$Satisfaction)
 surveyGeo$Satisfaction<-as.numeric(surveyGeo$Satisfaction)
 unique(surveyGeo$Satisfaction)
+
 #Insgtall ggplot packages 
 library(ggplot2)
 library(ggmap)
