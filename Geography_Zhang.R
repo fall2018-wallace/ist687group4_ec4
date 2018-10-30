@@ -6,15 +6,11 @@ str(sSurvey)
 #create new dataframe satisfaction surveyGep with 5 variables 
 #surveyGeo<-sSurvey [,-c(2:17,22:28)] 
 surveyGeo<-sSurvey [,c("Satisfaction","Orgin.City","Origin.State","Destination.City","Destination.State")]
-str(surveyGeo)
 
-#datacleaning 
+
+#data cleaning 
 surveyGeo <- surveyGeo[(surveyGeo$Satisfaction!="4.00.2.00"&surveyGeo$Satisfaction!="4.00.5"),]
-
-# Coerce satisfaction ratings into a new (numeric) column
-#cleanSatisfactionSurvey$SatisfactionNumeric <- as.numeric(as.character(cleanSatisfactionSurvey$Satisfaction))
-
-
+str(surveyGeo)
 #Explore the Satisfaction Variable 
 length(surveyGeo$Satisfaction)
 class(surveyGeo$Satisfaction)
