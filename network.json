@@ -238,6 +238,16 @@
             ],
             "source": "PassengerDemographics.R",
             "target": "Gender_bargraph.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "NoOfFlights",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "NumFlights.png"
         }
     ],
     "nodes": [
@@ -338,6 +348,6 @@
             "name": "NumFlights.png"
         }
     ],
-    "updated_at": "2018-10-31 23:21:47",
+    "updated_at": "2018-10-31 23:22:02",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
