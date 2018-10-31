@@ -291,8 +291,12 @@
             "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
             "name": "summaryLM.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "Here, we analyse all the variables related to the passengers.",
+            "name": "PassengerDemographics.R"
         }
     ],
-    "updated_at": "2018-10-25 21:14:00",
+    "updated_at": "2018-10-31 07:01:08",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
