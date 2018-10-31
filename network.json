@@ -359,8 +359,11 @@
         },
         {
             "name": "ShoppingAmt.png"
+        },
+        {
+            "name": "PriceSensitivity.png"
         }
     ],
-    "updated_at": "2018-10-31 23:23:04",
+    "updated_at": "2018-10-31 23:27:36",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
