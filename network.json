@@ -320,8 +320,11 @@
         },
         {
             "name": "Age_hist.png"
+        },
+        {
+            "name": "Gender_bargraph.png"
         }
     ],
-    "updated_at": "2018-10-31 23:20:46",
+    "updated_at": "2018-10-31 23:21:08",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
