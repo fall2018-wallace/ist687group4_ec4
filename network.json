@@ -212,16 +212,6 @@
         {
             "ports": [
                 {
-                    "input": "satisfactionSurvey",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "PassengerDemographics.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "Age",
                     "type": "png"
                 }
@@ -278,6 +268,16 @@
             ],
             "source": "PassengerDemographics.R",
             "target": "EatingDrinking.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "SatisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "PassengerDemographics.R"
         }
     ],
     "nodes": [
@@ -387,6 +387,6 @@
             "name": "EatingDrinking.png"
         }
     ],
-    "updated_at": "2018-10-31 23:28:58",
+    "updated_at": "2018-10-31 23:38:12",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
