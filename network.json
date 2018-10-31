@@ -258,6 +258,16 @@
             ],
             "source": "PassengerDemographics.R",
             "target": "ShoppingAmt.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "PriceSens",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "PriceSensitivity.png"
         }
     ],
     "nodes": [
@@ -364,6 +374,6 @@
             "name": "PriceSensitivity.png"
         }
     ],
-    "updated_at": "2018-10-31 23:27:36",
+    "updated_at": "2018-10-31 23:27:48",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
