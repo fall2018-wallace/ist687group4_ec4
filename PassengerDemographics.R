@@ -1,5 +1,5 @@
 
-passengerdf <- data.frame('SatisfactionSurvey.csv', stringsAsFactors = FALSE)
+df <- data.frame('SatisfactionSurvey.csv', stringsAsFactors = FALSE)
 passengerdf <- df[,c("Age","Gender","Year.of.First.Flight","No.of.Flights.p.a.","Shopping.Amount.at.Airport","Price.Sensitivity","Eating.and.Drinking.at.Airport")]
 
 
