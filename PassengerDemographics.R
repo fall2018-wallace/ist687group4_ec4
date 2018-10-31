@@ -1,15 +1,4 @@
 
-df <- data.frame(ssdata,stringsAsFactors = FALSE)
-
-#Initial look at NAs in our data
-for(i in colnames(df)){
-  print(paste(i,'=',sum(is.na(df[,i]))))
-}
-
-delay.df <- df[,c('Satisfaction','Scheduled.Departure.Hour','Departure.Delay.in.Minutes',
-                  'Arrival.Delay.in.Minutes','Flight.cancelled','Arrival.Delay.greater.5.Mins')]
-
-
 
 
 df <- data.frame('SatisfactionSurvey.csv', stringsAsFactors = FALSE)
