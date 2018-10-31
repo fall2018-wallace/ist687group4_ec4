@@ -248,6 +248,16 @@
             ],
             "source": "PassengerDemographics.R",
             "target": "NumFlights.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "ShoppingAmt",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "ShoppingAmt.png"
         }
     ],
     "nodes": [
@@ -351,6 +361,6 @@
             "name": "ShoppingAmt.png"
         }
     ],
-    "updated_at": "2018-10-31 23:22:51",
+    "updated_at": "2018-10-31 23:23:04",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
