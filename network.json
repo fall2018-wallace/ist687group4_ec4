@@ -307,8 +307,11 @@
             "desc": "Here, we analyse all the variables related to the passengers.",
             "name": "PassengerDemographics.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "Age_hist.png"
         }
     ],
-    "updated_at": "2018-10-31 23:20:10",
+    "updated_at": "2018-10-31 23:20:33",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
