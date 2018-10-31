@@ -212,7 +212,7 @@
         {
             "ports": [
                 {
-                    "input": "satisfactionSurvey.csv",
+                    "input": "satisfactionSurvey",
                     "type": "csv"
                 }
             ],
@@ -309,6 +309,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-31 07:04:56",
+    "updated_at": "2018-10-31 07:06:29",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
