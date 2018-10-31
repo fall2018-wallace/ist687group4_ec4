@@ -208,6 +208,16 @@
             ],
             "source": "summaryLM.R",
             "target": "summaryModel.txt"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "PassengerDemographics.R"
         }
     ],
     "nodes": [
@@ -291,8 +301,14 @@
             "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
             "name": "summaryLM.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "Here, we analyse all the variables related to the passengers.",
+            "name": "PassengerDemographics.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-25 21:14:00",
+    "updated_at": "2018-10-31 07:06:29",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
