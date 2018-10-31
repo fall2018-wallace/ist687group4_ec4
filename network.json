@@ -228,6 +228,16 @@
             ],
             "source": "PassengerDemographics.R",
             "target": "Age_hist.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Gender",
+                    "type": "csv"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "Gender_bargraph.csv"
         }
     ],
     "nodes": [
@@ -325,6 +335,6 @@
             "name": "Gender_bargraph.csv"
         }
     ],
-    "updated_at": "2018-10-31 23:18:39",
+    "updated_at": "2018-10-31 23:18:49",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
