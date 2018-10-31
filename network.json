@@ -218,16 +218,6 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "PassengerDemographics.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "Gender",
-                    "type": "csv"
-                }
-            ],
-            "source": "PassengerDemographics.R",
-            "target": "Gender_bargraph.csv"
         }
     ],
     "nodes": [
@@ -319,12 +309,9 @@
             "task_status": "in progress"
         },
         {
-            "name": "Gender_bargraph.csv"
-        },
-        {
             "name": "NumFlights.csv"
         }
     ],
-    "updated_at": "2018-10-31 23:19:56",
+    "updated_at": "2018-10-31 23:20:02",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
