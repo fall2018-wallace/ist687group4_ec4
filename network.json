@@ -218,6 +218,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "PassengerDemographics.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Age",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "Age_hist.png"
         }
     ],
     "nodes": [
@@ -312,6 +322,6 @@
             "name": "Age_hist.png"
         }
     ],
-    "updated_at": "2018-10-31 23:20:33",
+    "updated_at": "2018-10-31 23:20:46",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
