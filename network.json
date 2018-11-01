@@ -467,9 +467,12 @@
             "assigned_to": "rncasagr",
             "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the non-numeric Satisfaction entries that seem to be errors and account for the NULL values in a separate variable for future modelling.",
             "name": "cleanData.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
+        },
+        {
+            "name": "blankCounts.txt"
         }
     ],
-    "updated_at": "2018-11-01 18:30:40",
+    "updated_at": "2018-11-01 18:44:28",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
