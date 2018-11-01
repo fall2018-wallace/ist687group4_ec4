@@ -476,12 +476,6 @@
         },
         {
             "assigned_to": "rncasagr",
-            "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
-            "name": "arMiningPrep.R",
-            "task_status": "not started"
-        },
-        {
-            "assigned_to": "rncasagr",
             "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
             "name": "numberizeSatisfaction.R",
             "task_status": "in progress"
@@ -494,8 +488,14 @@
         },
         {
             "name": "histSat.png"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
+            "name": "Discretize.R",
+            "task_status": "not started"
         }
     ],
-    "updated_at": "2018-11-01 19:26:24",
+    "updated_at": "2018-11-01 20:41:56",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
