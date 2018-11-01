@@ -1,12 +1,12 @@
 
-# Coerce satisfaction ratings into a new (numeric) column
+# Coerce satisfaction ratings into a new (numeric) column for ease in future analysis
 ssClean$SatisfactionNumeric <- as.numeric(as.character(ssClean$Satisfaction))
 
-# In order to define our binary satisfcation categories of "High" and "Low", we must determine
+# In order to define binary satisfcation categories of "High" and "Low", we must determine
 # the threshold that makes the most sense within the distribution of Satisfaction numbers 
 # in our data.
 
-# Examine the central tendency and dispersion of the Satisfcation numbers
+# Examine the central tendency and dispersion of the Satisfaction numbers
 summary(ssClean$SatisfactionNumeric)
 histSat <- hist(ssClean$SatisfactionNumeric)
 
