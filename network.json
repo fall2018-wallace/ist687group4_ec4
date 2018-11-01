@@ -395,12 +395,6 @@
             "name": "s2.png"
         },
         {
-            "assigned_to": "rhfrench",
-            "desc": "Perform data mining based off of airline class (blue, gold platinum, silver) and determine what factors are comorbid with each",
-            "name": "statusMining.R",
-            "task_status": "proposed"
-        },
-        {
             "assigned_to": "tshetty",
             "desc": "Analysis on the attributes describing passenger demographics was done in this r code. The attribute 'Gender' was converted to dummy variables 0 and  1 for male and female. Created graphs to better understand each attribute.",
             "name": "PassengerDemographics.R",
@@ -441,8 +435,14 @@
             "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
             "name": "DiscretizedData.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "Descritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
+            "name": "descritizingPart1.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-01 16:12:53",
+    "updated_at": "2018-11-01 16:16:52",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
