@@ -427,8 +427,12 @@
             "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported by findings. ",
             "name": "Geography_Zhang.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "",
+            "name": "DiscretizedData.R"
         }
     ],
-    "updated_at": "2018-11-01 15:50:22",
+    "updated_at": "2018-11-01 16:03:58",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
