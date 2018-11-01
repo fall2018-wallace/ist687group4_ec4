@@ -388,8 +388,11 @@
         },
         {
             "name": "s1.png"
+        },
+        {
+            "name": "s2.png"
         }
     ],
-    "updated_at": "2018-11-01 00:36:10",
+    "updated_at": "2018-11-01 00:36:18",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
