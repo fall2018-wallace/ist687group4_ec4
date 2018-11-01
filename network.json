@@ -353,12 +353,6 @@
             "name": "h4.png"
         },
         {
-            "assigned_to": "zefeng",
-            "desc": "",
-            "name": "Geography_Zhang.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "oStateMap.png"
         },
         {
@@ -427,8 +421,14 @@
         {
             "desc": "H",
             "name": "modelling.R"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported by findings. ",
+            "name": "Geography_Zhang.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 15:48:35",
+    "updated_at": "2018-11-01 15:50:22",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
