@@ -9,6 +9,7 @@ unique(ssRaw$Satisfaction)
 # Per the above analysis, we see that there are some Satisfaction ratings of 4.00.5 and 
 # 4.00.2.00 in the data which fall outside of our expected format and are non-numeric 
 # (unable to be used in numerical analysis). As these are most likely errors, let's check
+# to see how much of the data these errors affect.
 
 # Remove the rows with non-numeric satisfaction ratings 
 # Per the group's decision: the we can do this check as an automated, non-manual process for the final project, but I knew what they were and am just exploring)
