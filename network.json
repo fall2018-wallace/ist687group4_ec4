@@ -423,8 +423,16 @@
             "desc": "Analysis on the attributes describing passenger demographics was done in this r code. The attribute 'Gender' was converted to dummy variables 0 and  1 for male and female. Created graphs to better understand each attribute.",
             "name": "PassengerDemographics.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "H",
+            "name": "modelling.R"
+        },
+        {
+            "desc": "",
+            "name": "script8342.R"
         }
     ],
-    "updated_at": "2018-11-01 15:47:34",
+    "updated_at": "2018-11-01 15:48:17",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
