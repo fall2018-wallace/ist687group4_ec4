@@ -443,10 +443,12 @@
             "task_status": "proposed"
         },
         {
+            "assigned_to": "abhishek27297",
             "desc": "",
-            "name": "script7391.R"
+            "name": "script7391.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 16:17:22",
+    "updated_at": "2018-11-01 16:17:39",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
