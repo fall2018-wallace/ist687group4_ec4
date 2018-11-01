@@ -441,8 +441,12 @@
             "desc": "Descritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
             "name": "descritizingPart1.R",
             "task_status": "proposed"
+        },
+        {
+            "desc": "",
+            "name": "script7391.R"
         }
     ],
-    "updated_at": "2018-11-01 16:16:52",
+    "updated_at": "2018-11-01 16:17:22",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
