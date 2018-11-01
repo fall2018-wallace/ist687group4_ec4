@@ -2,8 +2,9 @@
 # The Satisfaction variable is our dependent variable so it is important that it is 
 # formatted correctly and that its values are measurable.
 
-# Explore the data to discover any anomolies or unexpected values not equal to a number
+# Explore the unique values in the Satisfaction column to discover any anomolies or unexpected values not equal to a number
 # between 0 and 5.
+
 unique(ssRaw$Satisfaction)
 
 # Per the above analysis, we see that there are some Satisfaction ratings of 4.00.5 and 
