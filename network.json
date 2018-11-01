@@ -417,8 +417,12 @@
             "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the Satisfaction entries that seem to be in error and account for the NULL values in a separate variable for future modelling.",
             "name": "cleanData.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "Perform data mining based off of airline class (blue, gold platinum, silver) and determine what factors are comorbid with each",
+            "name": "script1273.R"
         }
     ],
-    "updated_at": "2018-11-01 15:39:40",
+    "updated_at": "2018-11-01 15:47:02",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
