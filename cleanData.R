@@ -2,7 +2,7 @@
 # The Satisfaction variable is our dependent variable so it is important that it is 
 # formatted correctly and that its values are measurable.
 
-# Explore the unique values in the Satisfaction column to discover any anomolies or 
+# Explore the unique entries in the Satisfaction column to discover any anomolies or 
 # unexpected values not equal to a number between 0 and 5.
 unique(ssRaw$Satisfaction)
 
@@ -26,5 +26,5 @@ nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / n
 # from the data set before moving forward. 
 
 # Remove the rows with non-numeric satisfaction ratings 
-ssClean <- ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5"),]
-str(ssClean)
+ssCleanSat <- ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5"),]
+
