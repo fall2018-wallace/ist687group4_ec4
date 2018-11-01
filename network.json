@@ -328,6 +328,16 @@
             ],
             "source": "numberizeSatisfaction.R",
             "target": "numberizedSatisfactionSurvey.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "histSat",
+                    "type": "png"
+                }
+            ],
+            "source": "numberizeSatisfaction.R",
+            "target": "histSat.png"
         }
     ],
     "nodes": [
@@ -486,6 +496,6 @@
             "name": "histSat.png"
         }
     ],
-    "updated_at": "2018-11-01 19:26:05",
+    "updated_at": "2018-11-01 19:26:24",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
