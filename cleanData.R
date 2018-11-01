@@ -55,4 +55,5 @@ dfCounts
 # along with 88% (2401 out of 2738) of the blanks for Arrival Delays and Flight Time. Since
 # a cancelled flight has no recorded time in the air and can not land late by any amount of 
 # time, we can reasonably set these instance to 0 for Arrival Delay and Flight Time. There 
+# were less Departure Delays than total flights cancelled, presumably because a flight can 
 
