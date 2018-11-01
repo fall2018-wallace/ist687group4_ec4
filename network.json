@@ -411,12 +411,6 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "zefeng",
-            "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported by findings. ",
-            "name": "Geography_Zhang.R",
-            "task_status": "in progress"
-        },
-        {
             "assigned_to": "not assigned",
             "desc": "Here we model our data using insights from the exploratory phase to achieve predict satisfaction value for new customers with a high accuracy.",
             "name": "modelling.R",
@@ -454,9 +448,18 @@
             "assigned_to": "rncasagr",
             "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the non-numeric Satisfaction entries that seem to be errors and account for the NULL values in a separate variable for future modelling.",
             "name": "cleanData.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported the findings. ",
+            "name": "Geography_Zhang.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "cleanSatisfactionSurvey.csv"
         }
     ],
-    "updated_at": "2018-11-01 17:15:15",
+    "updated_at": "2018-11-01 18:25:30",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
