@@ -140,7 +140,7 @@ cor.test(delay.df$Departure.Delay.in.Minutes,delay.df$Arrival.Delay.in.Minutes)
 #the preious plot using the Satisfaction variable
 s2 <- ggplot(aes(y=Arrival.Delay.in.Minutes,x=Departure.Delay.in.Minutes),
        data = delay.df)+
-  geom_point(aes(color = delay.df$Satisfaction))
+  geom_point()
 s2
 #However a clear trend cannot be observed here contrary to the expectation
 #that higher delay time may result in low satisfaction value 
