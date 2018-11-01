@@ -298,6 +298,36 @@
             ],
             "source": "delay_analysis.R",
             "target": "s2.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssRaw",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "cleanData.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "cleanSatisfactionSurvey.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dfBlankCounts",
+                    "type": "txt"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "blankCounts.txt"
         }
     ],
     "nodes": [
@@ -401,12 +431,6 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "zefeng",
-            "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported by findings. ",
-            "name": "Geography_Zhang.R",
-            "task_status": "in progress"
-        },
-        {
             "assigned_to": "not assigned",
             "desc": "Here we model our data using insights from the exploratory phase to achieve predict satisfaction value for new customers with a high accuracy.",
             "name": "modelling.R",
@@ -416,18 +440,6 @@
             "assigned_to": "rncasagr",
             "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
             "name": "arMiningPrep.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the Satisfaction entries that seem to be in error and account for the NULL values in a separate variable for future modelling.",
-            "name": "cleanData.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Remove any non-numeric numbers under the Satisfaction variable and coerce as numeric to be able to define a binary satisfaction level and do further exploratory analysis on the group of values",
-            "name": "numberizeSatisfaction.R",
             "task_status": "proposed"
         },
         {
@@ -445,8 +457,32 @@
         {
             "desc": "",
             "name": "datamining.R"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
+            "name": "numberizeSatisfaction.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported the findings. ",
+            "name": "Geography_Zhang.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "cleanSatisfactionSurvey.csv"
+        },
+        {
+            "name": "blankCounts.txt"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the non-numeric Satisfaction entries that seem to be errors and account for the NULL values in a separate variable for future modelling.",
+            "name": "cleanData.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-01 16:18:51",
+    "updated_at": "2018-11-01 18:44:55",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
