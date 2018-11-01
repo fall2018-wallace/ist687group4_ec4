@@ -63,9 +63,11 @@ dfBlankCounts
 # cancelled as an unreported delay on a flight that didn't fly most likely did not exist.
 
 # Create new columns that are based upon the data in Departure Delays, Arrival Delays and 
-# Flight Time, but that set these values to zero where they are blank and where Flight Cancelled is "Yes"
+# Flight Time, but that set these values to zero where they are blank and where Flight 
+# Cancelled is "Yes"
 
 ssClean$Departure.Delay.in.Minutes.0 <- ifelse (is.na(ssClean$Departure.Delay.in.Minutes)&ssClean$Flight.cancelled=="Yes", 0, ssClean$Departure.Delay.in.Minutes)
 ssClean$Arrival.Delay.in.Minutes.0 <- ifelse (is.na(ssClean$Arrival.Delay.in.Minutes)&ssClean$Flight.cancelled=="Yes", 0, ssClean$Arrival.Delay.in.Minutes)
 ssClean$Flight.time.in.minutes.0 <- ifelse (is.na(ssClean$Flight.time.in.minutes)&ssClean$Flight.cancelled=="Yes", 0, ssClean$Flight.time.in.minutes)
 
+# Note: the group will still need to decide what to do with the 338 instance where flights
