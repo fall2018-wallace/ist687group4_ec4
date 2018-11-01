@@ -425,30 +425,6 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "not assigned",
-            "desc": "Here we model our data using insights from the exploratory phase to achieve predict satisfaction value for new customers with a high accuracy.",
-            "name": "modelling.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
-            "name": "arMiningPrep.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "tshetty",
-            "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
-            "name": "DiscretizedData.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "rhfrench",
-            "desc": "Descritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
-            "name": "descritizingPart1.R",
-            "task_status": "proposed"
-        },
-        {
             "desc": "",
             "name": "datamining.R"
         },
@@ -466,23 +442,47 @@
         },
         {
             "assigned_to": "rncasagr",
+            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
+            "name": "summaryLM.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "Here we model our data using insights from the exploratory phase to achieve predict satisfaction value for new customers with a high accuracy.",
+            "name": "modelling.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
+            "name": "DiscretizedData.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "Descritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
+            "name": "descritizingPart1.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "rncasagr",
             "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the non-numeric Satisfaction entries that seem to be errors and account for the NULL values in a separate variable for future modelling.",
             "name": "cleanData.R",
-            "task_status": "proposed"
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
+            "name": "arMiningPrep.R",
+            "task_status": "not started"
         },
         {
             "assigned_to": "rncasagr",
             "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
             "name": "numberizeSatisfaction.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
-            "name": "summaryLM.R",
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 19:06:23",
+    "updated_at": "2018-11-01 19:13:01",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
