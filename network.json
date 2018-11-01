@@ -308,6 +308,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "cleanData.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "cleanSatisfactionSurvey.csv"
         }
     ],
     "nodes": [
@@ -460,6 +470,6 @@
             "name": "cleanSatisfactionSurvey.csv"
         }
     ],
-    "updated_at": "2018-11-01 18:25:30",
+    "updated_at": "2018-11-01 18:25:42",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
