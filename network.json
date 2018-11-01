@@ -172,26 +172,6 @@
         {
             "ports": [
                 {
-                    "input": "satisfactionSurvey",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "numberizeSatisfaction.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "cleanSatisfactionSurvey",
-                    "type": "csv"
-                }
-            ],
-            "source": "numberizeSatisfaction.R",
-            "target": "numberizedSatisfaction.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "cleanSatisfactionSurvey",
                     "type": "csv"
                 }
@@ -338,6 +318,16 @@
             ],
             "source": "cleanSatisfactionSurvey.csv",
             "target": "numberizeSatisfaction.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizeSatisfaction.R",
+            "target": "numberizedSatisfaction.csv"
         }
     ],
     "nodes": [
@@ -490,9 +480,9 @@
             "assigned_to": "rncasagr",
             "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
             "name": "numberizeSatisfaction.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 19:00:31",
+    "updated_at": "2018-11-01 19:02:12",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
