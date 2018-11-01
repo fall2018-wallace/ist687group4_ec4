@@ -318,6 +318,16 @@
             ],
             "source": "cleanData.R",
             "target": "cleanSatisfactionSurvey.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dfBlankCounts",
+                    "type": "txt"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "blankCounts.txt"
         }
     ],
     "nodes": [
@@ -473,6 +483,6 @@
             "name": "blankCounts.txt"
         }
     ],
-    "updated_at": "2018-11-01 18:44:28",
+    "updated_at": "2018-11-01 18:44:39",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
