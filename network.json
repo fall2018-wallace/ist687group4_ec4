@@ -302,7 +302,7 @@
         {
             "ports": [
                 {
-                    "input": "satSurv",
+                    "input": "ssRaw",
                     "type": "csv"
                 }
             ],
@@ -457,6 +457,6 @@
             "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-01 17:15:05",
+    "updated_at": "2018-11-01 17:15:15",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
