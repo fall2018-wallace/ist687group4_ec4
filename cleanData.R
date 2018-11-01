@@ -63,5 +63,5 @@ dfBlankCounts
 # Set Departure Delays, Arrival Delays and Flight Time to zero where they are blank and 
 # where Flight Cancelled is "Yes"
 
-
+b[b=='NULL'] <- 0
 
