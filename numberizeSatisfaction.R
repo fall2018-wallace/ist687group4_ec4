@@ -17,4 +17,3 @@ histSat <- hist(ssClean$SatisfactionNumeric)
 
 # Create a new column assigning a binary value to satisfaction
 ssClean$binarySat <- ifelse(ssClean$SatisfactionNumeric > 3.5, "High", "Low")
-ssClean$binarySat
