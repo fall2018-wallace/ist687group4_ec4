@@ -16,6 +16,8 @@ nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),])
 
 # Display the total number of rows
 nrow(ssRaw)
+
+# Display the number of non-standard rows as a percentage of total rows
 nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / nrow(ssRaw) * 100
 
 # Remove the rows with non-numeric satisfaction ratings 
