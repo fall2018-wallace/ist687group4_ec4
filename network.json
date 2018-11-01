@@ -416,9 +416,9 @@
             "assigned_to": "rncasagr",
             "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the Satisfaction entries that seem to be in error and account for the NULL values in a separate variable for future modelling.",
             "name": "cleanData.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 15:30:53",
+    "updated_at": "2018-11-01 15:39:40",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
