@@ -48,7 +48,7 @@ measures <- c("Cancelled flights", "Departure Delays",
 "Departure Delays for Cancelled flights", "Arrival Delays", "Arrival Delays for Cancelled Flights",
 "Flight Time", "Flight Time for Cancelled Flights")
 
-dfCounts <- (measures, blankCounts)
+dfCounts <- data.frame(measures, blankCounts)
 dfCounts
 
 
