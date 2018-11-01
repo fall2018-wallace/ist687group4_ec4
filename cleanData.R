@@ -30,7 +30,7 @@ ssCleanSat <- ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5
 
 # Per Abhishek's in in delay_analysis.R and Rebecca's exploratory analysis in 
 # flight_information.R, there are some NULL values in Departure Delays, Arrival Delays and
-# Flight Times (about 2% of instances).
+# Flight Times (approximately 2000 instance or 1.5% of the data). In order to not miss out
 
 
 
