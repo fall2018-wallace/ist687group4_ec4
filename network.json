@@ -138,6 +138,166 @@
             ],
             "source": "delay_analysis.R",
             "target": "h4.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "Geography_Zhang.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "oStateMap",
+                    "type": "png"
+                }
+            ],
+            "source": "Geography_Zhang.R",
+            "target": "oStateMap.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dStateMap",
+                    "type": "png"
+                }
+            ],
+            "source": "Geography_Zhang.R",
+            "target": "dStateMap.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "numberizeSatisfaction.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cleanSatisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizeSatisfaction.R",
+            "target": "numberizedSatisfaction.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "cleanSatisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfaction.csv",
+            "target": "summaryLM.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "summaryModel",
+                    "type": "txt"
+                }
+            ],
+            "source": "summaryLM.R",
+            "target": "summaryModel.txt"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Age",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "Age_hist.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Gender",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "Gender_bargraph.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "NoOfFlights",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "NumFlights.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "ShoppingAmt",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "ShoppingAmt.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "PriceSens",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "PriceSensitivity.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "EatingDrinking",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "EatingDrinking.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "PassengerDemographics.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "s1",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "s1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "s2",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "s2.png"
         }
     ],
     "nodes": [
@@ -193,12 +353,66 @@
             "name": "h4.png"
         },
         {
-            "assigned_to": "rncasagr",
-            "desc": "Investigate the data for missing values and outliers and clean them accordingly.",
-            "name": "clean_data.R",
+            "assigned_to": "zefeng",
+            "desc": "",
+            "name": "Geography_Zhang.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "oStateMap.png"
+        },
+        {
+            "name": "dStateMap.png"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Remove any non-numeric numbers under the Satisfaction variable and coerce as numeric to be able to define a binary satisfaction level and do further exploratory analysis on the group of values",
+            "name": "numberizeSatisfaction.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "numberizedSatisfaction.csv"
+        },
+        {
+            "name": "summaryModel.txt"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
+            "name": "summaryLM.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "Here, we analyse all the variables related to the passengers.",
+            "name": "PassengerDemographics.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "Age_hist.png"
+        },
+        {
+            "name": "Gender_bargraph.png"
+        },
+        {
+            "name": "NumFlights.png"
+        },
+        {
+            "name": "ShoppingAmt.png"
+        },
+        {
+            "name": "PriceSensitivity.png"
+        },
+        {
+            "name": "EatingDrinking.png"
+        },
+        {
+            "name": "s1.png"
+        },
+        {
+            "name": "s2.png"
         }
     ],
-    "updated_at": "2018-10-25 16:13:24",
+    "updated_at": "2018-11-01 00:38:32",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
