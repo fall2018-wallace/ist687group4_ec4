@@ -278,6 +278,26 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "PassengerDemographics.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "s1",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "s1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "s2",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "s2.png"
         }
     ],
     "nodes": [
@@ -385,8 +405,14 @@
         },
         {
             "name": "EatingDrinking.png"
+        },
+        {
+            "name": "s1.png"
+        },
+        {
+            "name": "s2.png"
         }
     ],
-    "updated_at": "2018-10-31 23:39:07",
+    "updated_at": "2018-11-01 00:38:32",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
