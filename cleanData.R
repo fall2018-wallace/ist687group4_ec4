@@ -56,4 +56,5 @@ dfCounts
 # a cancelled flight has no recorded time in the air and can not land late by any amount of 
 # time, we can reasonably set these instance to 0 for Arrival Delay and Flight Time. There 
 # were less Departure Delays than total flights cancelled, presumably because a flight can 
+# be delayed initially and also ultimately cancelled (after sitting on the tarmac). Still,
 
