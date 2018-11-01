@@ -455,10 +455,6 @@
             "task_status": "in progress"
         },
         {
-            "desc": "",
-            "name": "datamining.R"
-        },
-        {
             "assigned_to": "zefeng",
             "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported the findings. ",
             "name": "Geography_Zhang.R",
@@ -513,9 +509,9 @@
             "assigned_to": "rhfrench",
             "desc": "Discritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
             "name": "discritizingPart1.R",
-            "task_status": "not started"
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 23:45:38",
+    "updated_at": "2018-11-01 23:48:13",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
