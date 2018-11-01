@@ -53,4 +53,5 @@ dfCounts
 
 # We can see that all of the blanks for Departure Delays are for flights that were cancelled 
 # along with 88% (2401 out of 2738) of the blanks for Arrival Delays and Flight Time. Since
+# a cancelled flight has no recorded time in the air and can not land late by any amount of 
 
