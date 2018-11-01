@@ -7,5 +7,6 @@ ssClean$SatisfactionNumeric <- as.numeric(as.character(ssClean$Satisfaction))
 # in our data.
 
 # Examine the central tendency and dispersion of the Satisfcation numbers
+summary(ssClean$SatisfactionNumeric)
 # Create a new column assigning a binary value to satisfaction for future analysis
 ssClean$binarySat <- ssClean$SatisfactionNumeric > 3.5
