@@ -353,22 +353,10 @@
             "name": "h4.png"
         },
         {
-            "assigned_to": "zefeng",
-            "desc": "",
-            "name": "Geography_Zhang.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "oStateMap.png"
         },
         {
             "name": "dStateMap.png"
-        },
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Remove any non-numeric numbers under the Satisfaction variable and coerce as numeric to be able to define a binary satisfaction level and do further exploratory analysis on the group of values",
-            "name": "numberizeSatisfaction.R",
-            "task_status": "in progress"
         },
         {
             "name": "numberizedSatisfaction.csv"
@@ -380,12 +368,6 @@
             "assigned_to": "rncasagr",
             "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
             "name": "summaryLM.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "tshetty",
-            "desc": "Here, we analyse all the variables related to the passengers.",
-            "name": "PassengerDemographics.R",
             "task_status": "in progress"
         },
         {
@@ -411,8 +393,60 @@
         },
         {
             "name": "s2.png"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "Analysis on the attributes describing passenger demographics was done in this r code. The attribute 'Gender' was converted to dummy variables 0 and  1 for male and female. Created graphs to better understand each attribute.",
+            "name": "PassengerDemographics.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported by findings. ",
+            "name": "Geography_Zhang.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "Here we model our data using insights from the exploratory phase to achieve predict satisfaction value for new customers with a high accuracy.",
+            "name": "modelling.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
+            "name": "arMiningPrep.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the Satisfaction entries that seem to be in error and account for the NULL values in a separate variable for future modelling.",
+            "name": "cleanData.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Remove any non-numeric numbers under the Satisfaction variable and coerce as numeric to be able to define a binary satisfaction level and do further exploratory analysis on the group of values",
+            "name": "numberizeSatisfaction.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
+            "name": "DiscretizedData.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "Descritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
+            "name": "descritizingPart1.R",
+            "task_status": "proposed"
+        },
+        {
+            "desc": "",
+            "name": "datamining.R"
         }
     ],
-    "updated_at": "2018-11-01 00:38:32",
+    "updated_at": "2018-11-01 16:18:51",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
