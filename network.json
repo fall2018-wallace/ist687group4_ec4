@@ -411,8 +411,12 @@
         },
         {
             "name": "s2.png"
+        },
+        {
+            "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the Satisfaction entries that seem to be in error and account for the NULL values in a separate variable for future modelling.",
+            "name": "cleanData.R"
         }
     ],
-    "updated_at": "2018-11-01 00:38:32",
+    "updated_at": "2018-11-01 15:30:41",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
