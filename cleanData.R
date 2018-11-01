@@ -4,6 +4,7 @@
 
 # Explore the data to discover any anomolies or unexpected values not equal to a number
 # between 0 and 5.
+
 # Remove the rows with non-numeric satisfaction ratings 
 # Per the group's decision: the we can do this check as an automated, non-manual process for the final project, but I knew what they were and am just exploring)
 cleanSatisfactionSurvey <- satisfactionSurvey[(satisfactionSurvey$Satisfaction!="4.00.2.00"&satisfactionSurvey$Satisfaction!="4.00.5"),]
