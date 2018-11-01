@@ -419,12 +419,6 @@
             "task_status": "proposed"
         },
         {
-            "assigned_to": "rncasagr",
-            "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the Satisfaction entries that seem to be in error and account for the NULL values in a separate variable for future modelling.",
-            "name": "cleanData.R",
-            "task_status": "proposed"
-        },
-        {
             "assigned_to": "tshetty",
             "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
             "name": "DiscretizedData.R",
@@ -445,8 +439,14 @@
             "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
             "name": "numberizeSatisfaction.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the non-numeric Satisfaction entries that seem to be errors and account for the NULL values in a separate variable for future modelling.",
+            "name": "cleanData.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-01 17:10:49",
+    "updated_at": "2018-11-01 17:11:37",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
