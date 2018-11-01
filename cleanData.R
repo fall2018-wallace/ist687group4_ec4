@@ -51,4 +51,5 @@ measures <- c("Cancelled flights", "Departure Delays",
 dfCounts <- data.frame(measures, blankCounts)
 dfCounts
 
+# We can see that all of the blanks for Departure Delays are for flights that were Cancelled
 
