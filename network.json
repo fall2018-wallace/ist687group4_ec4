@@ -288,6 +288,16 @@
             ],
             "source": "delay_analysis.R",
             "target": "s1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "s2",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "s2.png"
         }
     ],
     "nodes": [
@@ -403,6 +413,6 @@
             "name": "s2.png"
         }
     ],
-    "updated_at": "2018-11-01 00:38:17",
+    "updated_at": "2018-11-01 00:38:32",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
