@@ -60,3 +60,5 @@ dfCounts
 # it is reasonable to set the remaining blank Departure Delays to 0 where the flights were
 # cancelled as an unreported delay on a flight that didn't fly most likely did not exist.
 
+# Set Departure Delays, Arrival Delays and Flight Time to zero where they are blank and 
+
