@@ -25,3 +25,5 @@ summary(predictDelayModel)
 ssClean$Arrival.Delay.in.Minutes.0.Est <- ifelse (is.na(ssClean$Arrival.Delay.in.Minutes.0), 0.9787024*(ssClean$Departure.Delay.in.Minutes) + 0.7733387, ssClean$Arrival.Delay.in.Minutes.0)
 ssClean$Flight.time.in.minutes.0.Est <- ifelse (is.na(ssClean$Flight.time.in.minutes.0), .1182*(ssClean$Flight.Distance) + 17.47, ssClean$Flight.time.in.minutes.0)
 
+predict <- lm(formula = Flight.time.in.minutes.0.Est ~ Flight.Distance, data = ssClean)
+summary(predict)
