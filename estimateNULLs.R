@@ -19,4 +19,5 @@ predictDelayModel <- lm(formula = Arrival.Delay.in.Minutes ~ Departure.Delay.in.
 summary(predictDelayModel)
 
 # With an R-Squared of 0.9316 and a p-value of 2.2e-16, we see the same type of relationship
-# between Departure Delay and Arrival Delay and can reasonably predict Arrival data from
+# between Departure Delay and Arrival Delay and can reasonably predict Arrival Delay data from
+#
