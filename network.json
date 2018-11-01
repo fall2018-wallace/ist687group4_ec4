@@ -176,7 +176,7 @@
                     "type": "csv"
                 }
             ],
-            "source": "numberizedSatisfaction.csv",
+            "source": "numberizedSatisfactionSurvey.csv",
             "target": "summaryLM.R"
         },
         {
@@ -327,7 +327,7 @@
                 }
             ],
             "source": "numberizeSatisfaction.R",
-            "target": "numberizedSatisfaction.csv"
+            "target": "numberizedSatisfactionSurvey.csv"
         }
     ],
     "nodes": [
@@ -389,7 +389,7 @@
             "name": "dStateMap.png"
         },
         {
-            "name": "numberizedSatisfaction.csv"
+            "name": "numberizedSatisfactionSurvey.csv"
         },
         {
             "name": "summaryModel.txt"
@@ -483,6 +483,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 19:05:12",
+    "updated_at": "2018-11-01 19:06:23",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
