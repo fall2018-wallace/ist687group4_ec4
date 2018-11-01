@@ -11,6 +11,7 @@ unique(ssRaw$Satisfaction)
 # (unable to be used in numerical analysis). As these are most likely errors, let's check
 # to see how much of the data these errors affect.
 
+# Display the number of rows with these anomolies
 nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),])
 nrow(ssRaw)
 nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / nrow(ssRaw) * 100
