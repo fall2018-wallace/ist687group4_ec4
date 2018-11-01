@@ -433,8 +433,12 @@
             "desc": "Here we model our data using insights from the exploratory phase to achieve predict satisfaction value for new customers with a high accuracy.",
             "name": "modelling.R",
             "task_status": "proposed"
+        },
+        {
+            "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
+            "name": "arMiningPrep.R"
         }
     ],
-    "updated_at": "2018-11-01 16:07:20",
+    "updated_at": "2018-11-01 16:10:41",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
