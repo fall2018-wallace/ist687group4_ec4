@@ -23,18 +23,19 @@ nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / n
 # Taking into account the fact that these numbers are unable to be analyzed as entered and
 # that we can not be sure of what numbers they were intended to be, we now also see that 
 # make up 3 out of 129889 (or 0.002%) of entries and wont' significantly influence overall 
-# trends. Based upon this, our group has opted to remove them completely from the data set before moving forward. 
+# trends. Based upon this, our group has opted to remove them completely from the data set 
+# before moving forward. 
 
 # Remove the rows with non-numeric satisfaction ratings 
 ssClean <- ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5"),]
 
 # Per Abhishek's exploratory analysis in delay_analysis.R and Rebecca's in 
 # flight_information.R, there are some NULL values in Departure Delays, Arrival Delays and
-# Flight Times (approximately 2000 instance or 1.5% of the data). In order to not miss out
+# Flight Times (approximately 2400 instance or 1.5% of the data). In order to not miss out
 # on other possibly valuable information in these rows, we will not remove them entirely 
-# but create new columns that assigns reasonable values where the data is missing.
+# but create new columns that assign reasonable values where the data is missing.
 
-# Explore the relationship between cancelled flights and missing delay and flight time data.
+# Create a dataframe that explores the relationship between cancelled flights and missing delay and flight time data.
 
 blankCounts <- c(nrow(ssRaw[ssRaw$Flight.cancelled=="Yes",]),
 nrow(ssRaw[is.na(ssRaw$Departure.Delay.in.Minutes),]),
