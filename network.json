@@ -172,31 +172,11 @@
         {
             "ports": [
                 {
-                    "input": "satisfactionSurvey",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "numberizeSatisfaction.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "cleanSatisfactionSurvey",
-                    "type": "csv"
-                }
-            ],
-            "source": "numberizeSatisfaction.R",
-            "target": "numberizedSatisfaction.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "cleanSatisfactionSurvey",
                     "type": "csv"
                 }
             ],
-            "source": "numberizedSatisfaction.csv",
+            "source": "numberizedSatisfactionSurvey.csv",
             "target": "summaryLM.R"
         },
         {
@@ -328,6 +308,26 @@
             ],
             "source": "cleanData.R",
             "target": "blankCounts.txt"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleanSatisfactionSurvey.csv",
+            "target": "numberizeSatisfaction.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizeSatisfaction.R",
+            "target": "numberizedSatisfactionSurvey.csv"
         }
     ],
     "nodes": [
@@ -389,16 +389,10 @@
             "name": "dStateMap.png"
         },
         {
-            "name": "numberizedSatisfaction.csv"
+            "name": "numberizedSatisfactionSurvey.csv"
         },
         {
             "name": "summaryModel.txt"
-        },
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
-            "name": "summaryLM.R",
-            "task_status": "in progress"
         },
         {
             "name": "Age_hist.png"
@@ -459,12 +453,6 @@
             "name": "datamining.R"
         },
         {
-            "assigned_to": "rncasagr",
-            "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
-            "name": "numberizeSatisfaction.R",
-            "task_status": "proposed"
-        },
-        {
             "assigned_to": "zefeng",
             "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported the findings. ",
             "name": "Geography_Zhang.R",
@@ -481,8 +469,20 @@
             "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the non-numeric Satisfaction entries that seem to be errors and account for the NULL values in a separate variable for future modelling.",
             "name": "cleanData.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
+            "name": "numberizeSatisfaction.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
+            "name": "summaryLM.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 18:44:55",
+    "updated_at": "2018-11-01 19:06:23",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
