@@ -7,5 +7,8 @@
 # like head and tail winds, flight direction, etc. We'll use a linear model to see if these
 # variables make a difference or if flight distance reamins a reasonable predictor of flight
 # time in minutes.
+
 predictModel <- lm(formula = Flight.time.in.minutes ~ Flight.Distance, data = ssClean)
 summary(predictModel)
+
+
