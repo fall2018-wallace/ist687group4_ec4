@@ -57,4 +57,5 @@ dfCounts
 # time, we can reasonably set these instance to 0 for Arrival Delay and Flight Time. There 
 # were less Departure Delays than total flights cancelled, presumably because a flight can 
 # be delayed initially and also ultimately cancelled (after sitting on the tarmac). Still,
+# it is reasonable to set the remaining blank Departure Delays to 0 where the flights were
 
