@@ -124,8 +124,7 @@ delay.df$Satisfaction <- as.numeric(as.character(delay.df$Satisfaction))
 #As previously observed both the delay variables had a very similar distribution
 #Thus we further look at how these variables are related by creating a scatter plot
 s1 <- ggplot(aes(y=Arrival.Delay.in.Minutes,x=Departure.Delay.in.Minutes),
-       data = subset(delay.df,!is.na(delay.df$Departure.Delay.in.Minutes) &
-                                       !is.na(delay.df$Arrival.Delay.in.Minutes)))+
+       data = delay.df)+
   geom_point()
 #We see a strong linear relationship between the two as expected
 #as if a flight's departure is delayed its arrival time is also affected
