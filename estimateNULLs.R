@@ -12,3 +12,4 @@ predictModel <- lm(formula = Flight.time.in.minutes ~ Flight.Distance, data = ss
 summary(predictModel)
 
 # At 0.9542, the R-Squared is extremely close to 1 and at 2.2e-16, the p-value is very far 
+# below 0.05 which together show that flight distance is reasonably good at predicting flight
