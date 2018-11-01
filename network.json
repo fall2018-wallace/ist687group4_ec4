@@ -401,12 +401,6 @@
             "name": "s2.png"
         },
         {
-            "assigned_to": "rncasagr",
-            "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the Satisfaction entries that seem to be in error and account for the NULL values in a separate variable for future modelling.",
-            "name": "cleanData.R",
-            "task_status": "in progress"
-        },
-        {
             "assigned_to": "rhfrench",
             "desc": "Perform data mining based off of airline class (blue, gold platinum, silver) and determine what factors are comorbid with each",
             "name": "statusMining.R",
@@ -439,8 +433,14 @@
             "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
             "name": "arMiningPrep.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the Satisfaction entries that seem to be in error and account for the NULL values in a separate variable for future modelling.",
+            "name": "cleanData.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-01 16:10:49",
+    "updated_at": "2018-11-01 16:11:02",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
