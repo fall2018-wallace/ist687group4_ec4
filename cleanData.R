@@ -26,7 +26,7 @@ nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / n
 # from the data set before moving forward. 
 
 # Remove the rows with non-numeric satisfaction ratings 
-ssCleanSat <- ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5"),]
+ssClean <- ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5"),]
 
 # Per Abhishek's in in delay_analysis.R and Rebecca's exploratory analysis in 
 # flight_information.R, there are some NULL values in Departure Delays, Arrival Delays and
@@ -63,8 +63,7 @@ dfBlankCounts
 # Set Departure Delays, Arrival Delays and Flight Time to zero where they are blank and 
 # where Flight Cancelled is "Yes"
 
-ssClean <- ssCleanSat
-ssClean$Departure.Delay.in.Minutes <- ifelse (is.na(ssClean$Departure.Delay.in.Minutes)&ssClean$Flight.cancelled=="Yes", 0, ssClean$Departure.Delay.in.Minutes)
-ssClean$Arrival.Delay.in.Minutes <- ifelse (is.na(ssClean$Arrival.Delay.in.Minutes)&ssClean$Flight.cancelled=="Yes", 0, ssClean$Arrival.Delay.in.Minutes)
-ssClean$Flight.time.in.minutes <- ifelse (is.na(ssClean$Flight.time.in.minutes)&ssClean$Flight.cancelled=="Yes", 0, ssClean$Flight.time.in.minutes)
+ssClean$Departure.Delay.in.Minutes.0 <- ifelse (is.na(ssClean$Departure.Delay.in.Minutes)&ssClean$Flight.cancelled=="Yes", 0, ssClean$Departure.Delay.in.Minutes)
+ssClean$Arrival.Delay.in.Minutes.0 <- ifelse (is.na(ssClean$Arrival.Delay.in.Minutes)&ssClean$Flight.cancelled=="Yes", 0, ssClean$Arrival.Delay.in.Minutes)
+ssClean$Flight.time.in.minutes.0 <- ifelse (is.na(ssClean$Flight.time.in.minutes)&ssClean$Flight.cancelled=="Yes", 0, ssClean$Flight.time.in.minutes)
 
