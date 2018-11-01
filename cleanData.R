@@ -11,6 +11,8 @@ unique(ssRaw$Satisfaction)
 # (unable to be used in numerical analysis). As these are most likely errors, let's check
 # to see how much of the data these errors affect.
 
+nrows(ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5"),])
+
 # Remove the rows with non-numeric satisfaction ratings 
 # Per the group's decision: the we can do this check as an automated, non-manual process for the final project, but I knew what they were and am just exploring)
-cleanSatisfactionSurvey <- satisfactionSurvey[(satisfactionSurvey$Satisfaction!="4.00.2.00"&satisfactionSurvey$Satisfaction!="4.00.5"),]
+# cleanSatisfactionSurvey <- satisfactionSurvey[(satisfactionSurvey$Satisfaction!="4.00.2.00"&satisfactionSurvey$Satisfaction!="4.00.5"),]
