@@ -208,6 +208,96 @@
             ],
             "source": "summaryLM.R",
             "target": "summaryModel.txt"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Age",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "Age_hist.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Gender",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "Gender_bargraph.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "NoOfFlights",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "NumFlights.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "ShoppingAmt",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "ShoppingAmt.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "PriceSens",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "PriceSensitivity.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "EatingDrinking",
+                    "type": "png"
+                }
+            ],
+            "source": "PassengerDemographics.R",
+            "target": "EatingDrinking.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "PassengerDemographics.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "s1",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "s1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "s2",
+                    "type": "png"
+                }
+            ],
+            "source": "delay_analysis.R",
+            "target": "s2.png"
         }
     ],
     "nodes": [
@@ -291,8 +381,38 @@
             "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
             "name": "summaryLM.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "Here, we analyse all the variables related to the passengers.",
+            "name": "PassengerDemographics.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "Age_hist.png"
+        },
+        {
+            "name": "Gender_bargraph.png"
+        },
+        {
+            "name": "NumFlights.png"
+        },
+        {
+            "name": "ShoppingAmt.png"
+        },
+        {
+            "name": "PriceSensitivity.png"
+        },
+        {
+            "name": "EatingDrinking.png"
+        },
+        {
+            "name": "s1.png"
+        },
+        {
+            "name": "s2.png"
         }
     ],
-    "updated_at": "2018-10-25 21:14:00",
+    "updated_at": "2018-11-01 00:38:32",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
