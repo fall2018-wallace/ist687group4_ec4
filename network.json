@@ -357,7 +357,7 @@
                 }
             ],
             "source": "cleanSatisfactionSurvey.csv",
-            "target": "script9417.R"
+            "target": "estimateNULLs.R"
         }
     ],
     "nodes": [
@@ -516,10 +516,12 @@
             "task_status": "in progress"
         },
         {
-            "desc": "",
-            "name": "script9417.R"
+            "assigned_to": "rncasagr",
+            "desc": "Using linear regression models, predict the values of the missing data elements, provided the models are strong enough to support predictive analysis.",
+            "name": "estimateNULLs.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 20:51:24",
+    "updated_at": "2018-11-01 20:57:45",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
