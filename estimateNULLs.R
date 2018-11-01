@@ -23,3 +23,4 @@ summary(predictDelayModel)
 # from Departure Delay Data.
 
 str(ssClean)
+ssClean$Arrival.Delay.in.Minutes.0.Est <- 
