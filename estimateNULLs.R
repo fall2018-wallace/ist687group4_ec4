@@ -17,3 +17,5 @@ summary(predictFlightModel)
 
 predictDelayModel <- lm(formula = Arrival.Delay.in.Minutes ~ Departure.Delay.in.Minutes, data = ssClean)
 summary(predictDelayModel)
+
+# With an R-Squared of 0.9316 and a p-value of 2.2e-16, we see the same type of relationship
