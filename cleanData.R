@@ -45,5 +45,6 @@ nrow(ssRaw[(is.na(ssRaw$Flight.time.in.minutes)&ssRaw$Flight.cancelled=="Yes"),]
 
 Measure Combinations <- c("Cancelled flights", "Departure Delays", 
 "Departure Delays for Cancelled flights", "Arrival Delays", "Arrival Delays for Cancelled Flights",
+"Flight Time", "Flight Time for Cancelled Flights")
 
 
