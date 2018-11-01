@@ -48,5 +48,5 @@ dX..of.Flight.with.other.Airlines[satisfactionSurvey$X..of.Flight.with.other.Air
 #dX..of.Flight.with.other.Airlines
 
 dSatisfactionSurveyPart1 <- data.frame(dAge, dPrice.Sensitivity, dYear.of.First.Flight, dNo.of.Flights.p.a., dX..of.Flight.with.other.Airlines)
-dSatisfactionSurveyPart1
+head(dSatisfactionSurveyPart1)
 
