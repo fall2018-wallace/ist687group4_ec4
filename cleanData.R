@@ -21,9 +21,9 @@ nrow(ssRaw)
 nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / nrow(ssRaw) * 100
 
 # Taking into account the fact that these numbers are unable to be analyzed as entered and
-# that we can not be sure of what numbers they were intended to be, we now also see that nd they make up 3 out of 129889 (or 0.002%) of entries and wont' 
-# significantly influence overall trends, our group has opted to remove them completely 
-# from the data set before moving forward. 
+# that we can not be sure of what numbers they were intended to be, we now also see that 
+# make up 3 out of 129889 (or 0.002%) of entries and wont' significantly influence overall 
+# trends. Based upon this, our group has opted to remove them completely from the data set before moving forward. 
 
 # Remove the rows with non-numeric satisfaction ratings 
 ssClean <- ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5"),]
