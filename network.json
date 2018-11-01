@@ -328,6 +328,16 @@
             ],
             "source": "cleanData.R",
             "target": "blankCounts.txt"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleanSatisfactionSurvey.csv",
+            "target": "numberizeSatisfaction.R"
         }
     ],
     "nodes": [
@@ -483,6 +493,6 @@
             "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-01 19:00:06",
+    "updated_at": "2018-11-01 19:00:31",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
