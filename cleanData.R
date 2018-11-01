@@ -13,6 +13,8 @@ unique(ssRaw$Satisfaction)
 
 # Display the number of rows with these anomolies
 nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),])
+
+# Display the total number of rows
 nrow(ssRaw)
 nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / nrow(ssRaw) * 100
 
