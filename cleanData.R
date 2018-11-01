@@ -20,8 +20,8 @@ nrow(ssRaw)
 # Display the number of non-standard rows as a percentage of total rows
 nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / nrow(ssRaw) * 100
 
-# Taking into account the fact that these numbers are unable to be analyzed as entered andwe can not be sure of what numbers they 
-# were intended to be and they make up 3 out of 129889 (or 0.002%) of entries and wont' 
+# Taking into account the fact that these numbers are unable to be analyzed as entered and
+# that we can not be sure of what numbers they were intended to be, we now also see that nd they make up 3 out of 129889 (or 0.002%) of entries and wont' 
 # significantly influence overall trends, our group has opted to remove them completely 
 # from the data set before moving forward. 
 
