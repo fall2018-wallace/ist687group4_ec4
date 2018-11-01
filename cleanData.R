@@ -27,3 +27,4 @@ nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / n
 
 # Remove the rows with non-numeric satisfaction ratings 
 ssClean <- ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5"),]
+str(ssClean)
