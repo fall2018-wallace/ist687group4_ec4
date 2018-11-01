@@ -413,10 +413,6 @@
             "task_status": "in progress"
         },
         {
-            "desc": "",
-            "name": "DiscretizedData.R"
-        },
-        {
             "assigned_to": "not assigned",
             "desc": "Here we model our data using insights from the exploratory phase to achieve predict satisfaction value for new customers with a high accuracy.",
             "name": "modelling.R",
@@ -439,8 +435,14 @@
             "desc": "Remove any non-numeric numbers under the Satisfaction variable and coerce as numeric to be able to define a binary satisfaction level and do further exploratory analysis on the group of values",
             "name": "numberizeSatisfaction.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
+            "name": "DiscretizedData.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-01 16:11:12",
+    "updated_at": "2018-11-01 16:12:53",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
