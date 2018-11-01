@@ -61,4 +61,5 @@ dfCounts
 # cancelled as an unreported delay on a flight that didn't fly most likely did not exist.
 
 # Set Departure Delays, Arrival Delays and Flight Time to zero where they are blank and 
+# where Flight Cancelled is "Yes"
 
