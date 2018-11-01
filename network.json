@@ -480,9 +480,9 @@
             "assigned_to": "rncasagr",
             "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
             "name": "summaryLM.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 19:05:08",
+    "updated_at": "2018-11-01 19:05:12",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
