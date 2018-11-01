@@ -2,7 +2,7 @@
 # The Satisfaction variable is our dependent variable so it is important that it is 
 # formatted correctly and that its values are measurable.
 
-# Explore the unique entries in the Satisfaction column to discover any anomolies or 
+# Explore the unique entries in the Satisfaction column to discover any anomalies or 
 # unexpected values not equal to a number between 0 and 5.
 unique(ssRaw$Satisfaction)
 
@@ -11,7 +11,7 @@ unique(ssRaw$Satisfaction)
 # (unable to be used in numerical analysis). As these are most likely errors, let's check
 # to see how much of the data these errors affect.
 
-# Display the number of rows with these anomolies
+# Display the number of rows with these anomalies
 nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),])
 
 # Display the total number of rows
@@ -20,7 +20,7 @@ nrow(ssRaw)
 # Display the number of non-standard rows as a percentage of total rows
 nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / nrow(ssRaw) * 100
 
-# As these numbers are unable to be analyazed, we can not be sure of what numbers they 
+# As these numbers are unable to be analyzed, we can not be sure of what numbers they 
 # were intended to be and they make up 3 out of 129889 (or 0.002%) of entries and wont' 
 # significantly influence overall trends, our group has opted to remove them completely 
 # from the data set before moving forward. 
@@ -28,7 +28,7 @@ nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / n
 # Remove the rows with non-numeric satisfaction ratings 
 ssClean <- ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5"),]
 
-# Per Abhishek's in in delay_analysis.R and Rebecca's exploratory analysis in 
+# Per Abhishek's exploratory analysis in delay_analysis.R and Rebecca's in 
 # flight_information.R, there are some NULL values in Departure Delays, Arrival Delays and
 # Flight Times (approximately 2000 instance or 1.5% of the data). In order to not miss out
 # on other possibly valuable information in these rows, we will not remove them entirely 
@@ -53,7 +53,7 @@ dfBlankCounts
 
 # We can see that all of the blanks for Departure Delays are for flights that were cancelled 
 # along with 88% (2401 out of 2738) of the blanks for Arrival Delays and Flight Time. Since
-# a cancelled flight has no recorded time in the air and can not land late by any amount of 
+# a cancelled flight has no recorded time in the air and cannot land late by any amount of 
 # time, we can reasonably set these instance to 0 for Arrival Delay and Flight Time. There 
 # were less Departure Delays than total flights cancelled, presumably because a flight can 
 # be delayed initially and also ultimately cancelled (after sitting on the tarmac). Still,
