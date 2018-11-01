@@ -58,4 +58,5 @@ dfCounts
 # were less Departure Delays than total flights cancelled, presumably because a flight can 
 # be delayed initially and also ultimately cancelled (after sitting on the tarmac). Still,
 # it is reasonable to set the remaining blank Departure Delays to 0 where the flights were
+# cancelled as an unreported delay on a flight that didn't fly most likely did not exist.
 
