@@ -10,5 +10,6 @@ ssClean$SatisfactionNumeric <- as.numeric(as.character(ssClean$Satisfaction))
 summary(ssClean$SatisfactionNumeric)
 histSat <- hist(ssClean$SatisfactionNumeric)
 
+# It seems the Satisfaction numbers fall into two groups distributed around 3.5, so we will
 # Create a new column assigning a binary value to satisfaction for future analysis
 ssClean$binarySat <- ssClean$SatisfactionNumeric > 3.5
