@@ -48,8 +48,8 @@ measures <- c("Cancelled flights", "Departure Delays",
 "Departure Delays for Cancelled flights", "Arrival Delays", "Arrival Delays for Cancelled Flights",
 "Flight Time", "Flight Time for Cancelled Flights")
 
-dfCounts <- data.frame(measures, blankCounts)
-dfCounts
+dfBlankCounts <- data.frame(measures, blankCounts)
+dfBlankCounts
 
 # We can see that all of the blanks for Departure Delays are for flights that were cancelled 
 # along with 88% (2401 out of 2738) of the blanks for Arrival Delays and Flight Time. Since
