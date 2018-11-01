@@ -23,4 +23,4 @@ summary(predictDelayModel)
 # from Departure Delay Data.
 
 str(ssClean)
-ssClean$Arrival.Delay.in.Minutes.0.Est <- 
+ssClean$Arrival.Delay.in.Minutes.0.Est <- ifelse (is.na(ssClean$Arrival.Delay.in.Minutes.0), 0.9787024(ssClean$Departure.Delay.in.Minutes) + 0.7733387, ssClean$Arrival.Delay.in.Minutes.0)
