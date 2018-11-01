@@ -37,8 +37,8 @@ ssCleanSat <- ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5
 # Explore the relationship between cancelled flights and missing delay and flight time data.
 nrow(ssRaw[is.na(ssRaw$Departure.Delay.in.Minutes),])
 nrow(ssRaw[(is.na(ssRaw$Departure.Delay.in.Minutes)&ssRaw$Flight.cancelled=="Yes"),])
-nrow(ssRaw[(ssRaw$Arrival.Delay.in.Minutes!=""&ssRaw$Flight.cancelled=="Yes"),])
-nrow(ssRaw[(ssRaw$Flight.Distance!=""&ssRaw$Flight.cancelled=="Yes"),])
+nrow(ssRaw[(is.na(ssRaw$Arrival.Delay.in.Minutes)&ssRaw$Flight.cancelled=="Yes"),])
+nrow(ssRaw[(is.na(ssRaw$Flight.Distance)&ssRaw$Flight.cancelled=="Yes"),])
 
 
 
