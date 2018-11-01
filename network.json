@@ -443,12 +443,12 @@
             "task_status": "proposed"
         },
         {
-            "assigned_to": "abhishek27297",
+            "assigned_to": "rncasagr",
             "desc": "",
             "name": "script7391.R",
-            "task_status": "in progress"
+            "task_status": "validating"
         }
     ],
-    "updated_at": "2018-11-01 16:17:39",
+    "updated_at": "2018-11-01 16:18:12",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
