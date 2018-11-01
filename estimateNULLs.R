@@ -22,5 +22,5 @@ summary(predictDelayModel)
 # between Departure Delay and Arrival Delay and can reasonably predict Arrival Delay data 
 # from Departure Delay Data.
 
-str(ssClean)
 ssClean$Arrival.Delay.in.Minutes.0.Est <- ifelse (is.na(ssClean$Arrival.Delay.in.Minutes.0), 0.9787024(ssClean$Departure.Delay.in.Minutes) + 0.7733387, ssClean$Arrival.Delay.in.Minutes.0)
+ssClean$Flight.time.in.minutes.0.Est <- ifelse (is.na(ssClean$Flight.time.in.minutes.0), .1182(ssClean$Flight.Distance) + 17.47, ssClean$Flight.time.in.minutes.0)
