@@ -64,5 +64,5 @@ dfBlankCounts
 # where Flight Cancelled is "Yes"
 
 ssClean <- ssCleanSat[(is.na(ssCleanSat$Departure.Delay.in.Minutes)&ssCleanSat$Flight.cancelled=="Yes"),] <- 0
-ssClean <- ssClean[(is.na(ssClean$Arrival.Delay.in.Minutes)&ssClean$Flight.cancelled=="Yes"),] <- 0
-ssClean <- ssClean[(is.na(ssClean$Flight.time.in.minutes)&ssClean$Flight.cancelled=="Yes"),] <- 0
+# ssClean <- ssClean[(is.na(ssClean$Arrival.Delay.in.Minutes)&ssClean$Flight.cancelled=="Yes"),] <- 0
+# ssClean <- ssClean[(is.na(ssClean$Flight.time.in.minutes)&ssClean$Flight.cancelled=="Yes"),] <- 0
