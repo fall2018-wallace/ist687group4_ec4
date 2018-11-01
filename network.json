@@ -338,6 +338,16 @@
             ],
             "source": "numberizeSatisfaction.R",
             "target": "histSat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleanSatisfactionSurvey.csv",
+            "target": "discretizingPart3.R"
         }
     ],
     "nodes": [
@@ -492,10 +502,10 @@
         {
             "assigned_to": "rncasagr",
             "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
-            "name": "Discretize.R",
+            "name": "discretizingPart3.R",
             "task_status": "not started"
         }
     ],
-    "updated_at": "2018-11-01 20:41:56",
+    "updated_at": "2018-11-01 20:43:52",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
