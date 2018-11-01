@@ -21,7 +21,8 @@ nrow(ssRaw)
 nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / nrow(ssRaw) * 100
 
 # As these numbers are unable to be analyazed, we can not be sure of what numbers they 
-# were intended to be and they make up 3 out of 129889 (or 0.002%) of entries and wont' , our group 
+# were intended to be and they make up 3 out of 129889 (or 0.002%) of entries and wont' 
+# significantly influence overall trends, our group has opted to remove them completely 
 # has decided to remove 
 # Remove the rows with non-numeric satisfaction ratings 
 # Per the group's decision: the we can do this check as an automated, non-manual process for the final project, but I knew what they were and am just exploring)
