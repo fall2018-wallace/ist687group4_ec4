@@ -16,4 +16,4 @@ histSat <- hist(ssClean$SatisfactionNumeric)
 # high group for the sake of simplicity.
 
 # Create a new column assigning a binary value to satisfaction for future analysis
-ssClean$binarySat <- ssClean$SatisfactionNumeric > 3.5
+ssClean$binarySat <- ifelse(ssClean$SatisfactionNumeric > 3.5, "High", "Low")
