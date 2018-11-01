@@ -8,9 +8,12 @@
 # variables make a difference or if flight distance reamins a reasonable predictor of flight
 # time in minutes.
 
-predictModel <- lm(formula = Flight.time.in.minutes ~ Flight.Distance, data = ssClean)
-summary(predictModel)
+predictFlightModel <- lm(formula = Flight.time.in.minutes ~ Flight.Distance, data = ssClean)
+summary(predictFlightModel)
 
 # At 0.9542, the R-Squared is extremely close to 1 and at 2.2e-16, the p-value is very far 
 # below 0.05 which together show that flight distance is reasonably good at predicting flight
 # time and that the results are statistically significant. 
+
+predictDelayModel <- lm(formula = Arrival.Delay.in.Minutes ~ Departure.Delay.in.Minutes, data = ssClean)
+summary(predictDelayModel)
