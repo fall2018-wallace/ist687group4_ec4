@@ -24,7 +24,7 @@ library(ggplot2)
 summary(delay.df$Scheduled.Departure.Hour)
 #SO it ranges from 1am to 23pm
 #Further let's look at how this variable is distributed
-h1 <- ggplot(aes(delay.df$Scheduled.Departure.Hour),data = delay.df) +
+h1 <- ggplot(aes(Scheduled.Departure.Hour),data = delay.df) +
   geom_histogram(binwidth = 1)
 
 #We see most of our data has departure times between 5am and 8pm
