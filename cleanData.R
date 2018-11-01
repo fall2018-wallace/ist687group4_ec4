@@ -21,7 +21,8 @@ nrow(ssRaw)
 nrow(ssRaw[(ssRaw$Satisfaction=="4.00.2.00"|ssRaw$Satisfaction=="4.00.5"),]) / nrow(ssRaw) * 100
 
 # As these numbers are unable to be analyazed, we can not be sure of what numbers they 
-# were intended to be and they make up 3 out of 129889 (or 0.002%) of entries, our group 
+# were intended to be and they make up 3 out of 129889 (or 0.002%) of entries and wont' , our group 
+# has decided to remove 
 # Remove the rows with non-numeric satisfaction ratings 
 # Per the group's decision: the we can do this check as an automated, non-manual process for the final project, but I knew what they were and am just exploring)
 # cleanSatisfactionSurvey <- satisfactionSurvey[(satisfactionSurvey$Satisfaction!="4.00.2.00"&satisfactionSurvey$Satisfaction!="4.00.5"),]
