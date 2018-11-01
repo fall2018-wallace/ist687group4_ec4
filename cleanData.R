@@ -32,6 +32,7 @@ ssCleanSat <- ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5
 # flight_information.R, there are some NULL values in Departure Delays, Arrival Delays and
 # Flight Times (approximately 2000 instance or 1.5% of the data). In order to not miss out
 # on other possibly valuable information in these rows, we will not remove them entirely 
+# but create new columns that assigns reasonable values where the data is missing.
 
 
 
