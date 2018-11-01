@@ -22,4 +22,4 @@ summary(predictDelayModel)
 # between Departure Delay and Arrival Delay and can reasonably predict Arrival Delay data 
 # from Departure Delay Data.
 
-
+str(ssClean)
