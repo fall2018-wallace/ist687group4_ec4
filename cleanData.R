@@ -35,7 +35,8 @@ ssClean <- ssRaw[(ssRaw$Satisfaction!="4.00.2.00"&ssRaw$Satisfaction!="4.00.5"),
 # on other possibly valuable information in these rows, we will not remove them entirely 
 # but create new columns that assign reasonable values where the data is missing.
 
-# Create a dataframe that explores the relationship between cancelled flights and missing delay and flight time data.
+# Create a dataframe that explores the relationship between cancelled flights and missing 
+# delay and flight time data.
 
 blankCounts <- c(nrow(ssRaw[ssRaw$Flight.cancelled=="Yes",]),
 nrow(ssRaw[is.na(ssRaw$Departure.Delay.in.Minutes),]),
@@ -61,7 +62,7 @@ dfBlankCounts
 # it is reasonable to set the remaining blank Departure Delays to 0 where the flights were
 # cancelled as an unreported delay on a flight that didn't fly most likely did not exist.
 
-# Set Departure Delays, Arrival Delays and Flight Time to zero where they are blank and 
+# Create new columns that are based upon the data in Departure Delays, Arrival Delays and Flight Time to zero where they are blank and 
 # where Flight Cancelled is "Yes"
 
 ssClean$Departure.Delay.in.Minutes.0 <- ifelse (is.na(ssClean$Departure.Delay.in.Minutes)&ssClean$Flight.cancelled=="Yes", 0, ssClean$Departure.Delay.in.Minutes)
