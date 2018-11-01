@@ -103,3 +103,4 @@ ssClean$Arrival.Delay.in.Minutes.0.Est <- ifelse (is.na(ssClean$Arrival.Delay.in
 ssClean$Flight.time.in.minutes.0.Est <- ifelse (is.na(ssClean$Flight.time.in.minutes.0), .1182*(ssClean$Flight.Distance) + 17.47, ssClean$Flight.time.in.minutes.0)
 
 # I have left these unrounded for now so that we can distinguish them from the non-estimated
+# values in case we have questions about their accuracy. We can round them if need be.
