@@ -71,3 +71,4 @@ ssClean$Arrival.Delay.in.Minutes.0 <- ifelse (is.na(ssClean$Arrival.Delay.in.Min
 ssClean$Flight.time.in.minutes.0 <- ifelse (is.na(ssClean$Flight.time.in.minutes)&ssClean$Flight.cancelled=="Yes", 0, ssClean$Flight.time.in.minutes)
 
 # Note: the group will still need to decide what to do with the 338 instance where flights
+# were not cancelled but Arrival Delay and Flight Time are still missing.
