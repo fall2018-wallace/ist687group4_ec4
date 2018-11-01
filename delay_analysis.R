@@ -131,6 +131,7 @@ s1 <- ggplot(aes(y=Arrival.Delay.in.Minutes,x=Departure.Delay.in.Minutes),
 #as if a flight's departure is delayed its arrival time is also affected
 #this linear relationship can be highlighted as follows
 s1 <- s1 + geom_smooth()
+s1
 #Next checing the correlation coefficicent
 cor.test(delay.df$Departure.Delay.in.Minutes,delay.df$Arrival.Delay.in.Minutes)
 #This confirms that these are higly correlated variables and both of them 
@@ -141,6 +142,7 @@ cor.test(delay.df$Departure.Delay.in.Minutes,delay.df$Arrival.Delay.in.Minutes)
 s2 <- ggplot(aes(y=Arrival.Delay.in.Minutes,x=Departure.Delay.in.Minutes),
        data = delay.df)+
   geom_point(aes(color = delay.df$Satisfaction))
+s2
 #However a clear trend cannot be observed here contrary to the expectation
 #that higher delay time may result in low satisfaction value 
 #This hints that customer satisfaction is not solely dependent on delay but
