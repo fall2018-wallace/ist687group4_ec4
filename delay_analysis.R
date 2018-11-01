@@ -138,7 +138,8 @@ cor.test(delay.df$Departure.Delay.in.Minutes,delay.df$Arrival.Delay.in.Minutes)
 
 #Further we look at how delay affects our satisfaction ratings by coloring
 #the preious plot using the Satisfaction variable
-s2 <- ggplot(aes(y=Arrival.Delay.in.Minutes,x=Departure.Delay.in.Minutes),
+s2 <- ggplot(aes(y=Arrival.Delay.in.Minutes,x=Departure.Delay.in.Minutes
+                color = Satisfaction),
        data = delay.df)+
   geom_point()
 s2
