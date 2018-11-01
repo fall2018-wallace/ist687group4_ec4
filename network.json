@@ -348,6 +348,16 @@
             ],
             "source": "cleanSatisfactionSurvey.csv",
             "target": "discretizingPart3.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleanSatisfactionSurvey.csv",
+            "target": "script9417.R"
         }
     ],
     "nodes": [
@@ -510,6 +520,6 @@
             "name": "script9417.R"
         }
     ],
-    "updated_at": "2018-11-01 20:51:05",
+    "updated_at": "2018-11-01 20:51:24",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
