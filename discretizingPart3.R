@@ -8,13 +8,17 @@
 # str(satisfactionSurvey)
 
 # Create a discretization function
-hist(satisfactionSurvey$Age)
-q <- quantile(satisfactionSurvey$Age, c(0.4, 0.6))
-q
-dAge <- replicate(length(satisfactionSurvey$Age), "Average")
-dAge[satisfactionSurvey$Age <= q[1]] <- "Low"
-dAge[satisfactionSurvey$Age > q[2]] <- "High"
-#dAge
+
+defineBucketQuantiles <- function(inputVector)
+{
+  q <- quantile(inputVector, c(0.4, 0.6))
+  vBuckets <- replicate(length(inputVector), "Average") # Create a vector of the right length with a default value
+  vBuckets[inputVector >= q[2]] <- "High" # Assign instances in the highest 60% to "High"
+  vBuckets[inputVector <= q[1]] <- "Low" # Assign instances in the lowest 40% to "Low" 
+  return(vBuckets) # Anything not assigned to "High" or "Low" will retain default value ("Average")
+}
+
+dhour
 
 #discritize Price.Sensitivity
 hist(satisfactionSurvey$Price.Sensitivity)
