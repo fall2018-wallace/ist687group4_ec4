@@ -292,32 +292,12 @@
         {
             "ports": [
                 {
-                    "output": "ssClean",
-                    "type": "csv"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "cleanSatisfactionSurvey.csv"
-        },
-        {
-            "ports": [
-                {
                     "output": "dfBlankCounts",
                     "type": "txt"
                 }
             ],
             "source": "cleanData.R",
             "target": "blankCounts.txt"
-        },
-        {
-            "ports": [
-                {
-                    "input": "ssClean",
-                    "type": "csv"
-                }
-            ],
-            "source": "cleanSatisfactionSurvey.csv",
-            "target": "numberizeSatisfaction.R"
         },
         {
             "ports": [
@@ -342,22 +322,33 @@
         {
             "ports": [
                 {
-                    "input": "ssClean",
-                    "type": "csv"
-                }
-            ],
-            "source": "cleanSatisfactionSurvey.csv",
-            "target": "discretizingPart3.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "satisfactionSurvey",
                     "type": "csv"
                 }
             ],
             "source": "satisfactionSurvey.csv",
             "target": "discritizingPart1.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "output": "ssClean",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "numberizeSatisfaction.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "discretizingPart3.R"
         }
     ],
     "nodes": [
@@ -461,9 +452,6 @@
             "task_status": "in progress"
         },
         {
-            "name": "cleanSatisfactionSurvey.csv"
-        },
-        {
             "name": "blankCounts.txt"
         },
         {
@@ -512,6 +500,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-02 02:37:30",
+    "updated_at": "2018-11-02 14:58:11",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
