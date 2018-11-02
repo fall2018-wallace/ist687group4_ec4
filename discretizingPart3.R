@@ -8,7 +8,7 @@ defineBucketQuantiles <- function(inputVector)
 {
   q <- quantile(inputVector, c(0.4, 0.6))
   vBuckets <- replicate(length(inputVector), "Average") # Create a vector of the right length with a default value
-  vBuckets[inputVector > q[2]] <- "High" # Assign instances above the 60% quartile to "High"
+  vBuckets[inputVector > q[2]] <- "High" # Assign instances above the 60% quantile to "High"
   vBuckets[inputVector <= q[1]] <- "Low" # Assign instances in the lowest 40% to "Low" 
   return(vBuckets) # Anything not assigned to "High" or "Low" will retain default value ("Average")
 }
