@@ -19,6 +19,7 @@ defineBucketQuantiles <- function(inputVector)
 }
 
 dhour
+ddelay
 
 #discritize Price.Sensitivity
 hist(satisfactionSurvey$Price.Sensitivity)
