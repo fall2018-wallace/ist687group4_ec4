@@ -369,6 +369,16 @@
             ],
             "source": "cleanData.R",
             "target": "numberizeSatisfaction.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "discretizingPart3.R"
         }
     ],
     "nodes": [
@@ -523,6 +533,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-02 14:57:40",
+    "updated_at": "2018-11-02 14:58:04",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
