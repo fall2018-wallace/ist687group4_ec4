@@ -2,8 +2,7 @@
 # ssClean[,c(22:24, 25, 26)]
 
 # Discretize: Scheduled.Departure.Hour, Departure.Delay.in.Minutes, Arrival.Delay.in.Minutes,
-Flight.time.in.minutes
-Flight.Distance
+# Flight.time.in.minutes, Flight.Distance
 #str(satisfactionSurvey)
 
 #discritize Age
