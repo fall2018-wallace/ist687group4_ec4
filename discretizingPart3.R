@@ -1,11 +1,7 @@
 
-# ssClean[,c(22:24, 25, 26)]
-# library (ggplot2)
-
 # Discretize: Scheduled.Departure.Hour, Departure.Delay.in.Minutes, Arrival.Delay.in.Minutes,
 # Flight.time.in.minutes, Flight.Distance for use in future mining
 
-# str(satisfactionSurvey)
 
 # Create a discretization function
 
@@ -26,4 +22,3 @@ dDistance <- defineBucketQuantiles(ssClean$Flight.Distance)
 
 
 dSatisfactionSurveyPart3 <- data.frame(dHour, dDepDelay, dArrDelay, dTime, dDistance)
-head(ssClean)
