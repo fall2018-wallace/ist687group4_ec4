@@ -57,6 +57,7 @@ codesBar <- ggplot(satisfactionSurvey,aes(x=Airline.Code, y=Satisfaction, group=
 codesBar <- codesBar + geom_col()
 codesBar <- codesBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 codesBar
+hist(satisfactionSurvey$Airline.Code)
 #WN has by far the highest satisfaction followed by DL, EV, OO, and AA at about half the amount
 
 
