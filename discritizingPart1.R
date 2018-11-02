@@ -1,6 +1,8 @@
 
 library(ggplot2)
 
+satisfactionSurvey <- cleanData
+
 #Discritize:Age, Price Sensitivity, Year of First Flight, Number of Flights, No of flights with other airlines
 #str(satisfactionSurvey)
 
