@@ -24,7 +24,7 @@ statusBar <- ggplot(satisfactionSurvey,aes(x=Airline.Status, y=Satisfaction, gro
 statusBar <- statusBar + geom_col()
 statusBar <- statusBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 statusBar
-
+hist(satisfactionSurvey$Airline.Status)
 #Blue (lowest level) members have a signifcantly higher satisfaction rate
 
 
@@ -40,6 +40,7 @@ otherFlightsBar <- ggplot(satisfactionSurvey,aes(x=X..of.Flight.with.other.Airli
 otherFlightsBar <- otherFlightsBar + geom_col()
 otherFlightsBar <- otherFlightsBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 otherFlightsBar
+hist(satisfactionSurvey$X..of.Flight.with.other.Airlines)
 #Satisfaction climbs up until 10 flights with other airlines and then hits a very sharp cutoff
 
 
