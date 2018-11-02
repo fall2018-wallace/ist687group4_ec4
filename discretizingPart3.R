@@ -18,8 +18,7 @@ defineBucketQuantiles <- function(inputVector)
   return(vBuckets) # Anything not assigned to "High" or "Low" will retain default value ("Average")
 }
 
-dhour
-ddelay
+dHour
 
 #discritize Price.Sensitivity
 hist(satisfactionSurvey$Price.Sensitivity)
