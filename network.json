@@ -512,12 +512,9 @@
             "task_status": "in progress"
         },
         {
-            "name": "histAge.png"
-        },
-        {
             "name": "histPrice.png"
         }
     ],
-    "updated_at": "2018-11-02 02:37:06",
+    "updated_at": "2018-11-02 02:37:25",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
