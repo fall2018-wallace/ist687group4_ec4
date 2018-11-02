@@ -292,32 +292,12 @@
         {
             "ports": [
                 {
-                    "output": "ssClean",
-                    "type": "csv"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "cleanSatisfactionSurvey.csv"
-        },
-        {
-            "ports": [
-                {
                     "output": "dfBlankCounts",
                     "type": "txt"
                 }
             ],
             "source": "cleanData.R",
             "target": "blankCounts.txt"
-        },
-        {
-            "ports": [
-                {
-                    "input": "ssClean",
-                    "type": "csv"
-                }
-            ],
-            "source": "cleanSatisfactionSurvey.csv",
-            "target": "numberizeSatisfaction.R"
         },
         {
             "ports": [
@@ -338,16 +318,6 @@
             ],
             "source": "numberizeSatisfaction.R",
             "target": "histSat.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "ssClean",
-                    "type": "csv"
-                }
-            ],
-            "source": "cleanSatisfactionSurvey.csv",
-            "target": "discretizingPart3.R"
         },
         {
             "ports": [
@@ -482,9 +452,6 @@
             "task_status": "in progress"
         },
         {
-            "name": "cleanSatisfactionSurvey.csv"
-        },
-        {
             "name": "blankCounts.txt"
         },
         {
@@ -533,6 +500,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-02 14:58:04",
+    "updated_at": "2018-11-02 14:58:11",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
