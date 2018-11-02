@@ -510,8 +510,11 @@
             "desc": "Discritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
             "name": "discritizingPart1.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "histAge.png"
         }
     ],
-    "updated_at": "2018-11-01 23:48:13",
+    "updated_at": "2018-11-02 02:36:57",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
