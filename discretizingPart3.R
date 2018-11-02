@@ -25,3 +25,4 @@ dDistance <- defineBucketQuantiles(ssClean$Flight.Distance)
 
 # Create a new dataframe with the discretized variables
 dSatisfactionSurveyPart3 <- data.frame(dHour, dDepDelay, dArrDelay, dTime, dDistance)
+head(dSatisfactionSurveyPart3)
