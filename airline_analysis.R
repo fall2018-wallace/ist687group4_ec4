@@ -74,6 +74,7 @@ cardsBar <- ggplot(satisfactionSurvey,aes(x=No..of.other.Loyalty.Cards, y=Satisf
 cardsBar <- cardsBar + geom_col()
 cardsBar <- cardsBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 cardsBar
+hist(satisfactionSurvey$No..of.other.Loyalty.Cards)
 #No loyalty cards has significantly more satisfaction, steep dropoff afterwords
 
 
