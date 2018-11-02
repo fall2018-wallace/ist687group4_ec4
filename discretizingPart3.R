@@ -1,12 +1,13 @@
 
 # ssClean[,c(22:24, 25, 26)]
-library (ggplot2)
+# library (ggplot2)
+
 # Discretize: Scheduled.Departure.Hour, Departure.Delay.in.Minutes, Arrival.Delay.in.Minutes,
 # Flight.time.in.minutes, Flight.Distance for use in future mining
 
 # str(satisfactionSurvey)
 
-#discritize Age
+# Create a discretization function
 hist(satisfactionSurvey$Age)
 q <- quantile(satisfactionSurvey$Age, c(0.4, 0.6))
 q
