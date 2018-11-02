@@ -26,4 +26,4 @@ dDistance <- defineBucketQuantiles(ssClean$Flight.Distance)
 
 
 dSatisfactionSurveyPart3 <- data.frame(dHour, dDepDelay, dArrDelay, dTime, dDistance)
-head(dSatisfactionSurveyPart3)
+head(ssclean)
