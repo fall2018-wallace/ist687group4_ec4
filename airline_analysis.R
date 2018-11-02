@@ -102,4 +102,5 @@ travelBar <- ggplot(satisfactionSurvey,aes(x=Type.of.Travel, y=Satisfaction, gro
 travelBar <- travelBar + geom_col()
 travelBar <- travelBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 travelBar
+
 #Business travel corresponds with significantly more satisfaction
