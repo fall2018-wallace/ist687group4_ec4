@@ -338,6 +338,26 @@
             ],
             "source": "numberizeSatisfaction.R",
             "target": "histSat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleanSatisfactionSurvey.csv",
+            "target": "discretizingPart3.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "discritizingPart1.R"
         }
     ],
     "nodes": [
@@ -435,10 +455,6 @@
             "task_status": "in progress"
         },
         {
-            "desc": "",
-            "name": "datamining.R"
-        },
-        {
             "assigned_to": "zefeng",
             "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported the findings. ",
             "name": "Geography_Zhang.R",
@@ -469,18 +485,6 @@
             "task_status": "not started"
         },
         {
-            "assigned_to": "rhfrench",
-            "desc": "Descritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
-            "name": "descritizingPart1.R",
-            "task_status": "not started"
-        },
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
-            "name": "arMiningPrep.R",
-            "task_status": "not started"
-        },
-        {
             "assigned_to": "rncasagr",
             "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
             "name": "numberizeSatisfaction.R",
@@ -494,8 +498,20 @@
         },
         {
             "name": "histSat.png"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
+            "name": "discretizingPart3.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "Discritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
+            "name": "discritizingPart1.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 19:26:24",
+    "updated_at": "2018-11-02 02:37:30",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
