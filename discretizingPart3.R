@@ -14,6 +14,7 @@ defineBucketQuantiles <- function(inputVector)
   return(vBuckets) # Anything not assigned to "High" or "Low" will retain default value ("Average")
 }
 
+# Use the above function to discretize the variables (using the cleaned and/or estimated ones where)
 dHour <- defineBucketQuantiles(ssClean$Scheduled.Departure.Hour)
 dDepDelay <- defineBucketQuantiles(ssClean$Departure.Delay.in.Minutes.0)
 dArrDelay <- defineBucketQuantiles(ssClean$Arrival.Delay.in.Minutes.0.Est)
