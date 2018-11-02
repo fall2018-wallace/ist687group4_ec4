@@ -2,7 +2,6 @@
 # Discretize: Scheduled.Departure.Hour, Departure.Delay.in.Minutes, Arrival.Delay.in.Minutes,
 # Flight.time.in.minutes, Flight.Distance for use in future mining
 
-
 # Create a discretization function
 
 defineBucketQuantiles <- function(inputVector)
