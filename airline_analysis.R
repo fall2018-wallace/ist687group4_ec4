@@ -90,6 +90,7 @@ classBar <- ggplot(satisfactionSurvey,aes(x=Class, y=Satisfaction, group=1))
 classBar <- classBar + geom_col()
 classBar <- classBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 classBar
+hist(satisfactionSurvey$Class)
 #Economy class has far and away the most satisfaction
 
 
@@ -105,5 +106,5 @@ travelBar <- ggplot(satisfactionSurvey,aes(x=Type.of.Travel, y=Satisfaction, gro
 travelBar <- travelBar + geom_col()
 travelBar <- travelBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 travelBar
-
+hist(satisfactionSurvey$Type.of.Travel)
 #Business travel corresponds with significantly more satisfaction
