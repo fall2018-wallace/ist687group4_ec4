@@ -13,49 +13,17 @@ defineBucketQuantiles <- function(inputVector)
 {
   q <- quantile(inputVector, c(0.4, 0.6))
   vBuckets <- replicate(length(inputVector), "Average") # Create a vector of the right length with a default value
-  vBuckets[inputVector >= q[2]] <- "High" # Assign instances in the highest 60% to "High"
+  vBuckets[inputVector > q[2]] <- "High" # Assign instances above the 60% quartile to "High"
   vBuckets[inputVector <= q[1]] <- "Low" # Assign instances in the lowest 40% to "Low" 
   return(vBuckets) # Anything not assigned to "High" or "Low" will retain default value ("Average")
 }
 
-dHour
-dDepDelay
-dArrDelay
-dTime
+dHour <- defineBucketQuantiles(ssClean$Scheduled.Departure.Hour)
+dDepDelay <- defineBucketQuantiles(ssClean$Departure.Delay.in.Minutes.0)
+dArrDelay <- defineBucketQuantiles(ssClean$Arrival.Delay.in.Minutes.0.Est)
+dTime <- defineBucketQuantiles(ssClean$Flight.time.in.minutes.0.Est)
+dDistance <- defineBucketQuantiles(ssClean$Flight.Distance)
 
-#discritize Price.Sensitivity
-hist(satisfactionSurvey$Price.Sensitivity)
-dPrice.Sensitivity <- replicate(length(satisfactionSurvey$Price.Sensitivity), "Average")
-dPrice.Sensitivity[satisfactionSurvey$Price.Sensitivity < 1] <- "Low"
-dPrice.Sensitivity[satisfactionSurvey$Price.Sensitivity > 1] <- "High"
-#dPrice.Sensitivity
 
-#discritize Year.of.First.Flight
-hist(satisfactionSurvey$Year.of.First.Flight)
-q <- quantile(satisfactionSurvey$Year.of.First.Flight, c(0.4, 0.6))
-q
-dYear.of.First.Flight <- replicate(length(satisfactionSurvey$Year.of.First.Flight), "Average")
-dYear.of.First.Flight[satisfactionSurvey$Year.of.First.Flight <= q[1]] <- "Low"
-dYear.of.First.Flight[satisfactionSurvey$Year.of.First.Flight > q[2]] <- "High"
-#dYear.of.First.Flight
-
-#discritize No.of.Flights.p.a.
-hist(satisfactionSurvey$No.of.Flights.p.a.)
-q <- quantile(satisfactionSurvey$No.of.Flights.p.a., c(0.4, 0.6))
-q
-dNo.of.Flights.p.a. <- replicate(length(satisfactionSurvey$No.of.Flights.p.a.), "Average")
-dNo.of.Flights.p.a.[satisfactionSurvey$No.of.Flights.p.a. <= q[1]] <- "Low"
-dNo.of.Flights.p.a.[satisfactionSurvey$No.of.Flights.p.a. > q[2]] <- "High"
-#dNo.of.Flights.p.a.
-
-#discritize X..of.Flight.with.other.Airlines
-hist(satisfactionSurvey$X..of.Flight.with.other.Airlines)
-q <- quantile(satisfactionSurvey$X..of.Flight.with.other.Airlines, c(0.4, 0.6))
-q
-dX..of.Flight.with.other.Airlines <- replicate(length(satisfactionSurvey$X..of.Flight.with.other.Airlines), "Average")
-dX..of.Flight.with.other.Airlines[satisfactionSurvey$X..of.Flight.with.other.Airlines <= q[1]] <- "Low"
-dX..of.Flight.with.other.Airlines[satisfactionSurvey$X..of.Flight.with.other.Airlines > q[2]] <- "High"
-#dX..of.Flight.with.other.Airlines
-
-dSatisfactionSurveyPart1 <- data.frame(dAge, dPrice.Sensitivity, dYear.of.First.Flight, dNo.of.Flights.p.a., dX..of.Flight.with.other.Airlines)
-head(dSatisfactionSurveyPart1)
+dSatisfactionSurveyPart3 <- data.frame(dHour, dDepDelay, dArrDelay, dTime, dDistance)
+head(dSatisfactionSurveyPart3)
