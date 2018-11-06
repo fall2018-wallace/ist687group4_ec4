@@ -172,31 +172,11 @@
         {
             "ports": [
                 {
-                    "input": "satisfactionSurvey",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "numberizeSatisfaction.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "cleanSatisfactionSurvey",
-                    "type": "csv"
-                }
-            ],
-            "source": "numberizeSatisfaction.R",
-            "target": "numberizedSatisfaction.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "cleanSatisfactionSurvey",
                     "type": "csv"
                 }
             ],
-            "source": "numberizedSatisfaction.csv",
+            "source": "numberizedSatisfactionSurvey.csv",
             "target": "summaryLM.R"
         },
         {
@@ -298,6 +278,78 @@
             ],
             "source": "delay_analysis.R",
             "target": "s2.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssRaw",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "cleanData.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dfBlankCounts",
+                    "type": "txt"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "blankCounts.txt"
+        },
+        {
+            "ports": [
+                {
+                    "output": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizeSatisfaction.R",
+            "target": "numberizedSatisfactionSurvey.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "histSat",
+                    "type": "png"
+                }
+            ],
+            "source": "numberizeSatisfaction.R",
+            "target": "histSat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "output": "ssClean",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "numberizeSatisfaction.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "discretizingPart3.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "output": "undefined",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "discritizingPart1.R"
         }
     ],
     "nodes": [
@@ -353,40 +405,16 @@
             "name": "h4.png"
         },
         {
-            "assigned_to": "zefeng",
-            "desc": "",
-            "name": "Geography_Zhang.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "oStateMap.png"
         },
         {
             "name": "dStateMap.png"
         },
         {
-            "assigned_to": "rncasagr",
-            "desc": "Remove any non-numeric numbers under the Satisfaction variable and coerce as numeric to be able to define a binary satisfaction level and do further exploratory analysis on the group of values",
-            "name": "numberizeSatisfaction.R",
-            "task_status": "in progress"
-        },
-        {
-            "name": "numberizedSatisfaction.csv"
+            "name": "numberizedSatisfactionSurvey.csv"
         },
         {
             "name": "summaryModel.txt"
-        },
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
-            "name": "summaryLM.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "tshetty",
-            "desc": "Here, we analyse all the variables related to the passengers.",
-            "name": "PassengerDemographics.R",
-            "task_status": "in progress"
         },
         {
             "name": "Age_hist.png"
@@ -411,8 +439,68 @@
         },
         {
             "name": "s2.png"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "Analysis on the attributes describing passenger demographics was done in this r code. The attribute 'Gender' was converted to dummy variables 0 and  1 for male and female. Created graphs to better understand each attribute.",
+            "name": "PassengerDemographics.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported the findings. ",
+            "name": "Geography_Zhang.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "blankCounts.txt"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
+            "name": "summaryLM.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "Here we model our data using insights from the exploratory phase to achieve predict satisfaction value for new customers with a high accuracy.",
+            "name": "modelling.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
+            "name": "DiscretizedData.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
+            "name": "numberizeSatisfaction.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the non-numeric Satisfaction entries that seem to be errors and account for the NULL values in a separate variable for future modelling.",
+            "name": "cleanData.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "histSat.png"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
+            "name": "discretizingPart3.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "Discritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
+            "name": "discritizingPart1.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 00:38:32",
+    "updated_at": "2018-11-02 16:48:03",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
