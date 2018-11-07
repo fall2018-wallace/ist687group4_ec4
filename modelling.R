@@ -1,2 +1,3 @@
 
 
+dSatisfactionLevel<-ssClean$binarySat
