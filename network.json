@@ -360,6 +360,11 @@
             "ports": [],
             "source": "numberizeSatisfaction.R",
             "target": "modelling.R"
+        },
+        {
+            "ports": [],
+            "source": "discritizingPart1.R",
+            "target": "modelling.R"
         }
     ],
     "nodes": [
@@ -511,6 +516,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-07 04:50:00",
+    "updated_at": "2018-11-07 04:50:07",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
