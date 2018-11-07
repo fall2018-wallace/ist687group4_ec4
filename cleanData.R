@@ -100,7 +100,7 @@ summary(predictDelayModel)
 # Use the linear models from above to replace the NULL values for the dependent variables
 # with estimated values
 ssClean$Arrival.Delay.in.Minutes.0.Est <- ifelse (is.na(ssClean$Arrival.Delay.in.Minutes.0), 0.9787024*(ssClean$Departure.Delay.in.Minutes) + 0.7733387, ssClean$Arrival.Delay.in.Minutes.0)
-#ssClean$Flight.time.in.minutes.0.Est <- ifelse (is.na(ssClean$Flight.time.in.minutes.0), .1182*(ssClean$Flight.Distance) + 17.47, ssClean$Flight.time.in.minutes.0)
+ssClean$Flight.time.in.minutes.0.Est <- ifelse (is.na(ssClean$Flight.time.in.minutes.0), .1182*(ssClean$Flight.Distance) + 17.47, ssClean$Flight.time.in.minutes.0)
 
 # I have left these unrounded for now so that we can distinguish them from the non-estimated
 # values in case we have questions about their accuracy. We can round them if need be.
