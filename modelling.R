@@ -4,7 +4,7 @@ dSatisfactionLevel<-ssClean$binarySat
 View(dSatisfactionLevel)
 View(dSatisfactionSurveyPart1)
 View(dSatisfactionSurveyPart2)
-View(dSatisfactionSurveyPart3)
+View(dSatisfactionSurveyPart3) 
 
 library("arules")
 library("arulesViz")
@@ -24,7 +24,7 @@ itemFrequencyPlot(dSatisfactionX,cex.names=0.4)
 
 #Then we use arules to discover patterns
 #Run the apriori command to try and predict happy customers
-rules <- apriori(dSatisfactionX,parameter = list(support=0.2,confidence=0.5),appearance = list(default="lhs",rhs="dSatisfactionLevel=High"))
+rules <- apriori(dSatisfactionX,parameter = list(support=0.2,confidence=0.6),appearance = list(default="lhs",rhs="dSatisfactionLevel=High"))
 summary(rules)
 inspect(rules)
 
