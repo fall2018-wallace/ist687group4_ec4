@@ -1,6 +1,6 @@
 
 
-#odeling 
+#modeling 
 dSatisfactionLevel<-ssClean$binarySat
 View(dSatisfactionLevel)
 View(dSatisfactionSurveyPart1)
