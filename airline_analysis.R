@@ -24,6 +24,7 @@ statusBar <- ggplot(satisfactionSurvey,aes(x=Airline.Status, y=Satisfaction, gro
 statusBar <- statusBar + geom_col()
 statusBar <- statusBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 statusBar
+hist(satisfactionSurvey$Airline.Status)
 #Blue (lowest level) members have a signifcantly higher satisfaction rate
 
 
@@ -39,6 +40,7 @@ otherFlightsBar <- ggplot(satisfactionSurvey,aes(x=X..of.Flight.with.other.Airli
 otherFlightsBar <- otherFlightsBar + geom_col()
 otherFlightsBar <- otherFlightsBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 otherFlightsBar
+hist(satisfactionSurvey$X..of.Flight.with.other.Airlines)
 #Satisfaction climbs up until 10 flights with other airlines and then hits a very sharp cutoff
 
 
@@ -55,6 +57,7 @@ codesBar <- ggplot(satisfactionSurvey,aes(x=Airline.Code, y=Satisfaction, group=
 codesBar <- codesBar + geom_col()
 codesBar <- codesBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 codesBar
+hist(satisfactionSurvey$Airline.Code)
 #WN has by far the highest satisfaction followed by DL, EV, OO, and AA at about half the amount
 
 
@@ -71,6 +74,7 @@ cardsBar <- ggplot(satisfactionSurvey,aes(x=No..of.other.Loyalty.Cards, y=Satisf
 cardsBar <- cardsBar + geom_col()
 cardsBar <- cardsBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 cardsBar
+hist(satisfactionSurvey$No..of.other.Loyalty.Cards)
 #No loyalty cards has significantly more satisfaction, steep dropoff afterwords
 
 
@@ -86,6 +90,7 @@ classBar <- ggplot(satisfactionSurvey,aes(x=Class, y=Satisfaction, group=1))
 classBar <- classBar + geom_col()
 classBar <- classBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 classBar
+hist(satisfactionSurvey$Class)
 #Economy class has far and away the most satisfaction
 
 
@@ -101,4 +106,5 @@ travelBar <- ggplot(satisfactionSurvey,aes(x=Type.of.Travel, y=Satisfaction, gro
 travelBar <- travelBar + geom_col()
 travelBar <- travelBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 travelBar
+hist(satisfactionSurvey$Type.of.Travel)
 #Business travel corresponds with significantly more satisfaction
