@@ -462,12 +462,6 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "not assigned",
-            "desc": "Here we model our data using insights from the exploratory phase to achieve predict satisfaction value for new customers with a high accuracy.",
-            "name": "modelling.R",
-            "task_status": "not started"
-        },
-        {
             "assigned_to": "tshetty",
             "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
             "name": "DiscretizedData.R",
@@ -499,8 +493,14 @@
             "desc": "Discritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
             "name": "discritizingPart1.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Here we use arules and arulesViz to look at most of over variables affect on  satisfaction level to better understand our dataset.",
+            "name": "modelling.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-02 16:48:03",
+    "updated_at": "2018-11-07 04:18:34",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
