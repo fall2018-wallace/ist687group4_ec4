@@ -355,11 +355,6 @@
             "ports": [],
             "source": "discretizingPart3.R",
             "target": "modelling.R"
-        },
-        {
-            "ports": [],
-            "source": "discritizingPart1.R",
-            "target": "modelling.R"
         }
     ],
     "nodes": [
@@ -511,6 +506,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-07 04:24:10",
+    "updated_at": "2018-11-07 04:49:48",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
