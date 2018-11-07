@@ -341,17 +341,6 @@
             "target": "discretizingPart3.R"
         },
         {
-            "ports": [
-                {
-                    "input": "satisfactionSurvey",
-                    "output": "undefined",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "discritizingPart1.R"
-        },
-        {
             "ports": [],
             "source": "discretizingPart3.R",
             "target": "modelling.R"
@@ -365,6 +354,17 @@
             "ports": [],
             "source": "discritizingPart1.R",
             "target": "modelling.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "output": "ssClean",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "discritizingPart1.R"
         }
     ],
     "nodes": [
@@ -480,7 +480,7 @@
             "assigned_to": "tshetty",
             "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
             "name": "DiscretizedData.R",
-            "task_status": "not started"
+            "task_status": "in progress"
         },
         {
             "assigned_to": "rncasagr",
@@ -516,6 +516,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-07 04:50:07",
+    "updated_at": "2018-11-07 15:08:34",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
