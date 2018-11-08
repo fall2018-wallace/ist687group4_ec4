@@ -374,7 +374,7 @@
             "ports": [
                 {
                     "input": "part4",
-                    "output": "part4",
+                    "output": "dSatisfactionSurveyPart4",
                     "type": "r_obj"
                 }
             ],
@@ -384,19 +384,19 @@
         {
             "ports": [
                 {
-                    "input": "part3",
-                    "output": "part3",
+                    "input": "part1",
+                    "output": "dSatisfactionSurveyPart1",
                     "type": "r_obj"
                 }
             ],
-            "source": "discretizingPart3.R",
+            "source": "discritizingPart1.R",
             "target": "modelling.R"
         },
         {
             "ports": [
                 {
                     "input": "part2",
-                    "output": "part2",
+                    "output": "dSatisfactionSurveyPart2",
                     "type": "r_obj"
                 }
             ],
@@ -406,12 +406,12 @@
         {
             "ports": [
                 {
-                    "input": "part1",
-                    "output": "part1",
+                    "input": "part3",
+                    "output": "dSatisfactionSurveyPart3",
                     "type": "r_obj"
                 }
             ],
-            "source": "discritizingPart1.R",
+            "source": "discretizingPart3.R",
             "target": "modelling.R"
         }
     ],
@@ -576,6 +576,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 16:27:10",
+    "updated_at": "2018-11-08 16:36:12",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
