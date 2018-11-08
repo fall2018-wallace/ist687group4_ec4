@@ -379,7 +379,7 @@
                 }
             ],
             "source": "dSatisfactionSurveyPart4.R",
-            "target": "modelling.R"
+            "target": "combine.R"
         },
         {
             "ports": [
@@ -390,7 +390,7 @@
                 }
             ],
             "source": "discritizingPart1.R",
-            "target": "modelling.R"
+            "target": "combine.R"
         },
         {
             "ports": [
@@ -401,7 +401,7 @@
                 }
             ],
             "source": "DiscretizedData2.R",
-            "target": "modelling.R"
+            "target": "combine.R"
         },
         {
             "ports": [
@@ -412,7 +412,37 @@
                 }
             ],
             "source": "discretizingPart3.R",
-            "target": "modelling.R"
+            "target": "combine.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "cleanData",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "svmModeling.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "type": "csv"
+                }
+            ],
+            "source": "discretizeddata.csv",
+            "target": "associationrulemining.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dSatisfactionCategory",
+                    "type": "csv"
+                }
+            ],
+            "source": "combine.R",
+            "target": "discretizeddata.csv"
         }
     ],
     "nodes": [
@@ -552,12 +582,6 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "zefeng",
-            "desc": "Here we use arules and arulesViz to look at most of over variables affect on  satisfaction level to better understand our dataset.",
-            "name": "modelling.R",
-            "task_status": "in progress"
-        },
-        {
             "assigned_to": "tshetty",
             "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
             "name": "DiscretizedData2.R",
@@ -574,8 +598,29 @@
             "desc": "",
             "name": "dSatisfactionSurveyPart4.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "Utilizing SVM to model the data and look for insights",
+            "name": "svmModeling.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "discretizeddata.csv"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Here we combine our discretized columns and produce a new csv file.",
+            "name": "combine.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "Here we use arules and arulesViz to look at most of over variables affect on  satisfaction level to better understand our dataset.",
+            "name": "associationrulemining.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 16:36:12",
+    "updated_at": "2018-11-08 20:40:32",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }

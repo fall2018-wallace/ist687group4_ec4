@@ -1,15 +1,9 @@
 
-#Modeling 
-
 library(arules)
 library(arulesViz)
 
-#Create a new data frame based on three different parts of discretized data (Need to add part 2)
-dSatisfactionCategory <- data.frame(cbind(part1,part2,part3,part4))
-#View(dSatisfactionCategory) 
-
 #Coerce the satisfaction data frame into a sparse transactions matrix 
-dSatisfactionX <- as(dSatisfactionCategory,"transactions")
+dSatisfactionX <- as(df,"transactions")
 dSatisfactionX
 
 #Here we use the inspect( ), itemFrequency( ), and itemFrequencyPlot( ) commands to explore the contents of dSatisfactionX
