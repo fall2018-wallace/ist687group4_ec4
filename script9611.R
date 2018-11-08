@@ -1,2 +1,2 @@
 
-satSurvey(str)
+str(satSurvey)
