@@ -361,21 +361,6 @@
             "target": "discritizingPart1.R"
         },
         {
-            "ports": [
-                {
-                    "input": "numSat",
-                    "type": "csv"
-                }
-            ],
-            "source": "numberizedSatisfactionSurvey.csv",
-            "target": "combine.R"
-        },
-        {
-            "ports": [],
-            "source": "discretizingPart3.R",
-            "target": "modelling.R"
-        },
-        {
             "ports": [],
             "source": "DiscretizedData2.R",
             "target": "modelling.R"
@@ -410,6 +395,17 @@
                 }
             ],
             "source": "discritizingPart1.R",
+            "target": "modelling.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "part3",
+                    "output": "part3",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "discretizingPart3.R",
             "target": "modelling.R"
         }
     ],
@@ -562,10 +558,6 @@
             "task_status": "in progress"
         },
         {
-            "desc": "",
-            "name": "combine.R"
-        },
-        {
             "assigned_to": "tshetty",
             "desc": "The complete dataframes with discretized attributes",
             "name": "DiscretizedCombined.R",
@@ -578,6 +570,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 16:25:16",
+    "updated_at": "2018-11-08 16:26:42",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
