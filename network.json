@@ -394,6 +394,17 @@
             ],
             "source": "numberizedSatisfactionSurvey.csv",
             "target": "dSatisfactionSurveyPart4.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "part4",
+                    "output": "part4",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "dSatisfactionSurveyPart4.R",
+            "target": "modelling.R"
         }
     ],
     "nodes": [
@@ -555,12 +566,12 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "not assigned",
+            "assigned_to": "zefeng",
             "desc": "",
             "name": "dSatisfactionSurveyPart4.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 16:13:35",
+    "updated_at": "2018-11-08 16:24:49",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
