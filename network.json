@@ -341,21 +341,6 @@
             "target": "discretizingPart3.R"
         },
         {
-            "ports": [],
-            "source": "discretizingPart3.R",
-            "target": "modelling.R"
-        },
-        {
-            "ports": [],
-            "source": "numberizeSatisfaction.R",
-            "target": "modelling.R"
-        },
-        {
-            "ports": [],
-            "source": "discritizingPart1.R",
-            "target": "modelling.R"
-        },
-        {
             "ports": [
                 {
                     "input": "satisfactionSurvey",
@@ -516,6 +501,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-07 15:08:34",
+    "updated_at": "2018-11-08 02:53:22",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
