@@ -423,6 +423,16 @@
             ],
             "source": "cleanData.R",
             "target": "svmModeling.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "discretizeddata",
+                    "type": "csv"
+                }
+            ],
+            "source": "combine.R",
+            "target": "discretizeddata.csv"
         }
     ],
     "nodes": [
@@ -601,6 +611,6 @@
             "name": "discretizeddata.csv"
         }
     ],
-    "updated_at": "2018-11-08 18:31:12",
+    "updated_at": "2018-11-08 18:31:35",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
