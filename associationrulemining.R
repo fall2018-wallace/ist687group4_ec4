@@ -1,13 +1,9 @@
 
-dSatisfaction <- data.frame(df)
-
-head(df)
-
 library(arules)
 library(arulesViz)
 
 #Coerce the satisfaction data frame into a sparse transactions matrix 
-dSatisfactionX <- as(dSatisfaction,"transactions")
+dSatisfactionX <- as(df,"transactions")
 dSatisfactionX
 
 #Here we use the inspect( ), itemFrequency( ), and itemFrequencyPlot( ) commands to explore the contents of dSatisfactionX
