@@ -586,10 +586,16 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "rhfrench",
             "desc": "Utilizing SVM to model the data and look for insights",
-            "name": "svmModeling.R"
+            "name": "svmModeling.R",
+            "task_status": "in progress"
+        },
+        {
+            "desc": "",
+            "name": "combine.R"
         }
     ],
-    "updated_at": "2018-11-08 16:52:22",
+    "updated_at": "2018-11-08 18:26:05",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
