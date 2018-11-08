@@ -443,16 +443,6 @@
             ],
             "source": "combine.R",
             "target": "discretizeddata.csv"
-        },
-        {
-            "ports": [
-                {
-                    "input": "satSurvey",
-                    "type": "csv"
-                }
-            ],
-            "source": "numberizedSatisfactionSurvey.csv",
-            "target": "script9611.R"
         }
     ],
     "nodes": [
@@ -629,12 +619,8 @@
             "desc": "Here we use arules and arulesViz to look at most of over variables affect on  satisfaction level to better understand our dataset.",
             "name": "associationrulemining.R",
             "task_status": "in progress"
-        },
-        {
-            "desc": "",
-            "name": "script9611.R"
         }
     ],
-    "updated_at": "2018-11-08 19:34:21",
+    "updated_at": "2018-11-08 20:40:32",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
