@@ -1,13 +1,12 @@
 
-Modeling 
-dSatisfactionLevel<-ssClean$binarySat
+#Modeling 
 
 library("arules")
 library("arulesViz")
 
 #Create a new data frame based on three different parts of discretized data (Need to add part 2)
 dSatisfactionCategory <- data.frame(cbind(part1,part2,part3,part4))
-View(dSatisfactionCategory) 
+#View(dSatisfactionCategory) 
 
 #Coerce the satisfaction data frame into a sparse transactions matrix 
 dSatisfactionX <- as(dSatisfactionCategory,"transactions")
@@ -20,7 +19,8 @@ itemFrequencyPlot(dSatisfactionX,cex.names=0.4)
 
 #Then we use arules to discover patterns
 #Run the apriori command to try and predict happy customers
-rules <- apriori(dSatisfactionX,parameter = list(support=0.2,confidence=0.6),appearance = list(default="lhs",rhs="dSatisfactionLevel=High"))
+rules <- apriori(dSatisfactionX,parameter = list(support=0.2,confidence=0.6),
+appearance = list(default="lhs",rhs="binarySat=High"))
 summary(rules)
 inspect(rules)
 
