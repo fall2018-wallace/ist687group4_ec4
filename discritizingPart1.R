@@ -5,12 +5,12 @@ library(ggplot2)
 #str(satisfactionSurvey)
 
 #discritize Age
-histAge <- hist(satisfactionSurvey$Age)
-q <- quantile(satisfactionSurvey$Age, c(0.4, 0.6))
+histAge <- hist(ssClean$Age)
+q <- quantile(ssClean$Age, c(0.4, 0.6))
 q
-dAge <- replicate(length(satisfactionSurvey$Age), "Average")
-dAge[satisfactionSurvey$Age <= q[1]] <- "Low"
-dAge[satisfactionSurvey$Age > q[2]] <- "High"
+dAge <- replicate(length(ssClean$Age), "Average")
+dAge[ssClean$Age <= q[1]] <- "Low"
+dAge[ssClean$Age > q[2]] <- "High"
 #dAge
 
 #discritize Price.Sensitivity
