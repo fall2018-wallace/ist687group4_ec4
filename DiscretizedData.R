@@ -3,11 +3,11 @@ library(ggplot2)
 
 #Discritizing No..of.other.Loyalty.Cards, Eating.and.Drinking.at.Airport, Day.of.Month, Shopping.Amount.at.Airport attributes from th SatisfactionSurvey table
 #discretize No..of.other.Loyalty.Cards
-q <- quantile(df$No..of.other.Loyalty.Cards, c(0.4, 0.6))
+q <- quantile(ssClean$No..of.other.Loyalty.Cards, c(0.4, 0.6))
 q
-dloyalty <- replicate(length(df$No..of.other.Loyalty.Cards), "Average")
-dloyalty[df$No..of.other.Loyalty.Cards <= q[1]] <- "Low"
-dloyalty[df$No..of.other.Loyalty.Cards > q[2]] <- "High"
+dloyalty <- replicate(length(ssClean$No..of.other.Loyalty.Cards), "Average")
+dloyalty[ssClean$No..of.other.Loyalty.Cards <= q[1]] <- "Low"
+dloyalty[ssClean$No..of.other.Loyalty.Cards > q[2]] <- "High"
 
 #Discretize Shopping.Amount.at.Airport
 q1 <- quantile(df$Shopping.Amount.at.Airport, c(0.4, 0.6))
