@@ -1,6 +1,5 @@
 
 #Modeling 
-dSatisfactionLevel<-ssClean$binarySat
 
 library("arules")
 library("arulesViz")
