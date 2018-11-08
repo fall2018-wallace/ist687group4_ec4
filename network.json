@@ -574,8 +574,12 @@
             "desc": "",
             "name": "dSatisfactionSurveyPart4.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "Utilizing SVM to model the data and look for insights",
+            "name": "svmModeling.R"
         }
     ],
-    "updated_at": "2018-11-08 16:36:12",
+    "updated_at": "2018-11-08 16:52:06",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
