@@ -363,26 +363,6 @@
         {
             "ports": [
                 {
-                    "input": "numSat",
-                    "type": "csv"
-                }
-            ],
-            "source": "numberizedSatisfactionSurvey.csv",
-            "target": "combine.R"
-        },
-        {
-            "ports": [],
-            "source": "discretizingPart3.R",
-            "target": "modelling.R"
-        },
-        {
-            "ports": [],
-            "source": "DiscretizedData2.R",
-            "target": "modelling.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "df",
                     "type": "csv"
                 }
@@ -394,7 +374,7 @@
             "ports": [
                 {
                     "input": "part4",
-                    "output": "part4",
+                    "output": "dSatisfactionSurveyPart4",
                     "type": "r_obj"
                 }
             ],
@@ -405,11 +385,33 @@
             "ports": [
                 {
                     "input": "part1",
-                    "output": "part1",
+                    "output": "dSatisfactionSurveyPart1",
                     "type": "r_obj"
                 }
             ],
             "source": "discritizingPart1.R",
+            "target": "modelling.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "part2",
+                    "output": "dSatisfactionSurveyPart2",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "DiscretizedData2.R",
+            "target": "modelling.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "part3",
+                    "output": "dSatisfactionSurveyPart3",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "discretizingPart3.R",
             "target": "modelling.R"
         }
     ],
@@ -562,10 +564,6 @@
             "task_status": "in progress"
         },
         {
-            "desc": "",
-            "name": "combine.R"
-        },
-        {
             "assigned_to": "tshetty",
             "desc": "The complete dataframes with discretized attributes",
             "name": "DiscretizedCombined.R",
@@ -578,6 +576,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 16:25:16",
+    "updated_at": "2018-11-08 16:36:12",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
