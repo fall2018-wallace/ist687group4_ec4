@@ -443,6 +443,16 @@
             ],
             "source": "combine.R",
             "target": "discretizeddata.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "script9611.R"
         }
     ],
     "nodes": [
@@ -625,6 +635,6 @@
             "name": "script9611.R"
         }
     ],
-    "updated_at": "2018-11-08 19:34:07",
+    "updated_at": "2018-11-08 19:34:21",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
