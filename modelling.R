@@ -1,17 +1,17 @@
 
-
-#modeling 
+Modeling 
 dSatisfactionLevel<-ssClean$binarySat
 View(dSatisfactionLevel)
 View(dSatisfactionSurveyPart1)
+View(dSatisfactionSurveyPart2)
 View(dSatisfactionSurveyPart3)
 
 library("arules")
 library("arulesViz")
 
 #Create a new data frame based on three different parts of discretized data (Need to add part 2)
-dSatisfactionCategory <- data.frame(cbind(dSatisfactionLevel,dSatisfactionSurveyPart1,dSatisfactionSurveyPart3))
-View(dSatisfactionCategory)
+dSatisfactionCategory <- data.frame(cbind(dSatisfactionLevel,dSatisfactionSurveyPart1,dSatisfactionSurveyPart2,dSatisfactionSurveyPart3))
+View(dSatisfactionCategory) 
 
 #Coerce the satisfaction data frame into a sparse transactions matrix 
 dSatisfactionX <- as(dSatisfactionCategory,"transactions")
@@ -28,6 +28,6 @@ rules <- apriori(dSatisfactionX,parameter = list(support=0.2,confidence=0.5),app
 summary(rules)
 inspect(rules)
 
-#Rank and comment 
+#Rank and comment
 rules.new <- rules[order(-quality(rules)$lift),]
 inspect(head(rules.new,5))
