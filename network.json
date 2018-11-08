@@ -379,7 +379,7 @@
                 }
             ],
             "source": "dSatisfactionSurveyPart4.R",
-            "target": "modelling.R"
+            "target": "combine.R"
         },
         {
             "ports": [
@@ -390,7 +390,7 @@
                 }
             ],
             "source": "discritizingPart1.R",
-            "target": "modelling.R"
+            "target": "combine.R"
         },
         {
             "ports": [
@@ -401,7 +401,7 @@
                 }
             ],
             "source": "DiscretizedData2.R",
-            "target": "modelling.R"
+            "target": "combine.R"
         },
         {
             "ports": [
@@ -412,7 +412,7 @@
                 }
             ],
             "source": "discretizingPart3.R",
-            "target": "modelling.R"
+            "target": "combine.R"
         },
         {
             "ports": [
@@ -562,12 +562,6 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "zefeng",
-            "desc": "Here we use arules and arulesViz to look at most of over variables affect on  satisfaction level to better understand our dataset.",
-            "name": "modelling.R",
-            "task_status": "in progress"
-        },
-        {
             "assigned_to": "tshetty",
             "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
             "name": "DiscretizedData2.R",
@@ -596,8 +590,14 @@
             "desc": "",
             "name": "associationrulemining.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Here we use arules and arulesViz to look at most of over variables affect on  satisfaction level to better understand our dataset.",
+            "name": "combine.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 18:28:42",
+    "updated_at": "2018-11-08 18:29:01",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
