@@ -361,11 +361,6 @@
             "target": "discritizingPart1.R"
         },
         {
-            "ports": [],
-            "source": "DiscretizedData2.R",
-            "target": "modelling.R"
-        },
-        {
             "ports": [
                 {
                     "input": "df",
@@ -406,6 +401,17 @@
                 }
             ],
             "source": "discretizingPart3.R",
+            "target": "modelling.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "part2",
+                    "output": "part2",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "DiscretizedData2.R",
             "target": "modelling.R"
         }
     ],
@@ -570,6 +576,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 16:26:42",
+    "updated_at": "2018-11-08 16:27:01",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
