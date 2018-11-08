@@ -508,8 +508,18 @@
             "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
             "name": "DiscretizedData2.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "",
+            "name": "combine.R"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "The complete dataframes with discretized attributes",
+            "name": "DiscretizedCombined.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-08 15:59:04",
+    "updated_at": "2018-11-08 16:06:01",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
