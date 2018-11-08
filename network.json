@@ -381,11 +381,6 @@
             "target": "modelling.R"
         },
         {
-            "ports": [],
-            "source": "discritizingPart1.R",
-            "target": "modelling.R"
-        },
-        {
             "ports": [
                 {
                     "input": "df",
@@ -404,6 +399,17 @@
                 }
             ],
             "source": "dSatisfactionSurveyPart4.R",
+            "target": "modelling.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "part1",
+                    "output": "part1",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "discritizingPart1.R",
             "target": "modelling.R"
         }
     ],
@@ -572,6 +578,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 16:24:49",
+    "updated_at": "2018-11-08 16:25:16",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
