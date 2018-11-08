@@ -341,30 +341,49 @@
             "target": "discretizingPart3.R"
         },
         {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "DiscretizedData2.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "discritizingPart1.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "numSat",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "combine.R"
+        },
+        {
             "ports": [],
             "source": "discretizingPart3.R",
             "target": "modelling.R"
         },
         {
             "ports": [],
-            "source": "numberizeSatisfaction.R",
+            "source": "DiscretizedData2.R",
             "target": "modelling.R"
         },
         {
             "ports": [],
             "source": "discritizingPart1.R",
             "target": "modelling.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "satisfactionSurvey",
-                    "output": "ssClean",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "discritizingPart1.R"
         }
     ],
     "nodes": [
@@ -477,12 +496,6 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "tshetty",
-            "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
-            "name": "DiscretizedData.R",
-            "task_status": "in progress"
-        },
-        {
             "assigned_to": "rncasagr",
             "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
             "name": "numberizeSatisfaction.R",
@@ -514,8 +527,24 @@
             "desc": "Here we use arules and arulesViz to look at most of over variables affect on  satisfaction level to better understand our dataset.",
             "name": "modelling.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
+            "name": "DiscretizedData2.R",
+            "task_status": "in progress"
+        },
+        {
+            "desc": "",
+            "name": "combine.R"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "The complete dataframes with discretized attributes",
+            "name": "DiscretizedCombined.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-07 15:08:34",
+    "updated_at": "2018-11-08 16:07:51",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
