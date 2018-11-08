@@ -612,15 +612,15 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "zefeng",
-            "desc": "Here we use arules and arulesViz to look at most of over variables affect on  satisfaction level to better understand our dataset.",
-            "name": "combine.R",
-            "task_status": "in progress"
+            "name": "discretizeddata.csv"
         },
         {
-            "name": "discretizeddata.csv"
+            "assigned_to": "zefeng",
+            "desc": "Here we combine our discretized columns and produce a new csv file.",
+            "name": "combine.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 18:31:49",
+    "updated_at": "2018-11-08 18:33:08",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
