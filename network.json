@@ -354,7 +354,7 @@
         {
             "ports": [
                 {
-                    "input": "ssclean",
+                    "input": "ssClean",
                     "type": "csv"
                 }
             ],
@@ -511,6 +511,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 15:49:31",
+    "updated_at": "2018-11-08 15:50:08",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
