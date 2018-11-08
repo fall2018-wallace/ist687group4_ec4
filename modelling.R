@@ -1,16 +1,12 @@
 
 Modeling 
 dSatisfactionLevel<-ssClean$binarySat
-View(dSatisfactionLevel)
-View(dSatisfactionSurveyPart1)
-View(dSatisfactionSurveyPart2)
-View(dSatisfactionSurveyPart3) 
 
 library("arules")
 library("arulesViz")
 
 #Create a new data frame based on three different parts of discretized data (Need to add part 2)
-dSatisfactionCategory <- data.frame(cbind(dSatisfactionLevel,dSatisfactionSurveyPart1,dSatisfactionSurveyPart2,dSatisfactionSurveyPart3))
+dSatisfactionCategory <- data.frame(cbind(part1,part2,part3,part4))
 View(dSatisfactionCategory) 
 
 #Coerce the satisfaction data frame into a sparse transactions matrix 
