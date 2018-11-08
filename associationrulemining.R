@@ -1,6 +1,7 @@
 
 library(arules)
 library(arulesViz)
+df <- data.frame(df)
 #Coerce the satisfaction data frame into a sparse transactions matrix 
 dSatisfactionX <- as(df,"transactions")
 dSatisfactionX
