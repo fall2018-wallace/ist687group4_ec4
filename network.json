@@ -596,8 +596,11 @@
             "desc": "Here we use arules and arulesViz to look at most of over variables affect on  satisfaction level to better understand our dataset.",
             "name": "combine.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "discretizeddata.csv"
         }
     ],
-    "updated_at": "2018-11-08 18:29:01",
+    "updated_at": "2018-11-08 18:31:12",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
