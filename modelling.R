@@ -1,8 +1,8 @@
 
 #Modeling 
 
-library("arules")
-library("arulesViz")
+library(arules)
+library(arulesViz)
 
 #Create a new data frame based on three different parts of discretized data (Need to add part 2)
 dSatisfactionCategory <- data.frame(cbind(part1,part2,part3,part4))
@@ -28,9 +28,3 @@ inspect(rules)
 rules.new <- rules[order(-quality(rules)$lift),]
 inspect(head(rules.new,5))
 
-#lhs                                           rhs                       support   confidence lift     count
-#[1] {dNo.of.Flights.p.a.=Low}                  => {dSatisfactionLevel=High} 0.2562093 0.6205109  1.215401 33278
-#[2] {dNo.of.Flights.p.a.=Low,dDayOfMonth=High} => {dSatisfactionLevel=High} 0.2562093 0.6205109  1.215401 33278
-#[3] {dNo.of.Flights.p.a.=Low,dEating=High}     => {dSatisfactionLevel=High} 0.2562093 0.6205109  1.215401 33278
-#[4] {dNo.of.Flights.p.a.=Low,dShopping=High}   => {dSatisfactionLevel=High} 0.2562093 0.6205109  1.215401 33278
-#[5] {dNo.of.Flights.p.a.=Low,dLoyalty=High}    => {dSatisfactionLevel=High} 0.2562093 0.6205109  1.215401 33278
