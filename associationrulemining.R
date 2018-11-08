@@ -1,5 +1,4 @@
 
-class(df)
 dSatisfaction <- data.frame(df)
 
 head(dSatisfactionX)
