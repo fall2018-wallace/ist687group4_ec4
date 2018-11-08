@@ -24,9 +24,9 @@ dEating[ssClean$Eating.and.Drinking.at.Airport < q2[1]] <- "Low"
 dEating[ssClean$Eating.and.Drinking.at.Airport > q2[2]] <- "High"
 
 #discretize Day of Month
-dDayOfMonth <- replicate(length(df$Day.of.Month), "Average")
-dDayOfMonth[df$Day.of.Month < '15'] <- "Low"
-dDayOfMonth[df$Day.of.Month > '15'] <- "High"
+dDayOfMonth <- replicate(length(ssClean$Day.of.Month), "Average")
+dDayOfMonth[ssClean$Day.of.Month < '15'] <- "Low"
+dDayOfMonth[ssClean$Day.of.Month > '15'] <- "High"
 
 dSatisfactionSurveyPart2 <- data.frame(dloyalty, dShopping, dEating, dDayOfMonth)
 head(dSatisfactionSurveyPart2)
