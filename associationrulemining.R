@@ -1,7 +1,7 @@
 
 dSatisfaction <- data.frame(df)
 
-head(dSatisfactionX)
+head(df)
 
 library(arules)
 library(arulesViz)
