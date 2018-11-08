@@ -545,10 +545,12 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "not assigned",
             "desc": "",
-            "name": "dSatisfactionSurveyPart3.R"
+            "name": "dSatisfactionSurveyPart4.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-08 16:12:28",
+    "updated_at": "2018-11-08 16:12:42",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
