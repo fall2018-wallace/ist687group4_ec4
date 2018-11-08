@@ -359,6 +359,16 @@
             ],
             "source": "numberizedSatisfactionSurvey.csv",
             "target": "discritizingPart1.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "numSat",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "combine.R"
         }
     ],
     "nodes": [
@@ -520,6 +530,6 @@
             "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-08 16:06:01",
+    "updated_at": "2018-11-08 16:06:20",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
