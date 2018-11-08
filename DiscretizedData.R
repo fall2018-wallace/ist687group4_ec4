@@ -10,18 +10,18 @@ dloyalty[ssClean$No..of.other.Loyalty.Cards <= q[1]] <- "Low"
 dloyalty[ssClean$No..of.other.Loyalty.Cards > q[2]] <- "High"
 
 #Discretize Shopping.Amount.at.Airport
-q1 <- quantile(df$Shopping.Amount.at.Airport, c(0.4, 0.6))
+q1 <- quantile(ssClean$Shopping.Amount.at.Airport, c(0.4, 0.6))
 q1
-dShopping <- replicate(length(df$Shopping.Amount.at.Airport), "Average")
-dShopping[df$Shopping.Amount.at.Airport < q1[1]] <- "Low"
-dShopping[df$Shopping.Amount.at.Airport > q1[2]] <- "High"
+dShopping <- replicate(length(ssClean$Shopping.Amount.at.Airport), "Average")
+dShopping[ssClean$Shopping.Amount.at.Airport < q1[1]] <- "Low"
+dShopping[ssClean$Shopping.Amount.at.Airport > q1[2]] <- "High"
 
 #discretize Eating and Drinking
-q2 <- quantile(df$Eating.and.Drinking.at.Airport, c(0.4, 0.6))
+q2 <- quantile(ssClean$EssCleanating.and.Drinking.at.Airport, c(0.4, 0.6))
 q2
-dEating <- replicate(length(df$Eating.and.Drinking.at.Airport), "Average")
-dEating[df$Eating.and.Drinking.at.Airport < q2[1]] <- "Low"
-dEating[df$Eating.and.Drinking.at.Airport > q2[2]] <- "High"
+dEating <- replicate(length(ssClean$Eating.and.Drinking.at.Airport), "Average")
+dEating[ssClean$Eating.and.Drinking.at.Airport < q2[1]] <- "Low"
+dEating[ssClean$Eating.and.Drinking.at.Airport > q2[2]] <- "High"
 
 #discretize Day of Month
 dDayOfMonth <- replicate(length(df$Day.of.Month), "Average")
