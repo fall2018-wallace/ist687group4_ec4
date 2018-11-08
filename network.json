@@ -384,6 +384,16 @@
             "ports": [],
             "source": "discritizingPart1.R",
             "target": "modelling.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "dSatisfactionSurveyPart4.R"
         }
     ],
     "nodes": [
@@ -551,6 +561,6 @@
             "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-08 16:12:42",
+    "updated_at": "2018-11-08 16:13:35",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
