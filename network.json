@@ -413,6 +413,16 @@
             ],
             "source": "discretizingPart3.R",
             "target": "modelling.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "cleanData",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "svmModeling.R"
         }
     ],
     "nodes": [
@@ -580,6 +590,6 @@
             "name": "svmModeling.R"
         }
     ],
-    "updated_at": "2018-11-08 16:52:06",
+    "updated_at": "2018-11-08 16:52:22",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
