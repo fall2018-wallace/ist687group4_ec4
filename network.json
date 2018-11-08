@@ -427,22 +427,22 @@
         {
             "ports": [
                 {
-                    "output": "discretizeddata",
-                    "type": "csv"
-                }
-            ],
-            "source": "combine.R",
-            "target": "discretizeddata.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "df",
                     "type": "csv"
                 }
             ],
             "source": "discretizeddata.csv",
             "target": "associationrulemining.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dSatisfactionCategory",
+                    "type": "csv"
+                }
+            ],
+            "source": "combine.R",
+            "target": "discretizeddata.csv"
         }
     ],
     "nodes": [
@@ -621,6 +621,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 18:33:17",
+    "updated_at": "2018-11-08 19:05:13",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
