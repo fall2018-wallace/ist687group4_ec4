@@ -592,10 +592,12 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "abhishek27297",
             "desc": "",
-            "name": "combine.R"
+            "name": "associationrulemining.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 18:26:05",
+    "updated_at": "2018-11-08 18:28:42",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
