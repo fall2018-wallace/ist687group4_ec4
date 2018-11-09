@@ -443,6 +443,16 @@
             ],
             "source": "combine.R",
             "target": "discretizeddata.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cleanData",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "cleanData.csv"
         }
     ],
     "nodes": [
@@ -624,6 +634,6 @@
             "name": "cleanData.csv"
         }
     ],
-    "updated_at": "2018-11-09 21:45:52",
+    "updated_at": "2018-11-09 21:46:05",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
