@@ -20,5 +20,5 @@ summaryModel <- summary(lm(formula = SatisfactionNumeric ~ Airline.Status + Age 
     Type.of.Travel + No..of.other.Loyalty.Cards + Shopping.Amount.at.Airport + 
     Eating.and.Drinking.at.Airport + Class + Day.of.Month + Flight.date + Airline.Code + Airline.Name +
     Orgin.City + Origin.State + Destination.City + Destination.State + Scheduled.Departure.Hour + 
-    Departure.Delay.in.Minutes.0 + Arrival.Delay.in.Minutes.0.Est + Flight.cancelled + Flight.time.in.minutes +
-    Flight.Distance + Arrival.Delay.greater.5.Mins, data = cleanSatisfactionSurvey))
+    Departure.Delay.in.Minutes.0 + Arrival.Delay.in.Minutes.0.Est + Flight.cancelled + 
+    Flight.time.in.minutes.0.Est + Flight.Distance + Arrival.Delay.greater.5.Mins, data = cleanSatisfactionSurvey))
