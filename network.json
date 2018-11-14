@@ -448,7 +448,7 @@
             "ports": [
                 {
                     "input": "cleanData",
-                    "output": "cleanData",
+                    "output": "ssClean",
                     "type": "r_obj"
                 }
             ],
@@ -635,6 +635,6 @@
             "name": "cleanData.csv"
         }
     ],
-    "updated_at": "2018-11-14 16:35:55",
+    "updated_at": "2018-11-14 16:37:07",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
