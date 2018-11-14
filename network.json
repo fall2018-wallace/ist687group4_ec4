@@ -417,26 +417,6 @@
         {
             "ports": [
                 {
-                    "input": "df",
-                    "type": "csv"
-                }
-            ],
-            "source": "discretizeddata.csv",
-            "target": "associationrulemining.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "dSatisfactionCategory",
-                    "type": "csv"
-                }
-            ],
-            "source": "combine.R",
-            "target": "discretizeddata.csv"
-        },
-        {
-            "ports": [
-                {
                     "output": "ssClean",
                     "type": "csv"
                 }
@@ -617,9 +597,6 @@
             "task_status": "in progress"
         },
         {
-            "name": "discretizeddata.csv"
-        },
-        {
             "assigned_to": "zefeng",
             "desc": "Here we combine our discretized columns and produce a new csv file.",
             "name": "combine.R",
@@ -635,6 +612,6 @@
             "name": "cleanData.csv"
         }
     ],
-    "updated_at": "2018-11-14 16:37:07",
+    "updated_at": "2018-11-14 23:26:59",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
