@@ -12,3 +12,4 @@ summaryModel <- summary(lm(formula = SatisfactionNumeric ~ Airline.Status + Age 
 
 # These were not significant 
 # Airline.Code + Day.of.Month + Departure.Delay.in.Minutes + Arrival.Delay.in.Minutes + Flight.Distance +
+# 
