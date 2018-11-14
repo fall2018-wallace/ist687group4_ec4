@@ -417,16 +417,6 @@
         {
             "ports": [
                 {
-                    "input": "cleanData",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "svmModeling.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "df",
                     "type": "csv"
                 }
@@ -453,6 +443,17 @@
             ],
             "source": "cleanData.R",
             "target": "cleanData.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "cleanData",
+                    "output": "cleanData",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "svmModeling.R"
         }
     ],
     "nodes": [
@@ -634,6 +635,6 @@
             "name": "cleanData.csv"
         }
     ],
-    "updated_at": "2018-11-09 21:50:20",
+    "updated_at": "2018-11-14 16:35:55",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
