@@ -614,8 +614,12 @@
         {
             "desc": "",
             "name": "discretizeddata.R"
+        },
+        {
+            "desc": "",
+            "name": "Modeling.R"
         }
     ],
-    "updated_at": "2018-11-14 23:32:18",
+    "updated_at": "2018-11-14 23:38:39",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
