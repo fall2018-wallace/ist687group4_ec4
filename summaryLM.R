@@ -10,11 +10,10 @@ summaryModel <- summary(lm(formula = SatisfactionNumeric ~ Airline.Status + Age 
 
 # Create a linear model with all applicable variables
 summaryModel2 <- summary(lm(formula = SatisfactionNumeric ~ Airline.Status + Age + Gender + 
-    Price.Sensitivity + Year.of.First.Flight + No.of.Flights.p.a. +
-    Type.of.Travel  + Shopping.Amount.at.Airport + 
+    Price.Sensitivity + Year.of.First.Flight + No.of.Flights.p.a. + Type.of.Travel  + Shopping.Amount.at.Airport + 
      + Class + Scheduled.Departure.Hour + 
     Flight.cancelled + 
-    Flight.time.in.minutes.0.Est + Flight.Distance + Arrival.Delay.greater.5.Mins, 
+     + Arrival.Delay.greater.5.Mins, 
     data = cleanSatisfactionSurvey))
 summaryModel2
 
@@ -24,3 +23,4 @@ summaryModel2
 # These were not statistically significant or less significant
 # X..of.Flight.with.other.Airlines + No..of.other.Loyalty.Cards + Eating.and.Drinking.at.Airport +
 # Day.of.Month + Airline.Code + Departure.Delay.in.Minutes.0 + Arrival.Delay.in.Minutes.0.Est + 
+# Flight.time.in.minutes.0.Est + Flight.Distance
