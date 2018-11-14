@@ -434,6 +434,17 @@
             ],
             "source": "cleanData.R",
             "target": "svmModeling.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "modeling",
+                    "output": "combine",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "combine.R",
+            "target": "Modeling.R"
         }
     ],
     "nodes": [
@@ -622,6 +633,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-14 23:56:41",
+    "updated_at": "2018-11-14 23:57:46",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
