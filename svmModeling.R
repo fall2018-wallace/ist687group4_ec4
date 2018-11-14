@@ -3,7 +3,6 @@
 #Use SVM to evaluate customer satisfaction
 
 #import necessary libraries
-library(RJSONIO)
 library(jsonlite)
 library(dplyr)
 library(kernlab)
