@@ -610,8 +610,12 @@
         },
         {
             "name": "cleanData.csv"
+        },
+        {
+            "desc": "",
+            "name": "discretizeddata.R"
         }
     ],
-    "updated_at": "2018-11-14 23:26:59",
+    "updated_at": "2018-11-14 23:32:18",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
