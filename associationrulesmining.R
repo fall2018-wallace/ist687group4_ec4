@@ -6,7 +6,7 @@ library(methods)
 #Coerce the satisfaction data frame into a sparse transactions matrix 
 dSatisfactionX <- as(dSatisfactionCategory,"transactions")
 
-str(dSatisfactionX)
+dSatisfactionX[] <- lapply(dSatisfactionX, factor)
 #Here we use the inspect( ), itemFrequency( ), and itemFrequencyPlot( ) commands to explore the contents of dSatisfactionX
 inspect(dSatisfactionX)
 itemFrequency(dSatisfactionX)
