@@ -133,9 +133,6 @@ df <- subset(df,select = -c(Arrival.Delay.in.Minutes.0))
 df <- subset(df,select = -c(Arrival.Delay.greater.5.Mins))
 #Since we are using the actual delay variable this will have redundant information
 
-df <- subset(df,select = -c(binarySat))
-#We will be using the numeric Satisfaction as our dependent variable
-
 ##Renaming columns
 #Here we rename columns logically
 names(df)[names(df) == 'Arrival.Delay.in.Minutes.0.Est'] <- 'Arrival.Delay.in.Minutes'
