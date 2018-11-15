@@ -4,6 +4,9 @@ str(df)
 
 df$Airline.Status <- factor(df$Airline.Status)
 df$Gender <- factor(df$Gender)
+df$Type.of.Travel <- factor(df$Type.of.Travel)
+df$Class <- factor(df$Class)
+
 
  
 # 'data.frame':	129886 obs. of  35 variables:
