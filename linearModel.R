@@ -6,7 +6,7 @@ summaryModel <- summary(lm(formula = Satisfaction ~ Airline.Status + Age + Gende
     Scheduled.Departure.Hour + Departure.Delay.in.Minutes + Arrival.Delay.in.Minutes + 
     Flight.time.in.minutes + Flight.Distance + Expenditure.at.Airport, 
     data = satisfactionSurvey))
-# summaryModel
+summaryModel
 
 # These were not applicable or too specialized
 # Orgin.City + Origin.State + Destination.City + Destination.State + Flight.date + Airline.Name
