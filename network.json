@@ -633,8 +633,12 @@
             "desc": "The complete dataframes with discretized attributes",
             "name": "DiscretizedCombined.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "Here we select and transform variables from all the available variables for modelling",
+            "name": "FeatureEngg.R"
         }
     ],
-    "updated_at": "2018-11-15 00:52:24",
+    "updated_at": "2018-11-15 02:13:50",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
