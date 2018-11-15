@@ -427,17 +427,6 @@
         {
             "ports": [
                 {
-                    "input": "cleanData",
-                    "output": "ssClean",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "svmModeling.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "dSatisfactionCategory",
                     "type": "csv"
                 }
@@ -464,6 +453,17 @@
             ],
             "source": "numberizedSatisfactionSurvey.csv",
             "target": "FeatureEngg.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "output": "ssClean",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "svmModeling.R"
         }
     ],
     "nodes": [
@@ -645,10 +645,12 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "abhishek27297",
             "desc": "Here we select and transform variables from all the available variables for modelling",
-            "name": "FeatureEngg.R"
+            "name": "FeatureEngg.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-15 02:14:15",
+    "updated_at": "2018-11-15 03:11:56",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
