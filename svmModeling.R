@@ -7,8 +7,7 @@ library(jsonlite)
 library(dplyr)
 library(kernlab)
 
-cleanData <- read.csv('/Users/Ryan/Dropbox/college/7_Semester_V/IST_687/group_project/cleanData.csv')
-
+cleanData <- ssClean
 #create binary satisfaction variable
 cleanData$binSat <- ifelse(cleanData$Satisfaction>3,1,0)
 cleanData$binSat <- as.factor(cleanData$binSat)
