@@ -464,6 +464,16 @@
             ],
             "source": "cleanData.R",
             "target": "svmModeling.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "itemFrequencyPlot",
+                    "type": "png"
+                }
+            ],
+            "source": "associationrulesmining.R",
+            "target": "itemFrequencyPlot.png"
         }
     ],
     "nodes": [
@@ -654,6 +664,6 @@
             "name": "itemFrequencyPlot.png"
         }
     ],
-    "updated_at": "2018-11-15 16:02:19",
+    "updated_at": "2018-11-15 16:02:47",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
