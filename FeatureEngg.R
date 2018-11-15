@@ -1,5 +1,4 @@
 
-#Let's take an initial look at all our variables
 
 df$Airline.Status <- factor(df$Airline.Status)
 df$Gender <- factor(df$Gender)
