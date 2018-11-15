@@ -3,6 +3,8 @@
 str(df)
 
 df$Airline.Status <- factor(df$Airline.Status)
+df$Gender <- factor(df$Gender)
+
  
 # 'data.frame':	129886 obs. of  35 variables:
 #   $ Satisfaction                    : num  4.5 4 2.5 4 5 5 3.5 4 4 4 ...
