@@ -359,6 +359,121 @@
             ],
             "source": "numberizedSatisfactionSurvey.csv",
             "target": "discritizingPart1.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "dSatisfactionSurveyPart4.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "part4",
+                    "output": "dSatisfactionSurveyPart4",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "dSatisfactionSurveyPart4.R",
+            "target": "combine.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "part1",
+                    "output": "dSatisfactionSurveyPart1",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "discritizingPart1.R",
+            "target": "combine.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "part2",
+                    "output": "dSatisfactionSurveyPart2",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "DiscretizedData2.R",
+            "target": "combine.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "part3",
+                    "output": "dSatisfactionSurveyPart3",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "discretizingPart3.R",
+            "target": "combine.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "ssClean",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "cleanData.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dSatisfactionCategory",
+                    "type": "csv"
+                }
+            ],
+            "source": "combine.R",
+            "target": "discretizeddata.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "dSatisfactionCategory",
+                    "type": "csv"
+                }
+            ],
+            "source": "discretizeddata.csv",
+            "target": "associationrulesmining.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "FeatureEngg.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "output": "ssClean",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "svmModeling.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "itemFrequencyPlot",
+                    "type": "png"
+                }
+            ],
+            "source": "associationrulesmining.R",
+            "target": "itemFrequencyPlot.png"
         }
     ],
     "nodes": [
@@ -498,28 +613,65 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "zefeng",
-            "desc": "Here we use arules and arulesViz to look at most of over variables affect on  satisfaction level to better understand our dataset.",
-            "name": "modelling.R",
-            "task_status": "in progress"
-        },
-        {
             "assigned_to": "tshetty",
             "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
             "name": "DiscretizedData2.R",
             "task_status": "in progress"
         },
         {
+            "assigned_to": "zefeng",
             "desc": "",
-            "name": "combine.R"
+            "name": "dSatisfactionSurveyPart4.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "Utilizing SVM to model the data and look for insights",
+            "name": "svmModeling.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "cleanData.csv"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "Here we combine our discretized columns and produce a new csv file.",
+            "name": "combine.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "discretizeddata.csv"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Here we  used Arules to look at the offered variables' effect on satisfaction level.",
+            "name": "associationrulesmining.R",
+            "task_status": "in progress"
         },
         {
             "assigned_to": "tshetty",
             "desc": "The complete dataframes with discretized attributes",
             "name": "DiscretizedCombined.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "Here we select and transform variables from all the available variables for modelling",
+            "name": "FeatureEngg.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "itemFrequencyPlot.png"
+        },
+        {
+            "desc": "",
+            "name": "logisticRegression.R"
+        },
+        {
+            "desc": "",
+            "name": "linearModel.R"
         }
     ],
-    "updated_at": "2018-11-08 16:06:01",
+    "updated_at": "2018-11-15 16:14:21",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
