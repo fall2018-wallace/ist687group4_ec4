@@ -1,6 +1,8 @@
 
 #Let's take an initial look at all our variables
 str(df)
+
+df$Airline.Status <- factor(df$Airline.Status)
  
 # 'data.frame':	129886 obs. of  35 variables:
 #   $ Satisfaction                    : num  4.5 4 2.5 4 5 5 3.5 4 4 4 ...
