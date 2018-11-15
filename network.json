@@ -666,8 +666,12 @@
         {
             "desc": "",
             "name": "logisticRegression.R"
+        },
+        {
+            "desc": "",
+            "name": "linearModel.R"
         }
     ],
-    "updated_at": "2018-11-15 16:12:58",
+    "updated_at": "2018-11-15 16:14:21",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
