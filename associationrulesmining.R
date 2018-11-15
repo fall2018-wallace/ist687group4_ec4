@@ -22,7 +22,7 @@ inspect(rules)
 rules.new <- rules[order(-quality(rules)$lift),]
 inspect(head(rules.new,5))  
 
- lhs                                                                             rhs              support   confidence lift     count
+# lhs                                                                             rhs              support   confidence lift     count
 #[1] {dArrDelay=Low,Type.of.Travel=Business travel}                               => {binarySat=High} 0.2596739 0.7597252  1.488082 33728
 #[2] {dEating=Average,dArrDelay=Low,Type.of.Travel=Business travel}               => {binarySat=High} 0.2596739 0.7597252  1.488082 33728
 #[3] {dDepDelay=Low,dArrDelay=Low,Type.of.Travel=Business travel}                 => {binarySat=High} 0.2111005 0.7564906  1.481746 27419
