@@ -1,10 +1,11 @@
 
-library("arules")
-library("arulesViz")
+
+library(arules) 
+library(arulesViz)
 
 #Coerce the satisfaction data frame into a sparse transactions matrix 
-dSatisfactionX <- as(dSatisfactionCategory,"transactions")
-dSatisfactionX
+dSatisfactionX <- as(df,"transactions")
+
 
 #Here we use the inspect( ), itemFrequency( ), and itemFrequencyPlot( ) commands to explore the contents of dSatisfactionX
 inspect(dSatisfactionX)
@@ -21,24 +22,9 @@ inspect(rules)
 rules.new <- rules[order(-quality(rules)$lift),]
 inspect(head(rules.new,5))  
 
-
-#lhs                                  rhs                support confidence     lift count
-#[1] {dPrice.Sensitivity=Average,                                                             
-#Type.of.Travel=Business travel,                                                         
-#Flight.cancelled=No,                                                                    
-#Arrival.Delay.greater.5.Mins=no} => {binarySat=High} 0.2168363  0.7718702 1.511870 28164
-#[2] {dPrice.Sensitivity=Average,                                                             
-#dEating=Average,                                                                        
-#Type.of.Travel=Business travel,                                                         
-#Flight.cancelled=No,                                                                    
-#Arrival.Delay.greater.5.Mins=no} => {binarySat=High} 0.2168363  0.7718702 1.511870 28164
-#[3] {dPrice.Sensitivity=Average,                                                             
-#Type.of.Travel=Business travel,                                                         
-#Arrival.Delay.greater.5.Mins=no} => {binarySat=High} 0.2196619  0.7668799 1.502096 28531
-#[4] {dPrice.Sensitivity=Average,                                                             
-#dEating=Average,                                                                        
-#Type.of.Travel=Business travel,                                                         
-#Arrival.Delay.greater.5.Mins=no} => {binarySat=High} 0.2196619  0.7668799 1.502096 28531
-#[5] {Type.of.Travel=Business travel,                                                         
-#Flight.cancelled=No,                                                                    
-#Arrival.Delay.greater.5.Mins=no} => {binarySat=High} 0.3008253  0.7653119 1.499024 39073
+ lhs                                                                             rhs              support   confidence lift     count
+#[1] {dArrDelay=Low,Type.of.Travel=Business travel}                               => {binarySat=High} 0.2596739 0.7597252  1.488082 33728
+#[2] {dEating=Average,dArrDelay=Low,Type.of.Travel=Business travel}               => {binarySat=High} 0.2596739 0.7597252  1.488082 33728
+#[3] {dDepDelay=Low,dArrDelay=Low,Type.of.Travel=Business travel}                 => {binarySat=High} 0.2111005 0.7564906  1.481746 27419
+#[4] {dEating=Average,dDepDelay=Low,dArrDelay=Low,Type.of.Travel=Business travel} => {binarySat=High} 0.2111005 0.7564906  1.481746 27419
+#[5] {dArrDelay=Low,Type.of.Travel=Business travel,Class=Eco}                     => {binarySat=High} 0.2090987 0.7545215  1.477889 27159

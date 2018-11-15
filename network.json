@@ -464,6 +464,16 @@
             ],
             "source": "cleanData.R",
             "target": "svmModeling.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "itemFrequencyPlot",
+                    "type": "png"
+                }
+            ],
+            "source": "associationrulesmining.R",
+            "target": "itemFrequencyPlot.png"
         }
     ],
     "nodes": [
@@ -649,8 +659,11 @@
             "desc": "Here we select and transform variables from all the available variables for modelling",
             "name": "FeatureEngg.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "itemFrequencyPlot.png"
         }
     ],
-    "updated_at": "2018-11-15 03:12:55",
+    "updated_at": "2018-11-15 16:02:47",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
