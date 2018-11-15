@@ -662,8 +662,12 @@
         },
         {
             "name": "itemFrequencyPlot.png"
+        },
+        {
+            "desc": "",
+            "name": "logisticRegression.R"
         }
     ],
-    "updated_at": "2018-11-15 16:02:47",
+    "updated_at": "2018-11-15 16:12:58",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
