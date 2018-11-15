@@ -21,6 +21,28 @@ inspect(rules)
 rules.new <- rules[order(-quality(rules)$lift),]
 inspect(head(rules.new,5))  
 
+library(arules) 
+library(arulesViz)
+
+#Coerce the satisfaction data frame into a sparse transactions matrix 
+dSatisfactionX <- as(df,"transactions")
+View(df)
+
+#Here we use the inspect( ), itemFrequency( ), and itemFrequencyPlot( ) commands to explore the contents of dSatisfactionX
+inspect(dSatisfactionX)
+itemFrequency(dSatisfactionX)
+itemFrequencyPlot(dSatisfactionX,cex.names=0.4)
+
+#Then we use arules to discover patterns
+#Run the apriori command to try and predict happy customers
+rules <- apriori(dSatisfactionX,parameter = list(support=0.2,confidence=0.6),appearance = list(default="lhs",rhs="binarySat=High"))
+summary(rules)
+inspect(rules)
+
+#Rank and comment
+rules.new <- rules[order(-quality(rules)$lift),]
+inspect(head(rules.new,5))  
+
  lhs                                                                             rhs              support   confidence lift     count
 #[1] {dArrDelay=Low,Type.of.Travel=Business travel}                               => {binarySat=High} 0.2596739 0.7597252  1.488082 33728
 #[2] {dEating=Average,dArrDelay=Low,Type.of.Travel=Business travel}               => {binarySat=High} 0.2596739 0.7597252  1.488082 33728
