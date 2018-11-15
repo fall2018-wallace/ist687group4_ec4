@@ -1,6 +1,5 @@
 
 #Let's take an initial look at all our variables
-str(df)
 
 df$Airline.Status <- factor(df$Airline.Status)
 df$Gender <- factor(df$Gender)
