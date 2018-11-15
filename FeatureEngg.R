@@ -9,8 +9,6 @@ df$Class <- factor(df$Class)
 df$Airline.Code <- factor(df$Airline.Code)
 df$Flight.cancelled <- factor(df$Flight.cancelled)
 
-
-
 # 'data.frame':	129886 obs. of  35 variables:
 #   $ Satisfaction                    : num  4.5 4 2.5 4 5 5 3.5 4 4 4 ...
 # $ Airline.Status                  : Factor w/ 4 levels "Blue","Gold",..: 1 1 1 1 4 2 2 4 1 1 ...
