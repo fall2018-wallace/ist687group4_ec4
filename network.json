@@ -445,6 +445,16 @@
             ],
             "source": "combine.R",
             "target": "Modeling.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "discretizeddata",
+                    "type": "csv"
+                }
+            ],
+            "source": "combine.R",
+            "target": "discretizeddata.csv"
         }
     ],
     "nodes": [
@@ -636,6 +646,6 @@
             "name": "discretizeddata.csv"
         }
     ],
-    "updated_at": "2018-11-15 00:48:07",
+    "updated_at": "2018-11-15 00:48:28",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
