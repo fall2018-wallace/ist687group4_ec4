@@ -1,2 +1,0 @@
-
-DiscretizedData <- merge(dSatisfactionSurveyPart1, dSatisfactionSurveyPart2, dSatisfactionSurveyPart3)
