@@ -449,7 +449,7 @@
         {
             "ports": [
                 {
-                    "output": "discretizeddata",
+                    "output": "dSatisfactionCategory",
                     "type": "csv"
                 }
             ],
@@ -646,6 +646,6 @@
             "name": "discretizeddata.csv"
         }
     ],
-    "updated_at": "2018-11-15 00:48:28",
+    "updated_at": "2018-11-15 00:49:05",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
