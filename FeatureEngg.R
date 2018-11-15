@@ -1,5 +1,5 @@
 
-
+#Converting string variables into categorical variables
 df$Airline.Status <- factor(df$Airline.Status)
 df$Gender <- factor(df$Gender)
 df$Type.of.Travel <- factor(df$Type.of.Travel)
@@ -7,6 +7,7 @@ df$Class <- factor(df$Class)
 df$Airline.Code <- factor(df$Airline.Code)
 df$Flight.cancelled <- factor(df$Flight.cancelled)
 
+#Let's take an initial look at all our variables
 str(df)
 
 # 'data.frame':	129886 obs. of  35 variables:
