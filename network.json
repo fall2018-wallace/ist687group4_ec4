@@ -438,13 +438,22 @@
         {
             "ports": [
                 {
-                    "input": "modeling",
-                    "output": "combine",
-                    "type": "r_obj"
+                    "output": "dSatisfactionCategory",
+                    "type": "csv"
                 }
             ],
             "source": "combine.R",
-            "target": "Modeling.R"
+            "target": "discretizeddata.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "dSatisfactionCategory",
+                    "type": "csv"
+                }
+            ],
+            "source": "discretizeddata.csv",
+            "target": "associationrulesmining.R"
         }
     ],
     "nodes": [
@@ -590,12 +599,6 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "tshetty",
-            "desc": "The complete dataframes with discretized attributes",
-            "name": "DiscretizedCombined.R",
-            "task_status": "in progress"
-        },
-        {
             "assigned_to": "zefeng",
             "desc": "",
             "name": "dSatisfactionSurveyPart4.R",
@@ -608,31 +611,30 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "abhishek27297",
-            "desc": "Here we use arules and arulesViz to look at most of over variables affect on  satisfaction level to better understand our dataset.",
-            "name": "associationrulemining.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "cleanData.csv"
-        },
-        {
-            "desc": "",
-            "name": "discretizeddata.R"
-        },
-        {
-            "assigned_to": "zefeng",
-            "desc": "Here we  used Arules to look at the offered variables' effect on satisfaction level.",
-            "name": "Modeling.R",
-            "task_status": "in progress"
         },
         {
             "assigned_to": "abhishek27297",
             "desc": "Here we combine our discretized columns and produce a new csv file.",
             "name": "combine.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "discretizeddata.csv"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Here we  used Arules to look at the offered variables' effect on satisfaction level.",
+            "name": "associationrulesmining.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "The complete dataframes with discretized attributes",
+            "name": "DiscretizedCombined.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-15 00:00:46",
+    "updated_at": "2018-11-15 00:52:24",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
