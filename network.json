@@ -485,6 +485,17 @@
             ],
             "source": "FeatureEngg.R",
             "target": "logisticRegression.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "FeatureEngg.R",
+            "target": "linearModel.R"
         }
     ],
     "nodes": [
@@ -669,8 +680,10 @@
             "name": "itemFrequencyPlot.png"
         },
         {
+            "assigned_to": "tshetty",
             "desc": "",
-            "name": "logisticRegression.R"
+            "name": "logisticRegression.R",
+            "task_status": "in progress"
         },
         {
             "assigned_to": "rncasagr",
@@ -679,6 +692,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-15 16:17:34",
+    "updated_at": "2018-11-15 16:25:49",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
