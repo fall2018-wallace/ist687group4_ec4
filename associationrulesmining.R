@@ -2,9 +2,6 @@
 library("arules")
 library("arulesViz")
 
-#Create a new data frame based on  different parts of discretized data 
-dSatisfactionCategory <- data.frame(cbind(dSatisfactionSurveyPart1,dSatisfactionSurveyPart2,dSatisfactionSurveyPart3,dSatisfactionSurveyPart4))
-dSatisfactionCategory
 #Coerce the satisfaction data frame into a sparse transactions matrix 
 dSatisfactionX <- as(dSatisfactionCategory,"transactions")
 dSatisfactionX

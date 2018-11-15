@@ -21,8 +21,9 @@ dDepDelay <- defineBucketQuantiles(ssClean$Departure.Delay.in.Minutes.0)
 dArrDelay <- defineBucketQuantiles(ssClean$Arrival.Delay.in.Minutes.0.Est)
 dTime <- defineBucketQuantiles(ssClean$Flight.time.in.minutes.0.Est)
 dDistance <- defineBucketQuantiles(ssClean$Flight.Distance)
+dShopping <- defineBucketQuantiles(ssClean$Shopping.Amount.at.Airport)
 
 # Create a new dataframe with the discretized variables
-dSatisfactionSurveyPart3 <- data.frame(dHour, dDepDelay, dArrDelay, dTime, dDistance)
+dSatisfactionSurveyPart3 <- data.frame(dHour, dDepDelay, dArrDelay, dTime, dDistance,dShopping)
 head(dSatisfactionSurveyPart3)
 str(dSatisfactionSurveyPart3)
