@@ -8,13 +8,11 @@ library(dplyr)
 library(kernlab)
 
 cleanData <- ssClean
-
 #create binary satisfaction variable
 cleanData$binSat <- ifelse(cleanData$Satisfaction>3,1,0)
 cleanData$binSat <- as.factor(cleanData$binSat)
 
-#sampleData <- sample_n(cleanData, 10000, replace = TRUE)
-sampleData <- cleanData
+sampleData <- cleanData[sample(nrow(cleanData),100000, replace=FALSE),]
 
 #randomize the order of the data to allow for random sampling of the thirds selected
 table(sampleData$binSat)
