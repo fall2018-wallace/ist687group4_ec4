@@ -438,8 +438,8 @@
         {
             "ports": [
                 {
-                    "input": "modeling",
-                    "output": "combine",
+                    "input": "df",
+                    "output": "dSatisfactionCategory",
                     "type": "r_obj"
                 }
             ],
@@ -633,6 +633,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-15 00:36:21",
+    "updated_at": "2018-11-15 00:41:43",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
