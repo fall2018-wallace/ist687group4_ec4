@@ -474,6 +474,17 @@
             ],
             "source": "associationrulesmining.R",
             "target": "itemFrequencyPlot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "FeatureEngg.R",
+            "target": "logisticRegression.R"
         }
     ],
     "nodes": [
@@ -668,6 +679,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-15 16:15:44",
+    "updated_at": "2018-11-15 16:17:29",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
