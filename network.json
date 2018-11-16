@@ -496,6 +496,16 @@
             ],
             "source": "FeatureEngg.R",
             "target": "linearModel.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "df",
+                    "type": "csv"
+                }
+            ],
+            "source": "FeatureEngg.R",
+            "target": "modeldata.csv"
         }
     ],
     "nodes": [
@@ -695,6 +705,6 @@
             "name": "modeldata.csv"
         }
     ],
-    "updated_at": "2018-11-16 18:31:53",
+    "updated_at": "2018-11-16 18:32:19",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
