@@ -690,8 +690,11 @@
             "desc": "",
             "name": "linearModel.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "modeldata.csv"
         }
     ],
-    "updated_at": "2018-11-15 16:25:49",
+    "updated_at": "2018-11-16 18:31:53",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
