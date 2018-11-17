@@ -55,7 +55,7 @@ logPred = ifelse(logProbs > 0.5, "High", "Low")
 
 confusionMatrix <- data.frame(test$binarySat,logPred)
 CM<-table(confusionMatrix)
-
+CM
 #error rate
 error <- ((CM[1,1]+CM[2,2])/sum(CM))
 error
