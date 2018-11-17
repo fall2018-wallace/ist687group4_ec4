@@ -1,7 +1,7 @@
 
 
 #library Amelia is used for logistic regression
-library(ISLR)
+library(Amelia)
 library(caTools)
 
 #Dropping the Satisfaction table from df, as the binarySatisfaction column has already been created
