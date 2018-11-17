@@ -690,12 +690,6 @@
             "name": "itemFrequencyPlot.png"
         },
         {
-            "assigned_to": "tshetty",
-            "desc": "",
-            "name": "logisticRegression.R",
-            "task_status": "in progress"
-        },
-        {
             "assigned_to": "rncasagr",
             "desc": "",
             "name": "linearModel.R",
@@ -703,8 +697,14 @@
         },
         {
             "name": "modeldata.csv"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "In this r code, we will create a logistic regression model to determine which variables are statistically significant to the satisfaction variable.",
+            "name": "logisticRegression.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-16 18:32:19",
+    "updated_at": "2018-11-17 19:53:56",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
