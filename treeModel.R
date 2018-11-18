@@ -41,6 +41,7 @@ confusionMatrix <- function(target,prediction){
   return(cm) 
 }
 
+#A function to calculate the error rate from the confusion matrix 
 errorRate <- function(cm){
   return(((cm[1,2]+cm[2,1])/sum(cm)))
 }
