@@ -46,6 +46,7 @@ errorRate <- function(cm){
   return(((cm[1,2]+cm[2,1])/sum(cm)))
 }
 
+#Let's use the above functions to obtain the confusionMatrix and errorRate
 cm <- confusionMatrix(test[,17],tree.pred)
 cm
 
