@@ -21,6 +21,7 @@ library(tree)
 
 #Creating our model
 tree.model <- tree(binarySat~.,data = train)
+#Let's take a look at the model
 tree.model
 summary(tree.model)
 
