@@ -527,6 +527,16 @@
             ],
             "source": "FeatureEnggTree.R",
             "target": "treeModel.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "tree.plot",
+                    "type": "png"
+                }
+            ],
+            "source": "treeModel.R",
+            "target": "DecisionTree.png"
         }
     ],
     "nodes": [
@@ -741,6 +751,6 @@
             "name": "DecisionTree.png"
         }
     ],
-    "updated_at": "2018-11-18 21:49:42",
+    "updated_at": "2018-11-18 21:50:10",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
