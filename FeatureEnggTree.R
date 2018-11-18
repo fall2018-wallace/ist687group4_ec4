@@ -1,5 +1,5 @@
 
-#Airline.Status,Gender,Type.of.Travel,Class,Airline.Code,binarySat
+#Creating factor variables for categorical 
 df$Airline.Status <- factor(df$Airline.Status)
 df$Gender <- factor(df$Gender)
 df$Type.of.Travel <- factor(df$Type.of.Travel)
