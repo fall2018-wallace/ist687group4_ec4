@@ -9,7 +9,7 @@ df$binarySat <- factor(df$binarySat)
 
 str(df)
 
-
+#Creating train & test split
 set.seed(101)
 samplerows <- sample(1:dim(df)[1])
 trainrows <- floor(2 * dim(df)[1]/3)
