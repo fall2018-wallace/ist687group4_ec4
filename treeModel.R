@@ -30,6 +30,7 @@ summary(tree.model)
 tree.plot <- plot(tree.model)
 text(tree.model, pretty=0)
 
+#Now we make prediction on the test data using our model
 tree.pred = predict(tree.model,test,type="class")
 
 confusionMatrix <- function(target,prediction){
