@@ -9,6 +9,7 @@ df$binarySat <- factor(df$binarySat)
 
 #Here we use a similar approach as feature engg for regression
 #the only difference being we do not convert categorical variables 
+#into numeric since our tree can work with them
 str(df)
 
 df <- subset(df,df$X..of.Flight.with.other.Airlines<=100)
@@ -43,3 +44,4 @@ names(df)[names(df) == 'Flight.time.in.minutes.0.Est'] <- 'Flight.time.in.minute
 names(df)[names(df) == 'SatisfactionNumeric'] <- 'Satisfaction'
 
 str(df)
+#Thus we are down to 19 variables (1 dependent) for forming our tree
