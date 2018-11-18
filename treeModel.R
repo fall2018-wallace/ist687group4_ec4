@@ -16,6 +16,7 @@ trainrows <- floor(2 * dim(df)[1]/3)
 train <- df[samplerows[1:trainrows],]
 test <- df[samplerows[(trainrows+1):dim(df)[1]],]
 
+#Loading the library for Decision tree
 library(tree)
 
 tree.model <- tree(binarySat~.,data = train)
