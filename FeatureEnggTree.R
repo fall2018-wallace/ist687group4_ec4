@@ -8,6 +8,7 @@ df$Airline.Code <- factor(df$Airline.Code)
 df$binarySat <- factor(df$binarySat)
 
 #Here we use a similar approach as feature engg for regression
+#the only difference being we do not convert categorical variables 
 str(df)
 
 df <- subset(df,df$X..of.Flight.with.other.Airlines<=100)
