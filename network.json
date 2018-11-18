@@ -732,10 +732,15 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "abhishek27297",
             "desc": "Here we build our decision tree model and make inference using the same.",
-            "name": "treeModel.R"
+            "name": "treeModel.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "DecisionTree.png"
         }
     ],
-    "updated_at": "2018-11-18 21:43:19",
+    "updated_at": "2018-11-18 21:49:42",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
