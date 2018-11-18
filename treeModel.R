@@ -33,6 +33,7 @@ text(tree.model, pretty=0)
 #Now we make prediction on the test data using our model
 tree.pred = predict(tree.model,test,type="class")
 
+#A function to create the confusion matrix using the target variables
 confusionMatrix <- function(target,prediction){
   confmatrix <- data.frame(target,prediction)
   cm <- table(confmatrix)
