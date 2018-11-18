@@ -19,6 +19,7 @@ test <- df[samplerows[(trainrows+1):dim(df)[1]],]
 #Loading the library for Decision tree
 library(tree)
 
+#Creating our model
 tree.model <- tree(binarySat~.,data = train)
 tree.model
 summary(tree.model)
