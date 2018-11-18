@@ -23,6 +23,7 @@ library(tree)
 tree.model <- tree(binarySat~.,data = train)
 #Let's take a look at the model
 tree.model
+#The significant variables can be found as follows
 summary(tree.model)
 
 plot(tree.model)
