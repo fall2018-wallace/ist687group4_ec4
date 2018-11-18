@@ -27,8 +27,8 @@ tree.model
 summary(tree.model)
 
 #Let's plot our Decision Tree
-plot(tree.model)
-text(tree.model, pretty=0);
+tree.plot <- plot(tree.model)
+text(tree.model, pretty=0)
 
 tree.pred = predict(tree.model,test,type="class")
 
