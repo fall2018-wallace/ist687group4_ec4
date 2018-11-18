@@ -1,5 +1,5 @@
 
-df <- data.frame(df)
+df <- data.frame(df,stringsAsFactors = True)
 str(df)
 
 df <- subset(df,df$X..of.Flight.with.other.Airlines<=100)
