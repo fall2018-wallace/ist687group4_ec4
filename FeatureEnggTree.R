@@ -1,5 +1,6 @@
 
-df <- data.frame(df,stringsAsFactors = True)
+
+#Airline.Status,Gender,Type.of.Travel,Class,Airline.Code,binarySat
 str(df)
 
 df <- subset(df,df$X..of.Flight.with.other.Airlines<=100)
