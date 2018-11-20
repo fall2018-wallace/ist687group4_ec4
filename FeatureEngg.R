@@ -133,9 +133,6 @@ df <- subset(df,select = -c(Arrival.Delay.in.Minutes.0))
 df <- subset(df,select = -c(Arrival.Delay.greater.5.Mins))
 #Since we are using the actual delay variable this will have redundant information
 
-df <- subset(df,select = -c(binarySat))
-#We will be using the numeric Satisfaction as our dependent variable
-
 ##Renaming columns
 #Here we rename columns logically
 names(df)[names(df) == 'Arrival.Delay.in.Minutes.0.Est'] <- 'Arrival.Delay.in.Minutes'
@@ -144,7 +141,7 @@ names(df)[names(df) == 'SatisfactionNumeric'] <- 'Satisfaction'
 
 #Now let's look at our data after performing feature engg
 str(df)
-# 'data.frame':	127479 obs. of  18 variables:
+# 'data.frame':	127479 obs. of  19 variables:
 #   $ Airline.Status                  : num  1 1 1 1 4 2 2 4 1 1 ...
 # $ Age                             : int  31 56 21 43 49 49 35 33 44 51 ...
 # $ Gender                          : num  0 0 1 0 0 1 0 0 1 1 ...
@@ -162,7 +159,10 @@ str(df)
 # $ Arrival.Delay.in.Minutes        : num  3 5 14 39 0 0 0 1 0 0 ...
 # $ Flight.time.in.minutes          : num  134 120 122 141 144 123 119 138 114 118 ...
 # $ Satisfaction                    : num  4.5 4 2.5 4 5 5 3.5 4 4 4 ...
+# $ binarySat                       : chr  "High" "High" "Low" "High" ...
 # $ Expenditure.at.Airport          : int  75 75 135 55 34 65 60 90 90 105 ...
 
-#So we have gone from all the 35 variables to 18 variables which are ready to
-#be modelled.
+
+
+#So we have gone from all the 35 variables to 19 variables (2 dependent variables) 
+#which are ready to be modelled.
