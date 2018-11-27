@@ -29,9 +29,9 @@ testData <- sampleData[randIndex[(cutPoint2_3+1):dim(sampleData)[1]],]
 
 #create the SVM expression with the following parameters
 svmOutput <- ksvm(binSat ~ Airline.Status + Age + Gender + 
-                    Price.Sensitivity + No.of.Flights.p.a. + Type.of.Travel  + 
-                    Class + Scheduled.Departure.Hour + Flight.cancelled + 
-                    Arrival.Delay.greater.5.Mins + Flight.Distance, data=sampleData, kernel="rbfdot", C=50, cross=3,
+                    No.of.Flights.p.a. + Type.of.Travel + Class
+                    + Departure.Delay.in.Minutes + Arrival.Delay.in.Minutes + , 
+                    data=sampleData, kernel="rbfdot", C=50, cross=3,
                   set.seed=1, prob.model=TRUE)
 svmOutput
 
