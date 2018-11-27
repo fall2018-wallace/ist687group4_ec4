@@ -474,6 +474,69 @@
             ],
             "source": "associationrulesmining.R",
             "target": "itemFrequencyPlot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "FeatureEngg.R",
+            "target": "logisticRegression.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "FeatureEngg.R",
+            "target": "linearModel.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "df",
+                    "type": "csv"
+                }
+            ],
+            "source": "FeatureEngg.R",
+            "target": "modeldata.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "FeatureEnggTree.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "FeatureEnggTree.R",
+            "target": "treeModel.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "tree.plot",
+                    "type": "png"
+                }
+            ],
+            "source": "treeModel.R",
+            "target": "DecisionTree.png"
         }
     ],
     "nodes": [
@@ -658,16 +721,36 @@
             "name": "itemFrequencyPlot.png"
         },
         {
-            "desc": "",
-            "name": "logisticRegression.R"
-        },
-        {
             "assigned_to": "rncasagr",
             "desc": "",
             "name": "linearModel.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "modeldata.csv"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "In this r code, we will create a logistic regression model to determine which variables are statistically significant to the satisfaction variable.",
+            "name": "logisticRegression.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "",
+            "name": "FeatureEnggTree.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "Here we build our decision tree model and make inference using the same.",
+            "name": "treeModel.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "DecisionTree.png"
         }
     ],
-    "updated_at": "2018-11-15 16:15:44",
+    "updated_at": "2018-11-18 21:50:10",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }

@@ -1,6 +1,4 @@
 
-#Group Project Zefeng Zhang Geography  
-
 #Load the datasets
 getwd() 
 sSurvey <-read.csv("satisfactionSurvey.csv",TRUE,",") #read in the file
