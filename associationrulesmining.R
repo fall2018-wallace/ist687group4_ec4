@@ -39,4 +39,4 @@ inspect(head(rules.new,5))
 #[5] {dArrDelay=Low,                                                                         
 #Type.of.Travel=Business travel,                                                        
 #Class=Eco}                      => {binarySat=High} 0.2090987  0.7545215 1.477889 27159
-> 
+
