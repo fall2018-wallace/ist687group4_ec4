@@ -544,18 +544,6 @@
             "name": "satisfactionSurvey.csv"
         },
         {
-            "assigned_to": "rncasagr",
-            "desc": "Analyze correlation between satisfaction and each of the following: Day of Month, Flight date, Flight time in minutes, Flight Distance. Create an appropriate visualization to show any correlations.",
-            "name": "flight_information.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "rhfrench",
-            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
-            "name": "airline_analysis.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "statusBar.png"
         },
         {
@@ -575,12 +563,6 @@
         },
         {
             "name": "barMeanDayofMonth.png"
-        },
-        {
-            "assigned_to": "abhishek27297",
-            "desc": "Here we look at the variables in our data related to flight delay.\r\n",
-            "name": "delay_analysis.R",
-            "task_status": "in progress"
         },
         {
             "name": "h1.png"
@@ -628,118 +610,22 @@
             "name": "s2.png"
         },
         {
-            "assigned_to": "tshetty",
-            "desc": "Analysis on the attributes describing passenger demographics was done in this r code. The attribute 'Gender' was converted to dummy variables 0 and  1 for male and female. Created graphs to better understand each attribute.",
-            "name": "PassengerDemographics.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "zefeng",
-            "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported the findings. ",
-            "name": "Geography_Zhang.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "blankCounts.txt"
-        },
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
-            "name": "summaryLM.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
-            "name": "numberizeSatisfaction.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the non-numeric Satisfaction entries that seem to be errors and account for the NULL values in a separate variable for future modelling.",
-            "name": "cleanData.R",
-            "task_status": "in progress"
         },
         {
             "name": "histSat.png"
         },
         {
-            "assigned_to": "rncasagr",
-            "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
-            "name": "discretizingPart3.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "rhfrench",
-            "desc": "Discritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
-            "name": "discritizingPart1.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "tshetty",
-            "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
-            "name": "DiscretizedData2.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "zefeng",
-            "desc": "",
-            "name": "dSatisfactionSurveyPart4.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "rhfrench",
-            "desc": "Utilizing SVM to model the data and look for insights",
-            "name": "svmModeling.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "cleanData.csv"
-        },
-        {
-            "assigned_to": "abhishek27297",
-            "desc": "Here we combine our discretized columns and produce a new csv file.",
-            "name": "combine.R",
-            "task_status": "in progress"
         },
         {
             "name": "discretizeddata.csv"
         },
         {
-            "assigned_to": "zefeng",
-            "desc": "Here we  used Arules to look at the offered variables' effect on satisfaction level.",
-            "name": "associationrulesmining.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "abhishek27297",
-            "desc": "Here we select and transform variables from all the available variables for modelling",
-            "name": "FeatureEngg.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "itemFrequencyPlot.png"
         },
         {
-            "assigned_to": "rncasagr",
-            "desc": "",
-            "name": "linearModel.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "modeldata.csv"
-        },
-        {
-            "assigned_to": "tshetty",
-            "desc": "In this r code, we will create a logistic regression model to determine which variables are statistically significant to the satisfaction variable.",
-            "name": "logisticRegression.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "abhishek27297",
-            "desc": "",
-            "name": "FeatureEnggTree.R",
-            "task_status": "in progress"
         },
         {
             "assigned_to": "abhishek27297",
@@ -749,8 +635,122 @@
         },
         {
             "name": "DecisionTree.png"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "Discritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
+            "name": "discritizingPart1.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
+            "name": "airline_analysis.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "Utilizing SVM to model the data and look for insights",
+            "name": "svmModeling.R",
+            "task_status": "validating"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Analyze correlation between satisfaction and each of the following: Day of Month, Flight date, Flight time in minutes, Flight Distance. Create an appropriate visualization to show any correlations.",
+            "name": "flight_information.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
+            "name": "summaryLM.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
+            "name": "numberizeSatisfaction.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
+            "name": "discretizingPart3.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Create a linear model with the newly cleaned and summarized data for comparison to the original model",
+            "name": "linearModel.R",
+            "task_status": "validating"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the non-numeric Satisfaction entries that seem to be errors and account for the NULL values in a separate variable for future modelling.",
+            "name": "cleanData.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported the findings. ",
+            "name": "Geography_Zhang.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Here we  used Arules to look at the offered variables' effect on satisfaction level.",
+            "name": "associationrulesmining.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "Here we look at the variables in our data related to flight delay.\r\n",
+            "name": "delay_analysis.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "Here we combine our discretized columns and produce a new csv file.",
+            "name": "combine.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "Here we select and transform variables from all the available variables for modelling",
+            "name": "FeatureEngg.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "",
+            "name": "FeatureEnggTree.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "Analysis on the attributes describing passenger demographics was done in this r code. The attribute 'Gender' was converted to dummy variables 0 and  1 for male and female. Created graphs to better understand each attribute.",
+            "name": "PassengerDemographics.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
+            "name": "DiscretizedData2.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "tshetty",
+            "desc": "In this r code, we will create a logistic regression model to determine which variables are statistically significant to the satisfaction variable.",
+            "name": "logisticRegression.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Factorize variables",
+            "name": "dSatisfactionSurveyPart4.R",
+            "task_status": "completed"
         }
     ],
-    "updated_at": "2018-11-18 21:50:10",
+    "updated_at": "2018-11-27 21:12:41",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
