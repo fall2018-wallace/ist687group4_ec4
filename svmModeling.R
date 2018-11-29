@@ -7,7 +7,7 @@ library(jsonlite)
 library(dplyr)
 library(kernlab)
 
-
+cleanData <- ssClean
 
 #create binary satisfaction variable
 cleanData$binSat <- ifelse(cleanData$Satisfaction>3,1,0)
