@@ -8,10 +8,9 @@
 #import necessary libraries
 library(ggplot2)
 
+satisfactionSurvey <- satisfactionSurvey
+
 satisfactionSurvey$Satisfaction <- as.numeric(satisfactionSurvey$Satisfaction)
-
-
-
 #Airline.Status
 #satisfactionSurvey$Airline.Status <- as.numeric(as.factor(satisfactionSurvey$Airline.Status))
 #plot(satisfactionSurvey$Airline.Status, satisfactionSurvey$Satisfaction)
@@ -20,11 +19,12 @@ satisfactionSurvey$Satisfaction <- as.numeric(satisfactionSurvey$Satisfaction)
 #R-Squared: .1168
 #Slope: <2e-16
 
-statusBar <- ggplot(satisfactionSurvey,aes(x=Airline.Status, y=Satisfaction, group=1))
-statusBar <- statusBar + geom_col()
-statusBar <- statusBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-statusBar
-hist(satisfactionSurvey$Airline.Status)
+#satisfactionSurvey$Airline.Status <- as.factor(satisfactionSurvey$Airline.Status)
+#statusBar <- ggplot(satisfactionSurvey,aes(Airline.Status), y=Satisfaction, group=1)
+#statusBar <- statusBar + geom_col()
+#statusBar <- statusBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+#statusBar
+#hist(satisfactionSurvey$Airline.Status)
 #Blue (lowest level) members have a signifcantly higher satisfaction rate
 
 
