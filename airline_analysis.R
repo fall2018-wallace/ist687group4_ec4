@@ -53,14 +53,8 @@ otherFlightsBar <- hist(satisfactionSurvey$X..of.Flight.with.other.Airlines)
 #R-Squared: 
 #Slope: 
 
-codesBar <- ggplot(satisfactionSurvey,aes(x=Airline.Code, y=Satisfaction, group=1))
-codesBar <- codesBar + geom_col()
-codesBar <- codesBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-codesBar
-hist(satisfactionSurvey$Airline.Code)
+codesHist <- hist(satisfactionSurvey$Airline.Code)
 #WN has by far the highest satisfaction followed by DL, EV, OO, and AA at about half the amount
-
-
 
 #No..of.other.Loyalty.Cards
 #satisfactionSurvey$Airline.Code <- as.numeric(as.factor(satisfactionSurvey$No..of.other.Loyalty.Cards))
