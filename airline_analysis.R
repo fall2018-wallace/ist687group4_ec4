@@ -19,12 +19,12 @@ satisfactionSurvey$Satisfaction <- as.numeric(satisfactionSurvey$Satisfaction)
 #R-Squared: .1168
 #Slope: <2e-16
 
-#satisfactionSurvey$Airline.Status <- as.factor(satisfactionSurvey$Airline.Status)
-#statusBar <- ggplot(satisfactionSurvey,aes(Airline.Status), y=Satisfaction, group=1)
-#statusBar <- statusBar + geom_col()
-#statusBar <- statusBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-#statusBar
-statusHist <- hist(satisfactionSurvey$Airline.Status)
+satisfactionSurvey$Airline.Status <- as.factor(satisfactionSurvey$Airline.Status)
+statusBar <- ggplot(satisfactionSurvey,aes(Airline.Status), y=Satisfaction, group=1)
+statusBar <- statusBar + geom_col()
+statusBar <- statusBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+statusBar
+#statusHist <- hist(satisfactionSurvey$Airline.Status)
 #Blue (lowest level) members have a signifcantly higher satisfaction rate
 
 
@@ -53,11 +53,11 @@ otherFlightsHist <- hist(satisfactionSurvey$X..of.Flight.with.other.Airlines)
 #R-Squared: 
 #Slope: 
 
-#codesBar <- ggplot(satisfactionSurvey,aes(x=Airline.Code, y=Satisfaction, group=1))
-#codesBar <- codesBar + geom_col()
-#codesBar <- codesBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-#codesBar
-codesHist<- hist(satisfactionSurvey$Airline.Code)
+codesBar <- ggplot(satisfactionSurvey,aes(x=Airline.Code, y=Satisfaction, group=1))
+codesBar <- codesBar + geom_col()
+codesBar <- codesBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+codesBar
+#codesHist<- hist(satisfactionSurvey$Airline.Code)
 #WN has by far the highest satisfaction followed by DL, EV, OO, and AA at about half the amount
 
 
@@ -86,11 +86,11 @@ cardsHist <- hist(satisfactionSurvey$No..of.other.Loyalty.Cards)
 #R-Squared: 
 #Slope:
 
-#classBar <- ggplot(satisfactionSurvey,aes(x=Class, y=Satisfaction, group=1))
-#classBar <- classBar + geom_col()
-#classBar <- classBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-#classBar
-classHist <- hist(satisfactionSurvey$Class)
+classBar <- ggplot(satisfactionSurvey,aes(x=Class, y=Satisfaction, group=1))
+classBar <- classBar + geom_col()
+classBar <- classBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+classBar
+#classHist <- hist(satisfactionSurvey$Class)
 #Economy class has far and away the most satisfaction
 
 
