@@ -1,5 +1,4 @@
 
-
 library(arules) 
 library(arulesViz)
 library(methods)
@@ -17,7 +16,7 @@ itemFrequencyPlot(dSatisfactionX,cex.names=0.4)
 #Run the apriori command to try and predict happy customers
 rules <- apriori(dSatisfactionX,parameter = list(support=0.2,confidence=0.6),appearance = list(default="lhs",rhs="binarySat=High"))
 summary(rules)
-inspect(rules)
+inspect(head(rules,5))  
 
 #Rank and comment
 rules.new <- rules[order(-quality(rules)$lift),]
