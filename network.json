@@ -527,6 +527,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "airline_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "svmHist",
+                    "type": "png"
+                }
+            ],
+            "source": "svmModeling.R",
+            "target": "svmHist.png"
         }
     ],
     "nodes": [
@@ -736,8 +746,11 @@
             "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
             "name": "airline_analysis.R",
             "task_status": "completed"
+        },
+        {
+            "name": "svmHist.png"
         }
     ],
-    "updated_at": "2018-11-29 18:40:59",
+    "updated_at": "2018-11-29 19:35:18",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
