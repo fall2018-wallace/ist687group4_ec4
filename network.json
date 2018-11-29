@@ -491,16 +491,6 @@
         {
             "ports": [
                 {
-                    "output": "codesHist",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "codesHist.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "statusBar",
                     "type": "png"
                 }
@@ -527,6 +517,16 @@
             ],
             "source": "airline_analysis.R",
             "target": "classBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "codesBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "codesHist.png"
         }
     ],
     "nodes": [
@@ -738,6 +738,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-11-29 18:01:45",
+    "updated_at": "2018-11-29 18:14:00",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
