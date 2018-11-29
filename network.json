@@ -12,16 +12,6 @@
         {
             "ports": [
                 {
-                    "output": "statusBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "statusBar.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "otherFlightsBar",
                     "type": "png"
                 }
@@ -544,9 +534,6 @@
             "name": "satisfactionSurvey.csv"
         },
         {
-            "name": "statusBar.png"
-        },
-        {
             "name": "otherFlightsBar.png"
         },
         {
@@ -751,6 +738,6 @@
             "name": "statusHist.png"
         }
     ],
-    "updated_at": "2018-11-29 17:05:28",
+    "updated_at": "2018-11-29 17:10:49",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
