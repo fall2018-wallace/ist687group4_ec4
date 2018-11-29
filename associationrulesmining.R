@@ -21,7 +21,7 @@ rules <- apriori(dSatisfactionX,parameter = list(support=0.2,confidence=0.6),app
 #Rank and comment
 rules.new <- rules[order(-quality(rules)$lift),]
 #inspect(head(rules.new,5))  
-
+print('done')
  
 #lhs                                 rhs                support confidence     lift count
 #[1] {dArrDelay=Low,                                                                         
