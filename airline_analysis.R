@@ -24,7 +24,7 @@ satisfactionSurvey$Satisfaction <- as.numeric(satisfactionSurvey$Satisfaction)
 #statusBar <- statusBar + geom_col()
 #statusBar <- statusBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 #statusBar
-#hist(satisfactionSurvey$Airline.Status)
+hist(satisfactionSurvey$Airline.Status)
 #Blue (lowest level) members have a signifcantly higher satisfaction rate
 
 
