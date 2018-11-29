@@ -12,16 +12,6 @@
         {
             "ports": [
                 {
-                    "input": "satisfactionSurvey",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "airline_analysis.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "statusBar",
                     "type": "png"
                 }
@@ -527,6 +517,16 @@
             ],
             "source": "FeatureEnggTree.R",
             "target": "treeModel.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "airline_analysis.R"
         }
     ],
     "nodes": [
@@ -738,6 +738,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-11-29 16:49:13",
+    "updated_at": "2018-11-29 16:49:41",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
