@@ -11,8 +11,7 @@ library(ggplot2)
 
 
 #satisfactionSurvey$Airline.Status <- as.factor(satisfactionSurvey$Airline.Status)
-statusBar <- ggplot(satisfactionSurvey,aes(x=Airline.Status, y=Satisfaction, group=1))
-statusBar <- statusBar + geom_col()
+statusBar <- ggplot(satisfactionSurvey,aes(x=Airline.Status)) + geom_bar()
 statusBar <- statusBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 statusBar
 
@@ -22,8 +21,7 @@ otherFlightsHist <- hist(satisfactionSurvey$X..of.Flight.with.other.Airlines)
 
 
 
-codesBar <- ggplot(satisfactionSurvey,aes(x=Airline.Code, y=Satisfaction, group=1))
-codesBar <- codesBar + geom_col()
+codesBar <- ggplot(satisfactionSurvey,aes(x=Airline.Code)) + geom_bar()
 codesBar <- codesBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 codesBar
 
@@ -33,14 +31,12 @@ cardsHist <- hist(satisfactionSurvey$No..of.other.Loyalty.Cards)
 
 
 
-classBar <- ggplot(satisfactionSurvey,aes(x=Class, y=Satisfaction, group=1))
-classBar <- classBar + geom_col()
+classBar <- ggplot(satisfactionSurvey,aes(x=Class)) + geom_bar()
 classBar <- classBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 classBar
 
 
-
-travelBar <- ggplot(satisfactionSurvey,aes(x=Type.of.Travel, y=Satisfaction, group=1))
-travelBar <- travelBar + geom_col()
+travelBar <- ggplot(satisfactionSurvey,aes(x=Type.of.Travel)) + geom_bar()
 travelBar <- travelBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 travelBar
+
