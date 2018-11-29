@@ -8,8 +8,6 @@
 #import necessary libraries
 library(ggplot2)
 
-satisfactionSurvey <- read.csv('/Users/Ryan/Dropbox/college/7_Semester_V/IST_687/group_project/cleanData.csv')
-
 
 
 #satisfactionSurvey$Airline.Status <- as.factor(satisfactionSurvey$Airline.Status)
