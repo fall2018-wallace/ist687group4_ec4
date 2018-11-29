@@ -36,7 +36,10 @@ statusHist <- hist(satisfactionSurvey$Airline.Status)
 #R-Squared: .004561
 #Slope: <2e-16
 
-
+#otherFlightsBar <- ggplot(satisfactionSurvey,aes(x=X..of.Flight.with.other.Airlines, y=Satisfaction, group=1))
+#otherFlightsBar <- otherFlightsBar + geom_col()
+#otherFlightsBar <- otherFlightsBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+#otherFlightsBar
 otherFlightsHist <- hist(satisfactionSurvey$X..of.Flight.with.other.Airlines)
 #Satisfaction climbs up until 10 flights with other airlines and then hits a very sharp cutoff
 
@@ -50,7 +53,11 @@ otherFlightsHist <- hist(satisfactionSurvey$X..of.Flight.with.other.Airlines)
 #R-Squared: 
 #Slope: 
 
-codesHist <- hist(satisfactionSurvey$Airline.Code)
+#codesBar <- ggplot(satisfactionSurvey,aes(x=Airline.Code, y=Satisfaction, group=1))
+#codesBar <- codesBar + geom_col()
+#codesBar <- codesBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+#codesBar
+codesHist<- hist(satisfactionSurvey$Airline.Code)
 #WN has by far the highest satisfaction followed by DL, EV, OO, and AA at about half the amount
 
 
@@ -63,11 +70,11 @@ codesHist <- hist(satisfactionSurvey$Airline.Code)
 #R-Squared: .007647
 #Slope: 
 
-cardsBar <- ggplot(satisfactionSurvey,aes(x=No..of.other.Loyalty.Cards, y=Satisfaction, group=1))
-cardsBar <- cardsBar + geom_col()
-cardsBar <- cardsBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-cardsBar
-hist(satisfactionSurvey$No..of.other.Loyalty.Cards)
+#cardsBar <- ggplot(satisfactionSurvey,aes(x=No..of.other.Loyalty.Cards, y=Satisfaction, group=1))
+#cardsBar <- cardsBar + geom_col()
+#cardsBar <- cardsBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+#cardsBar
+cardsHist <- hist(satisfactionSurvey$No..of.other.Loyalty.Cards)
 #No loyalty cards has significantly more satisfaction, steep dropoff afterwords
 
 
@@ -79,11 +86,11 @@ hist(satisfactionSurvey$No..of.other.Loyalty.Cards)
 #R-Squared: 
 #Slope:
 
-classBar <- ggplot(satisfactionSurvey,aes(x=Class, y=Satisfaction, group=1))
-classBar <- classBar + geom_col()
-classBar <- classBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-classBar
-hist(satisfactionSurvey$Class)
+#classBar <- ggplot(satisfactionSurvey,aes(x=Class, y=Satisfaction, group=1))
+#classBar <- classBar + geom_col()
+#classBar <- classBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+#classBar
+classHist <- hist(satisfactionSurvey$Class)
 #Economy class has far and away the most satisfaction
 
 
@@ -95,9 +102,9 @@ hist(satisfactionSurvey$Class)
 #R-Squared: 
 #Slope: 
 
-travelBar <- ggplot(satisfactionSurvey,aes(x=Type.of.Travel, y=Satisfaction, group=1))
-travelBar <- travelBar + geom_col()
-travelBar <- travelBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-travelBar
-hist(satisfactionSurvey$Type.of.Travel)
+#travelBar <- ggplot(satisfactionSurvey,aes(x=Type.of.Travel, y=Satisfaction, group=1))
+#travelBar <- travelBar + geom_col()
+#travelBar <- travelBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+#travelBar
+travelHist <- hist(satisfactionSurvey$Type.of.Travel)
 #Business travel corresponds with significantly more satisfaction
