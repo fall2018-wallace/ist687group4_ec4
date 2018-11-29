@@ -4,7 +4,7 @@
 
 #import necessary libraries
 library(jsonlite)
-library(dplyr)
+#library(dplyr)
 library(kernlab)
 
 cleanData <- ssClean
@@ -13,7 +13,7 @@ cleanData <- ssClean
 cleanData$binSat <- ifelse(cleanData$Satisfaction>3,1,0)
 cleanData$binSat <- as.factor(cleanData$binSat)
 
-sampleData <- cleanData[sample(nrow(cleanData),100000, replace=FALSE),]
+sampleData <- cleanData[sample(nrow(cleanData),10, replace=FALSE),]
 
 #randomize the order of the data to allow for random sampling of the thirds selected
 table(sampleData$binSat)
