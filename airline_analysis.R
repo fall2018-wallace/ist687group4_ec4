@@ -20,7 +20,7 @@ satisfactionSurvey$Satisfaction <- as.numeric(satisfactionSurvey$Satisfaction)
 #Slope: <2e-16
 
 satisfactionSurvey$Airline.Status <- as.factor(satisfactionSurvey$Airline.Status)
-statusBar <- ggplot(satisfactionSurvey,aes(Airline.Status), y=Satisfaction, group=1)
+statusBar <- ggplot(satisfactionSurvey,aes(x=Airline.Status, y=Satisfaction, group=1))
 statusBar <- statusBar + geom_col()
 statusBar <- statusBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 statusBar
