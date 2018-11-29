@@ -526,7 +526,7 @@
                 }
             ],
             "source": "airline_analysis.R",
-            "target": "codesHist.png"
+            "target": "codesBar.png"
         }
     ],
     "nodes": [
@@ -537,7 +537,7 @@
             "name": "otherFlightsHist.png"
         },
         {
-            "name": "codesHist.png"
+            "name": "codesBar.png"
         },
         {
             "name": "cardsHist.png"
@@ -738,6 +738,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-11-29 18:14:00",
+    "updated_at": "2018-11-29 18:14:14",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
