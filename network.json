@@ -12,66 +12,6 @@
         {
             "ports": [
                 {
-                    "output": "statusBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "statusBar.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "otherFlightsBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "otherFlightsBar.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "codesBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "codesBar.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "cardsBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "cardsBar.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "classBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "classBar.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "travelBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "travelBar.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "barMean",
                     "type": "png"
                 }
@@ -521,11 +461,71 @@
         {
             "ports": [
                 {
-                    "input": "satisfactionSurvey",
-                    "type": "r_obj"
+                    "output": "otherFlightsHist",
+                    "type": "png"
                 }
             ],
-            "source": "cleanData.R",
+            "source": "airline_analysis.R",
+            "target": "otherFlightsHist.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cardsHist",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "cardsHist.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "statusBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "statusBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "travelBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "travelBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "classBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "classBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "codesBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "codesBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
             "target": "airline_analysis.R"
         }
     ],
@@ -534,16 +534,13 @@
             "name": "satisfactionSurvey.csv"
         },
         {
-            "name": "statusBar.png"
-        },
-        {
-            "name": "otherFlightsBar.png"
+            "name": "otherFlightsHist.png"
         },
         {
             "name": "codesBar.png"
         },
         {
-            "name": "cardsBar.png"
+            "name": "cardsHist.png"
         },
         {
             "name": "classBar.png"
@@ -627,12 +624,6 @@
             "assigned_to": "rhfrench",
             "desc": "Discritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
             "name": "discritizingPart1.R",
-            "task_status": "completed"
-        },
-        {
-            "assigned_to": "rhfrench",
-            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
-            "name": "airline_analysis.R",
             "task_status": "completed"
         },
         {
@@ -736,8 +727,17 @@
             "desc": "Factorize variables",
             "name": "dSatisfactionSurveyPart4.R",
             "task_status": "completed"
+        },
+        {
+            "name": "statusBar.png"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
+            "name": "airline_analysis.R",
+            "task_status": "completed"
         }
     ],
-    "updated_at": "2018-11-29 16:49:41",
+    "updated_at": "2018-11-29 18:40:59",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
