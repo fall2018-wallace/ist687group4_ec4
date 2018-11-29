@@ -39,7 +39,7 @@ svmOutput
 
 
 #examine the support vectors
-hist(alpha(svmOutput)[[1]], main="Support Vector Histogram with C=250", xlab="Support Vector Values")
+svmHist <- hist(alpha(svmOutput)[[1]], main="Support Vector Histogram with C=500", xlab="Support Vector Values")
 
 #test the created model against the test data set
 svmPred <- predict(svmOutput, testData, type='votes')
