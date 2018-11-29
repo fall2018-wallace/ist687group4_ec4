@@ -8,6 +8,8 @@
 #import necessary libraries
 library(ggplot2)
 
+satisfactionSurvey <- satisfactionSurvey
+
 satisfactionSurvey$Satisfaction <- as.numeric(satisfactionSurvey$Satisfaction)
 #Airline.Status
 #satisfactionSurvey$Airline.Status <- as.numeric(as.factor(satisfactionSurvey$Airline.Status))
