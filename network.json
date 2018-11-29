@@ -12,16 +12,6 @@
         {
             "ports": [
                 {
-                    "input": "satisfactionSurvey",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "airline_analysis.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "statusBar",
                     "type": "png"
                 }
@@ -531,12 +521,12 @@
         {
             "ports": [
                 {
-                    "output": "tree.plot",
-                    "type": "png"
+                    "input": "satisfactionSurvey",
+                    "type": "r_obj"
                 }
             ],
-            "source": "treeModel.R",
-            "target": "DecisionTree.png"
+            "source": "cleanData.R",
+            "target": "airline_analysis.R"
         }
     ],
     "nodes": [
@@ -632,9 +622,6 @@
             "desc": "Here we build our decision tree model and make inference using the same.",
             "name": "treeModel.R",
             "task_status": "in progress"
-        },
-        {
-            "name": "DecisionTree.png"
         },
         {
             "assigned_to": "rhfrench",
@@ -751,6 +738,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-11-27 21:12:41",
+    "updated_at": "2018-11-29 16:49:41",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
