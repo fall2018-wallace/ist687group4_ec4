@@ -4,8 +4,9 @@
 
 #import necessary libraries
 library(jsonlite)
-#library(dplyr)
+library(dplyr)
 library(kernlab)
+
 
 
 #create binary satisfaction variable
