@@ -15,12 +15,12 @@ itemFrequencyPlot(dSatisfactionX,cex.names=0.4)
 #Then we use arules to discover patterns
 #Run the apriori command to try and predict happy customers
 rules <- apriori(dSatisfactionX,parameter = list(support=0.2,confidence=0.6),appearance = list(default="lhs",rhs="binarySat=High"))
-summary(rules)
-inspect(head(rules,5))  
+#summary(rules)
+#inspect(head(rules,5))  
 
 #Rank and comment
 rules.new <- rules[order(-quality(rules)$lift),]
-inspect(head(rules.new,5))  
+#inspect(head(rules.new,5))  
 
  
 #lhs                                 rhs                support confidence     lift count
