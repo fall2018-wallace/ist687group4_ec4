@@ -516,7 +516,7 @@
                 }
             ],
             "source": "airline_analysis.R",
-            "target": "cardsBar.png"
+            "target": "cardsHist.png"
         },
         {
             "ports": [
@@ -540,7 +540,7 @@
             "name": "codesBar.png"
         },
         {
-            "name": "cardsBar.png"
+            "name": "cardsHist.png"
         },
         {
             "name": "classBar.png"
@@ -738,6 +738,6 @@
             "name": "statusHist.png"
         }
     ],
-    "updated_at": "2018-11-29 17:18:33",
+    "updated_at": "2018-11-29 17:18:39",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
