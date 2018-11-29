@@ -8,7 +8,7 @@ dSatisfactionX <- as(dSatisfactionCategory,"transactions")
 
 
 #Here we use the inspect( ), itemFrequency( ), and itemFrequencyPlot( ) commands to explore the contents of dSatisfactionX
-#inspect(dSatisfactionX)
+inspect(dSatisfactionX)
 itemFrequency(dSatisfactionX)
 itemFrequencyPlot(dSatisfactionX,cex.names=0.4)
 
