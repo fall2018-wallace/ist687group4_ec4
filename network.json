@@ -527,6 +527,16 @@
             ],
             "source": "cleanData.R",
             "target": "airline_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "statusHist",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "statusHist.png"
         }
     ],
     "nodes": [
@@ -741,6 +751,6 @@
             "name": "statusHist.png"
         }
     ],
-    "updated_at": "2018-11-29 17:05:01",
+    "updated_at": "2018-11-29 17:05:28",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
