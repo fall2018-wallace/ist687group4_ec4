@@ -628,12 +628,6 @@
         },
         {
             "assigned_to": "rhfrench",
-            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
-            "name": "airline_analysis.R",
-            "task_status": "completed"
-        },
-        {
-            "assigned_to": "rhfrench",
             "desc": "Utilizing SVM to model the data and look for insights",
             "name": "svmModeling.R",
             "task_status": "validating"
@@ -736,8 +730,14 @@
         },
         {
             "name": "statusBar.png"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
+            "name": "airline_analysis.R",
+            "task_status": "completed"
         }
     ],
-    "updated_at": "2018-11-29 18:00:21",
+    "updated_at": "2018-11-29 18:01:45",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
