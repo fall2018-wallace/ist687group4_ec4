@@ -36,7 +36,7 @@ classBar <- classBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 classBar
 
 
-travelBar <- ggplot(satisfactionSurvey,aes(x=Type.of.Travel, y=Satisfaction, group=1))
-travelBar <- travelBar + geom_col()
+travelBar <- ggplot(satisfactionSurvey,aes(x=Type.of.Travel)) + geom_bar()
 travelBar <- travelBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 travelBar
+
