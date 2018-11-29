@@ -36,11 +36,8 @@ statusHist <- hist(satisfactionSurvey$Airline.Status)
 #R-Squared: .004561
 #Slope: <2e-16
 
-otherFlightsBar <- ggplot(satisfactionSurvey,aes(x=X..of.Flight.with.other.Airlines, y=Satisfaction, group=1))
-otherFlightsBar <- otherFlightsBar + geom_col()
-otherFlightsBar <- otherFlightsBar + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-otherFlightsBar
-otherFlightsBar <- hist(satisfactionSurvey$X..of.Flight.with.other.Airlines)
+
+otherFlightsHist <- hist(satisfactionSurvey$X..of.Flight.with.other.Airlines)
 #Satisfaction climbs up until 10 flights with other airlines and then hits a very sharp cutoff
 
 
@@ -55,6 +52,8 @@ otherFlightsBar <- hist(satisfactionSurvey$X..of.Flight.with.other.Airlines)
 
 codesHist <- hist(satisfactionSurvey$Airline.Code)
 #WN has by far the highest satisfaction followed by DL, EV, OO, and AA at about half the amount
+
+
 
 #No..of.other.Loyalty.Cards
 #satisfactionSurvey$Airline.Code <- as.numeric(as.factor(satisfactionSurvey$No..of.other.Loyalty.Cards))
