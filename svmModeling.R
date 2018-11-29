@@ -7,7 +7,7 @@ library(jsonlite)
 library(dplyr)
 library(kernlab)
 
-
+cleanData <- ssClean
 
 #create binary satisfaction variable
 cleanData$binSat <- ifelse(cleanData$Satisfaction>3,1,0)
@@ -29,13 +29,12 @@ trainData <- sampleData[randIndex[1:cutPoint2_3],]
 testData <- sampleData[randIndex[(cutPoint2_3):dim(sampleData)[1]],]
 
 #create the SVM expression with the following parameters
-
-svmOutput <- ksvm(binSat ~ Airline.Status + Age + Gender + Price.Sensitivity + No.of.Flights.p.a. +
-                  Type.of.Travel + Class + Departure.Delay.in.Minutes + 
-                  Flight.Distance, 
+#create the SVM expression with the following parameters
+svmOutput <- ksvm(binSat ~ Airline.Status + Age + Gender + Price.Sensitivity + No.of.Flights.p.a. + 
+                    Type.of.Travel + Class + Departure.Delay.in.Minutes + Arrival.Delay.in.Minutes + 
+                    Flight.time.in.minutes + Flight.Distance, 
                   data=sampleData, kernel="rbfdot", C=500, cross=3, set.seed=1, prob.model=TRUE)
 svmOutput
-
 
 
 #examine the support vectors
