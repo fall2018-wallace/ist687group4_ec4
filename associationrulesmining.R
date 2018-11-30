@@ -18,6 +18,9 @@ rules <- apriori(dSatisfactionX,parameter = list(support=0.3,confidence=0.5),app
 summary(rules)
 inspect(rules)
 
+#Rank and comment
+rules.new <- rules[order(-quality(rules)$lift),]
+
 
 
  #lhs                                                       rhs             support   confidence lift    
