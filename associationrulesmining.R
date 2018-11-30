@@ -14,7 +14,7 @@ itemFrequencyPlot(dSatisfactionX,cex.names=0.4)
 
 #Then we use arules to discover patterns
 #Run the apriori command to try and predict happy customers
-rules <- apriori(dSatisfactionX,parameter = list(support=0.3,confidence=0.5),appearance = list(default="lhs",rhs="binarySat=High"))
+rules <- apriori(dSatisfactionX,parameter = list(support=0.3,confidence=0.5),appearance = list(default="lhs",rhs="binarySat=Low"))
 summary(rules)
 inspect(rules)
 
