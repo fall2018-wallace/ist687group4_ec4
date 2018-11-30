@@ -2,7 +2,7 @@
 library(arules) 
 library(arulesViz)
 library(methods)
-library(grid)
+library(Matrix)
 #Coerce the satisfaction data frame into a sparse transactions matrix 
 dSatisfactionCategory[] <- lapply(dSatisfactionCategory, factor)
 dSatisfactionX <- as(dSatisfactionCategory,"transactions")
