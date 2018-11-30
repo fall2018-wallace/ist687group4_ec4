@@ -775,8 +775,11 @@
         },
         {
             "name": "barFlightTime.png"
+        },
+        {
+            "name": "barFlightDistance.png"
         }
     ],
-    "updated_at": "2018-11-30 19:59:52",
+    "updated_at": "2018-11-30 20:00:04",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
