@@ -1,10 +1,4 @@
 
-# Analyze correlation between satisfaction and each of the following: Day of Month, Flight date, Flight time in minutes, Flight Distance. 
-# Create an appropriate visualization to show any correlations.
-
-myData <- 'C:/Users/rlosurdo/Desktop/SU/IST 687/Project/numberizedSatisfactionSurvey.csv'
-raw_data <- read.csv(myData)
-View(raw_data)
 
 library(dplyr)
 library(ggplot2)
