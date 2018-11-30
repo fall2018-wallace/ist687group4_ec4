@@ -23,20 +23,9 @@ rules.new <- rules[order(-quality(rules)$lift),]
 inspect(head(rules.new,5))  
 print('done')
 
-#lhs                                 rhs                support confidence     lift count
-#[1] {dArrDelay=Low,                                                                         
-#Type.of.Travel=Business travel} => {binarySat=High} 0.2596739  0.7597252 1.488082 33728
-#[2] {dEating=Average,                                                                       
-#dArrDelay=Low,                                                                         
-#Type.of.Travel=Business travel} => {binarySat=High} 0.2596739  0.7597252 1.488082 33728
-#[3] {dDepDelay=Low,                                                                         
-#dArrDelay=Low,                                                                         
-#Type.of.Travel=Business travel} => {binarySat=High} 0.2111005  0.7564906 1.481746 27419
-#[4] {dEating=Average,                                                                       
-#dDepDelay=Low,                                                                         
-#dArrDelay=Low,                                                                         
-#Type.of.Travel=Business travel} => {binarySat=High} 0.2111005  0.7564906 1.481746 27419
-#[5] {dArrDelay=Low,                                                                         
-#Type.of.Travel=Business travel,                                                        
-#Class=Eco}                      => {binarySat=High} 0.2090987  0.7545215 1.477889 27159
-> 
+ #lhs                                                       rhs             support   confidence lift    
+#[1] {Airline.Status=Blue,Class=Eco}                        => {binarySat=Low} 0.3263631 0.5885456  1.202439
+#[2] {dEating=Average,Airline.Status=Blue,Class=Eco}        => {binarySat=Low} 0.3263631 0.5885456  1.202439
+#[3] {dDayOfMonth=High,Airline.Status=Blue}                 => {binarySat=Low} 0.3081086 0.5840570  1.193268
+#[4] {dEating=Average,dDayOfMonth=High,Airline.Status=Blue} => {binarySat=Low} 0.3081086 0.5840570  1.193268
+#[5] {Airline.Status=Blue}                                  => {binarySat=Low} 0.3991500 0.5831131  1.191340
