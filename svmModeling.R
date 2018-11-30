@@ -14,10 +14,12 @@ cleanData$binSat <- ifelse(cleanData$Satisfaction>3,1,0)
 cleanData$binSat <- as.factor(cleanData$binSat)
 cleanData <- na.omit(cleanData)
 
-sampleData <- cleanData[sample(nrow(cleanData),1000, replace=FALSE),]
+set.seed(123) #set seed to ensure consistent results
+sampleData <- cleanData[sample(nrow(cleanData),10000, replace=FALSE),]
 
 #randomize the order of the data to allow for random sampling of the thirds selected
 table(sampleData$binSat)
+set.seed(123) #set seed to ensure consistent results
 randIndex <- sample(1:dim(sampleData)[1])
 
 #create a 2/3 cut point by dividing the data into thirds
@@ -33,7 +35,7 @@ testData <- sampleData[randIndex[(cutPoint2_3):dim(sampleData)[1]],]
 svmOutput <- ksvm(binSat ~ Airline.Status + Age + Gender + Price.Sensitivity + No.of.Flights.p.a. + 
                     Type.of.Travel + Class + Departure.Delay.in.Minutes + Arrival.Delay.in.Minutes + 
                     Flight.time.in.minutes + Flight.Distance, 
-                  data=sampleData, kernel="rbfdot", C=500, cross=3, set.seed=1, prob.model=TRUE)
+                  data=sampleData, kernel="rbfdot", C=500, cross=10, set.seed=123, prob.model=TRUE)
 svmOutput
 
 
