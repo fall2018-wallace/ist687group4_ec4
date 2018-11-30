@@ -20,6 +20,8 @@ inspect(rules)
 
 #Rank and comment
 rules.new <- rules[order(-quality(rules)$lift),]
+inspect(head(rules.new,5))  
+
 
 
 
