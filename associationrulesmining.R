@@ -21,7 +21,7 @@ inspect(rules)
 #Rank and comment
 rules.new <- rules[order(-quality(rules)$lift),]
 inspect(head(rules.new,5))  
-print('done')
+
 
  #lhs                                                       rhs             support   confidence lift    
 #[1] {Airline.Status=Blue,Class=Eco}                        => {binarySat=Low} 0.3263631 0.5885456  1.202439
