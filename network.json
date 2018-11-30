@@ -762,8 +762,11 @@
         },
         {
             "name": "BarFlightDate.png"
+        },
+        {
+            "name": "barFlightTime.png"
         }
     ],
-    "updated_at": "2018-11-30 19:59:08",
+    "updated_at": "2018-11-30 19:59:38",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
