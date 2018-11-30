@@ -12,16 +12,6 @@
         {
             "ports": [
                 {
-                    "output": "barMean",
-                    "type": "png"
-                }
-            ],
-            "source": "flight_information.R",
-            "target": "barMeanDayofMonth.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "raw_data",
                     "type": "csv"
                 }
@@ -537,6 +527,16 @@
             ],
             "source": "svmModeling.R",
             "target": "svmHist.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "barMeanDayOfMonth",
+                    "type": "png"
+                }
+            ],
+            "source": "flight_information.R",
+            "target": "barMeanDayofMonth.png"
         }
     ],
     "nodes": [
@@ -751,6 +751,6 @@
             "name": "svmHist.png"
         }
     ],
-    "updated_at": "2018-11-29 19:35:18",
+    "updated_at": "2018-11-30 19:58:24",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
