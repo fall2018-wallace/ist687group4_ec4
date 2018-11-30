@@ -537,6 +537,16 @@
             ],
             "source": "flight_information.R",
             "target": "barMeanDayofMonth.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "barMeanFlightDate",
+                    "type": "png"
+                }
+            ],
+            "source": "flight_information.R",
+            "target": "BarFlightDate.png"
         }
     ],
     "nodes": [
@@ -754,6 +764,6 @@
             "name": "BarFlightDate.png"
         }
     ],
-    "updated_at": "2018-11-30 19:58:52",
+    "updated_at": "2018-11-30 19:59:08",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
