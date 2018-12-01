@@ -567,6 +567,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "flight_information.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "tree.plot",
+                    "type": "png"
+                }
+            ],
+            "source": "treeModel.R",
+            "target": "DecisionTree.png"
         }
     ],
     "nodes": [
@@ -793,6 +803,6 @@
             "name": "DecisionTree.png"
         }
     ],
-    "updated_at": "2018-12-01 18:25:40",
+    "updated_at": "2018-12-01 18:25:56",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
