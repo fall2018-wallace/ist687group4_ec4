@@ -66,7 +66,7 @@ Flight.minute.bins <- defineMinuteBuckets(satisfactionSurvey$Flight.time.in.minu
 Flight.minute.bins # There are some NA values which are coming up as "Error" (uncategorized)
 
 # Create a new column within the survey data with the new minute buckets
-raw_data$Flight.minute.bins <- Flight.minute.bins[,1]
+satisfactionSurvey$Flight.minute.bins <- Flight.minute.bins[,1]
 
 # Group by week, report average satisfaction per group, coerce vector into df
 mean <- data.frame(tapply(as.numeric(satisfactionSurvey$Satisfaction), satisfactionSurvey$Flight.minute.bins, mean, na.rm = TRUE))
@@ -101,7 +101,7 @@ Flight.distance.bins <- defineMileBuckets(satisfactionSurvey$Flight.Distance)
 Flight.distance.bins
 
 # Create a new column within the survey data with the new minute buckets
-raw_data$Flight.distance.bins <- Flight.distance.bins[,1]
+satisfactionSurvey$Flight.distance.bins <- Flight.distance.bins[,1]
 
 # Group by week, report average satisfaction per group, coerce vector into df
 mean <- data.frame(tapply(as.numeric(satisfactionSurvey$Satisfaction), satisfactionSurvey$Flight.distance.bins, mean, na.rm = TRUE))
