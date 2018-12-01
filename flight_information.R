@@ -4,12 +4,12 @@ library(dplyr)
 library(ggplot2)
 
 # Group by day of the month, report average satisfaction per group, coerce vector into df
-mean <- data.frame(tapply(as.numeric(raw_data$Satisfaction), raw_data$Day.of.Month, mean, na.rm = TRUE))
+mean <- data.frame(tapply(as.numeric(satisfactionSurvey$Satisfaction), satisfactionSurvey$Day.of.Month, mean, na.rm = TRUE))
 # Add titles, columns to df necessary for plotting
 colnames(mean) <- "Satisfaction"
-mean$Day.of.Month <- rownames(mean)
+mean$DayOfMonth <- rownames(mean)
 # Plot results
-barMeanDayOfMonth <- ggplot(mean, aes(x=Day.of.Month, y=Satisfaction, group = 1)) + geom_col() 
+barMeanDayOfMonth <- ggplot(mean, aes(x=DayOfMonth, y=Satisfaction, group = 1)) + geom_col() 
 
 # Create a function to put the flight dates into buckets of one week
 defineWeekBuckets <- function(inputVector) 
@@ -32,14 +32,14 @@ defineWeekBuckets <- function(inputVector)
 }
 
 # Store the function results in a variable and validate the results
-Flight.date.bins <- defineWeekBuckets(raw_data$Flight.date)
+Flight.date.bins <- defineWeekBuckets(satisfactionSurvey$Flight.date)
 Flight.date.bins
 
 # Create a new column within the survey data with the new week buckets
-raw_data$Flight.date.bins <- Flight.date.bins[,1]
+satisfactionSurvey$Flight.date.bins <- Flight.date.bins[,1]
 
 # Group by week, report average satisfaction per group, coerce vector into df
-mean <- data.frame(tapply(as.numeric(raw_data$Satisfaction), raw_data$Flight.date.bins, mean, na.rm = TRUE))
+mean <- data.frame(tapply(as.numeric(satisfactionSurvey$Satisfaction), satisfactionSurvey$Flight.date.bins, mean, na.rm = TRUE))
 # Add titles, columns to df necessary for plotting
 colnames(mean) <- "Satisfaction"
 mean$WeekEndDate <- rownames(mean)
@@ -62,14 +62,14 @@ defineMinuteBuckets <- function(inputVector)
 }
 
 # Store the function results in a variable and validate the results
-Flight.minute.bins <- defineMinuteBuckets(raw_data$Flight.time.in.minutes)
+Flight.minute.bins <- defineMinuteBuckets(satisfactionSurvey$Flight.time.in.minutes)
 Flight.minute.bins # There are some NA values which are coming up as "Error" (uncategorized)
 
 # Create a new column within the survey data with the new minute buckets
 raw_data$Flight.minute.bins <- Flight.minute.bins[,1]
 
 # Group by week, report average satisfaction per group, coerce vector into df
-mean <- data.frame(tapply(as.numeric(raw_data$Satisfaction), raw_data$Flight.minute.bins, mean, na.rm = TRUE))
+mean <- data.frame(tapply(as.numeric(satisfactionSurvey$Satisfaction), satisfactionSurvey$Flight.minute.bins, mean, na.rm = TRUE))
 # Add titles, columns to df necessary for plotting
 colnames(mean) <- "Satisfaction"
 mean$MinuteRange <- rownames(mean)
@@ -97,14 +97,14 @@ defineMileBuckets <- function(inputVector)
 }
 
 # Store the function results in a variable and validate the results
-Flight.distance.bins <- defineMileBuckets(raw_data$Flight.Distance)
+Flight.distance.bins <- defineMileBuckets(satisfactionSurvey$Flight.Distance)
 Flight.distance.bins
 
 # Create a new column within the survey data with the new minute buckets
 raw_data$Flight.distance.bins <- Flight.distance.bins[,1]
 
 # Group by week, report average satisfaction per group, coerce vector into df
-mean <- data.frame(tapply(as.numeric(raw_data$Satisfaction), raw_data$Flight.distance.bins, mean, na.rm = TRUE))
+mean <- data.frame(tapply(as.numeric(satisfactionSurvey$Satisfaction), satisfactionSurvey$Flight.distance.bins, mean, na.rm = TRUE))
 # Add titles, columns to df necessary for plotting
 colnames(mean) <- "Satisfaction"
 mean$DistanceRange <- rownames(mean)
