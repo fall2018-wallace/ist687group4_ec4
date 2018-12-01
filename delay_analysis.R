@@ -84,7 +84,7 @@ unique(delay.df$Flight.cancelled)
 #So we see flights cancelled is a categorical variable taking values 'YES' and 'NO'
 #So we look at the proportion of delayed flights by transforming our variable
 #into a dummy variable which can be further used for modelling as well
-
+table(delay.df$Flight.cancelled)
 delay.df['Flight.cancelled.dummy'] <- as.numeric(delay.df$Flight.cancelled=='Yes')
 print(paste('Number of cancelled flights=',sum(delay.df$Flight.cancelled.dummy==1)))
 #Thus there are around 2000 flights that have been cancelled
