@@ -11,6 +11,7 @@ dSatisfactionX <- as(dSatisfactionCategory,"transactions")
 #inspect(dSatisfactionX)
 itemFrequency(dSatisfactionX)
 itemFrequencyPlot1 <- itemFrequencyPlot(dSatisfactionX,cex.names=0.4)
+itemFrequencyPlot1
 
 #Then we use arules to discover patterns
 #Run the apriori command to try and predict happy customers
