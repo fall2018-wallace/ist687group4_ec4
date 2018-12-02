@@ -66,7 +66,7 @@ dfBlankCounts
 # Flight Time, but that set these values to zero where they are blank and where Flight 
 # Cancelled is "Yes"
 
-satisfactionSurvey$Departure.Delay.in.Minutes.0 <- ifelse (is.na(satisfactionSurveyn$Departure.Delay.in.Minutes)&satisfactionSurvey$Flight.cancelled=="Yes", 0, satisfactionSurvey$Departure.Delay.in.Minutes)
+satisfactionSurvey$Departure.Delay.in.Minutes.0 <- ifelse (is.na(satisfactionSurvey$Departure.Delay.in.Minutes)&satisfactionSurvey$Flight.cancelled=="Yes", 0, satisfactionSurvey$Departure.Delay.in.Minutes)
 satisfactionSurvey$Arrival.Delay.in.Minutes.0 <- ifelse (is.na(satisfactionSurvey$Arrival.Delay.in.Minutes)&satisfactionSurvey$Flight.cancelled=="Yes", 0, satisfactionSurvey$Arrival.Delay.in.Minutes)
 satisfactionSurvey$Flight.time.in.minutes.0 <- ifelse (is.na(satisfactionSurvey$Flight.time.in.minutes)&satisfactionSurvey$Flight.cancelled=="Yes", 0, satisfactionSurvey$Flight.time.in.minutes)
 
