@@ -14,29 +14,23 @@ itemFrequencyPlot(dSatisfactionX,cex.names=0.4)
 
 #Then we use arules to discover patterns
 #Run the apriori command to try and predict happy customers
-rules <- apriori(dSatisfactionX,parameter = list(support=0.2,confidence=0.6),appearance = list(default="lhs",rhs="binarySat=High"))
+rules <- apriori(dSatisfactionX,parameter = list(support=0.3,confidence=0.5),appearance = list(default="lhs",rhs="binarySat=Low"))
 summary(rules)
 inspect(rules)
 
 #Rank and comment
 rules.new <- rules[order(-quality(rules)$lift),]
 inspect(head(rules.new,5))  
-print('done')
- 
-#lhs                                 rhs                support confidence     lift count
-#[1] {dArrDelay=Low,                                                                         
-#Type.of.Travel=Business travel} => {binarySat=High} 0.2596739  0.7597252 1.488082 33728
-#[2] {dEating=Average,                                                                       
-#dArrDelay=Low,                                                                         
-#Type.of.Travel=Business travel} => {binarySat=High} 0.2596739  0.7597252 1.488082 33728
-#[3] {dDepDelay=Low,                                                                         
-#dArrDelay=Low,                                                                         
-#Type.of.Travel=Business travel} => {binarySat=High} 0.2111005  0.7564906 1.481746 27419
-#[4] {dEating=Average,                                                                       
-#dDepDelay=Low,                                                                         
-#dArrDelay=Low,                                                                         
-#Type.of.Travel=Business travel} => {binarySat=High} 0.2111005  0.7564906 1.481746 27419
-#[5] {dArrDelay=Low,                                                                         
-#Type.of.Travel=Business travel,                                                        
-#Class=Eco}                      => {binarySat=High} 0.2090987  0.7545215 1.477889 27159
+rules.new.1<-head(rules.new,1)
+plot(rules.new.1,method="graph",main="Graph for 3 rules")
+rules.new.2<-rules.new[2]
+plot(rules.new.2,method="graph",main="Graph for 4 rules")
 
+
+
+ #lhs                                                           rhs            support   confidence lift    
+#[1] {Airline.Status=Blue,Class=Eco}                        => {binarySat=Low} 0.3263631 0.5885456  1.202439
+#[2] {dEating=Average,Airline.Status=Blue,Class=Eco}        => {binarySat=Low} 0.3263631 0.5885456  1.202439
+#[3] {dDayOfMonth=High,Airline.Status=Blue}                 => {binarySat=Low} 0.3081086 0.5840570  1.193268
+#[4] {dEating=Average,dDayOfMonth=High,Airline.Status=Blue} => {binarySat=Low} 0.3081086 0.5840570  1.193268
+#[5] {Airline.Status=Blue}                                  => {binarySat=Low} 0.3991500 0.5831131  1.191340
