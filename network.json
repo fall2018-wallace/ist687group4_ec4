@@ -566,7 +566,7 @@
                 }
             ],
             "source": "associationrulesmining.R",
-            "target": "itemFrequencyPlot.png"
+            "target": "itemFrequencyPlot1.png"
         }
     ],
     "nodes": [
@@ -649,7 +649,7 @@
             "name": "discretizeddata.csv"
         },
         {
-            "name": "itemFrequencyPlot.png"
+            "name": "itemFrequencyPlot1.png"
         },
         {
             "name": "modeldata.csv"
@@ -790,6 +790,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-02 15:50:38",
+    "updated_at": "2018-12-02 16:08:05",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
