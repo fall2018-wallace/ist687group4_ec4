@@ -21,7 +21,10 @@ inspect(rules)
 #Rank and comment
 rules.new <- rules[order(-quality(rules)$lift),]
 inspect(head(rules.new,5))  
-
+rules.new.1<-head(rules.new,1)
+plot(rules.new.1,method="graph",main="Graph for 3 rules")
+rules.new.2<-rules.new[2]
+plot(rules.new.2,method="graph",main="Graph for 4 rules")
 
 
 
