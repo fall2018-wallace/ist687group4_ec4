@@ -18,7 +18,7 @@ nrow(satisfactionSurvey[(satisfactionSurvey$Satisfaction=="4.00.2.00"|satisfacti
 nrow(satisfactionSurvey)
 
 # Display the number of non-standard rows as a percentage of total rows
-nrow(satisfactionSurvey[(satisfactionSurvey$Satisfaction=="4.00.2.00"|satisfactionSurvey$Satisfaction=="4.00.5"),]) / nrow(ssRaw) * 100
+nrow(satisfactionSurvey[(satisfactionSurvey$Satisfaction=="4.00.2.00"|satisfactionSurvey$Satisfaction=="4.00.5"),]) / nrow(satisfactionSurvey) * 100
 
 # Taking into account the fact that these numbers are unable to be analyzed as entered and
 # that we can not be sure of what numbers they were intended to be, we now also see that 
