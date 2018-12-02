@@ -192,16 +192,6 @@
         {
             "ports": [
                 {
-                    "input": "ssRaw",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "cleanData.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "dfBlankCounts",
                     "type": "txt"
                 }
@@ -212,33 +202,12 @@
         {
             "ports": [
                 {
-                    "output": "ssClean",
-                    "type": "csv"
-                }
-            ],
-            "source": "numberizeSatisfaction.R",
-            "target": "numberizedSatisfactionSurvey.csv"
-        },
-        {
-            "ports": [
-                {
                     "output": "histSat",
                     "type": "png"
                 }
             ],
             "source": "numberizeSatisfaction.R",
             "target": "histSat.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "ssClean",
-                    "output": "ssClean",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "numberizeSatisfaction.R"
         },
         {
             "ports": [
@@ -327,16 +296,6 @@
         {
             "ports": [
                 {
-                    "output": "ssClean",
-                    "type": "csv"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "cleanData.csv"
-        },
-        {
-            "ports": [
-                {
                     "output": "dSatisfactionCategory",
                     "type": "csv"
                 }
@@ -363,27 +322,6 @@
             ],
             "source": "numberizedSatisfactionSurvey.csv",
             "target": "FeatureEngg.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "ssClean",
-                    "output": "ssClean",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "svmModeling.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "itemFrequencyPlot",
-                    "type": "png"
-                }
-            ],
-            "source": "associationrulesmining.R",
-            "target": "itemFrequencyPlot.png"
         },
         {
             "ports": [
@@ -567,6 +505,58 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "flight_information.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "cleanData.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "output": "satisfactionSurvey",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "numberizeSatisfaction.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "output": "satisfactionSurvey",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "svmModeling.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizeSatisfaction.R",
+            "target": "numberizedSatisfactionSurvey.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "cleanData.csv"
         }
     ],
     "nodes": [
@@ -647,9 +637,6 @@
         },
         {
             "name": "discretizeddata.csv"
-        },
-        {
-            "name": "itemFrequencyPlot.png"
         },
         {
             "name": "modeldata.csv"
@@ -790,6 +777,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-01 17:46:03",
+    "updated_at": "2018-12-02 20:54:03",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
