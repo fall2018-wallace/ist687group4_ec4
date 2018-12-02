@@ -378,16 +378,6 @@
         {
             "ports": [
                 {
-                    "output": "itemFrequencyPlot",
-                    "type": "png"
-                }
-            ],
-            "source": "associationrulesmining.R",
-            "target": "itemFrequencyPlot.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "df",
                     "output": "df",
                     "type": "r_obj"
@@ -567,6 +557,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "flight_information.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "itemFrequencyPlot1",
+                    "type": "png"
+                }
+            ],
+            "source": "associationrulesmining.R",
+            "target": "itemFrequencyPlot.png"
         }
     ],
     "nodes": [
@@ -790,6 +790,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-01 18:31:46",
+    "updated_at": "2018-12-02 15:50:38",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
