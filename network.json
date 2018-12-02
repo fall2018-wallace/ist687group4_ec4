@@ -202,16 +202,6 @@
         {
             "ports": [
                 {
-                    "output": "ssClean",
-                    "type": "csv"
-                }
-            ],
-            "source": "numberizeSatisfaction.R",
-            "target": "numberizedSatisfactionSurvey.csv"
-        },
-        {
-            "ports": [
-                {
                     "output": "histSat",
                     "type": "png"
                 }
@@ -557,6 +547,16 @@
             ],
             "source": "cleanData.R",
             "target": "svmModeling.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizeSatisfaction.R",
+            "target": "numberizedSatisfactionSurvey.csv"
         }
     ],
     "nodes": [
@@ -777,6 +777,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-02 20:31:30",
+    "updated_at": "2018-12-02 20:32:57",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
