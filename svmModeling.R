@@ -35,12 +35,12 @@ testData <- sampleData[randIndex[(cutPoint2_3):dim(sampleData)[1]],]
 svmOutput <- ksvm(binSat ~ Airline.Status + Age + Gender + Price.Sensitivity + No.of.Flights.p.a. + 
                     Type.of.Travel + Class + Departure.Delay.in.Minutes + Arrival.Delay.in.Minutes + 
                     Flight.time.in.minutes + Flight.Distance, 
-                  data=sampleData, kernel="rbfdot", C=500, cross=10, set.seed=123, prob.model=TRUE)
+                  data=sampleData, kernel="rbfdot", C=250, cross=10, set.seed=123, prob.model=TRUE)
 svmOutput
 
 
 #examine the support vectors
-svmHist <- hist(alpha(svmOutput)[[1]], main="Support Vector Histogram with C=500", xlab="Support Vector Values")
+svmHist <- hist(alpha(svmOutput)[[1]], main="Support Vector Histogram with C=250", xlab="Support Vector Values")
 
 #test the created model against the test data set
 svmPred <- predict(svmOutput, testData, type='votes')
