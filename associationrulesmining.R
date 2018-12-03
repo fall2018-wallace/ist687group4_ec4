@@ -31,8 +31,8 @@ plot(rules.new.2,method="graph",main="Graph for 4 rules")
 
 #run the apriori command allowed us to predict happy customers.
 rules.high <- apriori(dSatisfactionX,parameter = list(support=0.3,confidence=0.5),appearance = list(default="lhs",rhs="binarySat=High"))
-summary(rules)
-inspect(rules)
+summary(rules.high)
+inspect(rules.high)
 
 #Rank and comment
 #Use following code allowed to rank the resulting rules
