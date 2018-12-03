@@ -82,16 +82,6 @@
         {
             "ports": [
                 {
-                    "output": "summaryModel",
-                    "type": "txt"
-                }
-            ],
-            "source": "linearModel.R",
-            "target": "originalLM.txt"
-        },
-        {
-            "ports": [
-                {
                     "output": "Age",
                     "type": "png"
                 }
@@ -550,7 +540,17 @@
         {
             "ports": [
                 {
-                    "output": "summaryModel2",
+                    "output": "originalModel",
+                    "type": "txt"
+                }
+            ],
+            "source": "linearModel.R",
+            "target": "originalLM.txt"
+        },
+        {
+            "ports": [
+                {
+                    "output": "finalModel",
                     "type": "txt"
                 }
             ],
@@ -773,6 +773,6 @@
             "name": "finalLM.txt"
         }
     ],
-    "updated_at": "2018-12-03 14:27:13",
+    "updated_at": "2018-12-03 17:21:21",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
