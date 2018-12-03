@@ -87,7 +87,7 @@
                 }
             ],
             "source": "linearModel.R",
-            "target": "summaryModel.txt"
+            "target": "summaryLM.txt"
         },
         {
             "ports": [
@@ -589,7 +589,7 @@
             "name": "numberizedSatisfactionSurvey.csv"
         },
         {
-            "name": "summaryModel.txt"
+            "name": "summaryLM.txt"
         },
         {
             "name": "Age_hist.png"
@@ -760,6 +760,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-03 14:25:47",
+    "updated_at": "2018-12-03 14:26:09",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
