@@ -34,6 +34,7 @@ summary(rules)
 inspect(rules)
 
 #Rank and comment
+#Use following code allowed to rank the resulting rules
 rules.high <- rules[order(-quality(rules)$lift),]
 inspect(head(rules.high,5))  
 rules.high.1<-head(rules.high,1)
