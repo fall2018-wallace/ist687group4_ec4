@@ -27,7 +27,9 @@ plot(rules.new.1,method="graph",main="Graph for 3 rules")
 rules.new.2<-rules.new[2]
 plot(rules.new.2,method="graph",main="Graph for 4 rules")
 
-
+rules.high <- apriori(dSatisfactionX,parameter = list(support=0.3,confidence=0.5),appearance = list(default="lhs",rhs="binarySat=High"))
+summary(rules)
+inspect(rules)
 
  #lhs                                                           rhs            support   confidence lift    
 #[1] {Airline.Status=Blue,Class=Eco}                        => {binarySat=Low} 0.3263631 0.5885456  1.202439
