@@ -540,22 +540,22 @@
         {
             "ports": [
                 {
-                    "output": "summaryModel2",
-                    "type": "txt"
-                }
-            ],
-            "source": "linearModel.R",
-            "target": "finalLM.txt"
-        },
-        {
-            "ports": [
-                {
                     "output": "originalModel",
                     "type": "txt"
                 }
             ],
             "source": "linearModel.R",
             "target": "originalLM.txt"
+        },
+        {
+            "ports": [
+                {
+                    "output": "finalModel",
+                    "type": "txt"
+                }
+            ],
+            "source": "linearModel.R",
+            "target": "finalLM.txt"
         }
     ],
     "nodes": [
@@ -773,6 +773,6 @@
             "name": "finalLM.txt"
         }
     ],
-    "updated_at": "2018-12-03 17:21:08",
+    "updated_at": "2018-12-03 17:21:21",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
