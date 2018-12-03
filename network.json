@@ -546,6 +546,16 @@
             ],
             "source": "numberizedSatisfactionSurvey.csv",
             "target": "linearModel.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "summaryModel2",
+                    "type": "txt"
+                }
+            ],
+            "source": "linearModel.R",
+            "target": "finalLM.txt"
         }
     ],
     "nodes": [
@@ -763,6 +773,6 @@
             "name": "finalLM.txt"
         }
     ],
-    "updated_at": "2018-12-03 14:27:01",
+    "updated_at": "2018-12-03 14:27:13",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
