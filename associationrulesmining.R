@@ -23,6 +23,7 @@ inspect(rules)
 #Use following code allowed to rank the resulting rules
 rules.new <- rules[order(-quality(rules)$lift),]
 inspect(head(rules.new,5))  
+#Write code to visualize the two lowest satisfaction rule
 rules.new.1<-head(rules.new,1)
 plot(rules.new.1,method="graph",main="Graph for 3 rules")
 rules.new.2<-rules.new[2]
