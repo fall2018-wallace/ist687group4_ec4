@@ -758,8 +758,11 @@
             "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
             "name": "linearModel.R",
             "task_status": "completed"
+        },
+        {
+            "name": "finalLM.txt"
         }
     ],
-    "updated_at": "2018-12-03 14:26:28",
+    "updated_at": "2018-12-03 14:27:01",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
