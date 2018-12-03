@@ -31,6 +31,14 @@ rules.high <- apriori(dSatisfactionX,parameter = list(support=0.3,confidence=0.5
 summary(rules)
 inspect(rules)
 
+#Rank and comment
+rules.high <- rules[order(-quality(rules)$lift),]
+inspect(head(rules.high,5))  
+rules.high.1<-head(rules.high,1)
+plot(rules.high.1,method="graph",main="Graph for 3 rules")
+rules.high.2<-rules.high[2]
+plot(rules.high.2,method="graph",main="Graph for 4 rules")
+
  #lhs                                                           rhs            support   confidence lift    
 #[1] {Airline.Status=Blue,Class=Eco}                        => {binarySat=Low} 0.3263631 0.5885456  1.202439
 #[2] {dEating=Average,Airline.Status=Blue,Class=Eco}        => {binarySat=Low} 0.3263631 0.5885456  1.202439
