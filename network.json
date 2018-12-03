@@ -327,17 +327,6 @@
         {
             "ports": [
                 {
-                    "input": "satisfactionSurvey",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "FeatureEngg.R",
-            "target": "linearModel.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "df",
                     "type": "csv"
                 }
@@ -685,12 +674,6 @@
         },
         {
             "assigned_to": "rncasagr",
-            "desc": "Create a linear model with the newly cleaned and summarized data for comparison to the original model",
-            "name": "linearModel.R",
-            "task_status": "validating"
-        },
-        {
-            "assigned_to": "rncasagr",
             "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the non-numeric Satisfaction entries that seem to be errors and account for the NULL values in a separate variable for future modelling.",
             "name": "cleanData.R",
             "task_status": "completed"
@@ -777,6 +760,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-03 14:21:01",
+    "updated_at": "2018-12-03 14:25:05",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
