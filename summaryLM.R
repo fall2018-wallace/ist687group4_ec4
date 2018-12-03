@@ -7,7 +7,7 @@ summaryModel <- summary(lm(formula = SatisfactionNumeric ~ Airline.Status + Age 
     Orgin.City + Origin.State + Destination.City + Destination.State + Scheduled.Departure.Hour + 
     Departure.Delay.in.Minutes.0 + Arrival.Delay.in.Minutes.0.Est + Flight.cancelled + 
     Flight.time.in.minutes.0.Est + Flight.Distance + Arrival.Delay.greater.5.Mins, 
-    data = cleanSatisfactionSurvey))
+    data = satisfactionSurvey))
 # summaryModel
 
 # These were not applicable or too specialized
@@ -22,5 +22,5 @@ summaryModel <- summary(lm(formula = SatisfactionNumeric ~ Airline.Status + Age 
 summaryModel2 <- summary(lm(formula = SatisfactionNumeric ~ Airline.Status + Age + Gender + 
     Price.Sensitivity + Year.of.First.Flight + No.of.Flights.p.a. + Type.of.Travel  + 
     Shopping.Amount.at.Airport + Class + Scheduled.Departure.Hour + Flight.cancelled + 
-    Arrival.Delay.greater.5.Mins, data = cleanSatisfactionSurvey))
+    Arrival.Delay.greater.5.Mins, data = satisfactionSurvey))
 summaryModel2
