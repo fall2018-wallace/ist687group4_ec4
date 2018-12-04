@@ -46,7 +46,7 @@ PriceSens
 #How often do passengers eat and drink at the airports
 #Histogram for the Eating and drinking variable
 EatingDrinking <- ggplot(passengerdf, aes(Eating.and.Drinking.at.Airport)) + 
-  geom_bar(color="light blue")+
+  geom_bar(color="blue")+
   scale_x_continuous(limits = c(0,300))
 EatingDrinking
 summary(passengerdf$Eating.and.Drinking.at.Airport)
