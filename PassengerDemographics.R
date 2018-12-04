@@ -39,7 +39,7 @@ summary(passengerdf$Shopping.Amount.at.Airport)
 #Bar graph for Price Sensitivity
 #The price sensitivity has a range from 0 to 5 which is the grade to which the price affects to customer's purchasing.
 #Assuming that >2 indicates that passengers find the products at the airport expensive.
-PriceSens <- ggplot(passengerdf, aes(Price.Sensitivity)) + geom_bar()
+PriceSens <- ggplot(passengerdf, aes(Price.Sensitivity)) + geom_bar(color="blue", fill="light blue")
 PriceSens
 #Maximum grading is 1
 
