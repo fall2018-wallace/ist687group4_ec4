@@ -15,13 +15,14 @@ itemFrequencyPlot1
 
 #Then we use arules to discover patterns
 #Run the apriori command to try and predict unhappy customers
-rules <- apriori(dSatisfactionX,parameter = list(support=0.3,confidence=0.5),appearance = list(default="lhs",rhs="binarySat=Low"))
-summary(rules)
-inspect(rules)
+
+rulesLow <- apriori(dSatisfactionX,parameter = list(support=0.3,confidence=0.5),appearance = list(default="lhs",rhs="binarySat=Low"))
+summary(rulesLow)
+inspect(rulesLow)
 
 #Rank and comment
 #Use following code allowed to rank the resulting rules
-rules.new <- rules[order(-quality(rules)$lift),]
+rules.new <- rulesLow[order(-quality(rulesLow)$lift),]
 inspect(head(rules.new,5))  
 #Write code to visualize the two lowest satisfaction rule
 rules.new.1<-head(rules.new,1)
