@@ -15,7 +15,7 @@ summary(passengerdf$Age)
 #as.numeric...true=1, false=0
 #The number of female passengers are more than males, since dummy variable 1 is assigned to females
 passengerdf['GenderDummy'] <- as.numeric(passengerdf$Gender=="Female")
-Gender <- ggplot(passengerdf,aes(GenderDummy)) + geom_bar(aes(color="blue", fill="light blue"))
+Gender <- ggplot(passengerdf,aes(GenderDummy)) + geom_bar(color="blue", fill="light blue")
 Gender
 
 #Histogram of number of flights 
