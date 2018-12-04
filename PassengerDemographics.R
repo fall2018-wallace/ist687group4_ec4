@@ -7,7 +7,7 @@ library(ggplot2)
 
 #histogram of age
 #People in the age group of 35 to 55 travel more frequently, peaking at 40
-Age <- ggplot(passengerdf, aes(Age)) + geom_histogram()
+Age <- ggplot(passengerdf, aes(Age)) + geom_histogram(color="blue", fill="light blue")
 Age
 summary(passengerdf$Age)
 
