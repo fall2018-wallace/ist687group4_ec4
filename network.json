@@ -12,86 +12,6 @@
         {
             "ports": [
                 {
-                    "output": "statusBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "statusBar.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "otherFlightsBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "otherFlightsBar.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "codesBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "codesBar.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "cardsBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "cardsBar.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "classBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "classBar.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "travelBar",
-                    "type": "png"
-                }
-            ],
-            "source": "airline_analysis.R",
-            "target": "travelBar.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "barMean",
-                    "type": "png"
-                }
-            ],
-            "source": "flight_information.R",
-            "target": "barMeanDayofMonth.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "raw_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "flight_information.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "ssdata",
                     "type": "csv"
                 }
@@ -158,26 +78,6 @@
             ],
             "source": "Geography_Zhang.R",
             "target": "dStateMap.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "cleanSatisfactionSurvey",
-                    "type": "csv"
-                }
-            ],
-            "source": "numberizedSatisfactionSurvey.csv",
-            "target": "summaryLM.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "summaryModel",
-                    "type": "txt"
-                }
-            ],
-            "source": "summaryLM.R",
-            "target": "summaryModel.txt"
         },
         {
             "ports": [
@@ -272,16 +172,6 @@
         {
             "ports": [
                 {
-                    "input": "ssRaw",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "cleanData.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "dfBlankCounts",
                     "type": "txt"
                 }
@@ -292,33 +182,12 @@
         {
             "ports": [
                 {
-                    "output": "ssClean",
-                    "type": "csv"
-                }
-            ],
-            "source": "numberizeSatisfaction.R",
-            "target": "numberizedSatisfactionSurvey.csv"
-        },
-        {
-            "ports": [
-                {
                     "output": "histSat",
                     "type": "png"
                 }
             ],
             "source": "numberizeSatisfaction.R",
             "target": "histSat.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "ssClean",
-                    "output": "ssClean",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "numberizeSatisfaction.R"
         },
         {
             "ports": [
@@ -407,16 +276,6 @@
         {
             "ports": [
                 {
-                    "output": "ssClean",
-                    "type": "csv"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "cleanData.csv"
-        },
-        {
-            "ports": [
-                {
                     "output": "dSatisfactionCategory",
                     "type": "csv"
                 }
@@ -447,27 +306,6 @@
         {
             "ports": [
                 {
-                    "input": "ssClean",
-                    "output": "ssClean",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "svmModeling.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "itemFrequencyPlot",
-                    "type": "png"
-                }
-            ],
-            "source": "associationrulesmining.R",
-            "target": "itemFrequencyPlot.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "df",
                     "output": "df",
                     "type": "r_obj"
@@ -475,17 +313,6 @@
             ],
             "source": "FeatureEngg.R",
             "target": "logisticRegression.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "satisfactionSurvey",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "FeatureEngg.R",
-            "target": "linearModel.R"
         },
         {
             "ports": [
@@ -521,12 +348,214 @@
         {
             "ports": [
                 {
+                    "output": "otherFlightsHist",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "otherFlightsHist.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cardsHist",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "cardsHist.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "statusBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "statusBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "travelBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "travelBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "classBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "classBar.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "codesBar",
+                    "type": "png"
+                }
+            ],
+            "source": "airline_analysis.R",
+            "target": "codesBar.png"
+        },
+        {
+            "ports": [
+                {
                     "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "airline_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "svmHist",
+                    "type": "png"
+                }
+            ],
+            "source": "svmModeling.R",
+            "target": "svmHist.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "barMeanDayOfMonth",
+                    "type": "png"
+                }
+            ],
+            "source": "flight_information.R",
+            "target": "barMeanDayofMonth.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "barMeanFlightDate",
+                    "type": "png"
+                }
+            ],
+            "source": "flight_information.R",
+            "target": "BarFlightDate.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "barMeanFlightMinutes",
+                    "type": "png"
+                }
+            ],
+            "source": "flight_information.R",
+            "target": "barFlightTime.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "barMeanFlightMiles",
+                    "type": "png"
+                }
+            ],
+            "source": "flight_information.R",
+            "target": "barFlightDistance.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "flight_information.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "cleanData.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "output": "satisfactionSurvey",
                     "type": "r_obj"
                 }
             ],
             "source": "cleanData.R",
-            "target": "airline_analysis.R"
+            "target": "numberizeSatisfaction.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "output": "satisfactionSurvey",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "svmModeling.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizeSatisfaction.R",
+            "target": "numberizedSatisfactionSurvey.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "cleanData.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "type": "csv"
+                }
+            ],
+            "source": "numberizedSatisfactionSurvey.csv",
+            "target": "linearModel.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "originalModel",
+                    "type": "txt"
+                }
+            ],
+            "source": "linearModel.R",
+            "target": "originalLM.txt"
+        },
+        {
+            "ports": [
+                {
+                    "output": "finalModel",
+                    "type": "txt"
+                }
+            ],
+            "source": "linearModel.R",
+            "target": "finalLM.txt"
         }
     ],
     "nodes": [
@@ -534,16 +563,13 @@
             "name": "satisfactionSurvey.csv"
         },
         {
-            "name": "statusBar.png"
-        },
-        {
-            "name": "otherFlightsBar.png"
+            "name": "otherFlightsHist.png"
         },
         {
             "name": "codesBar.png"
         },
         {
-            "name": "cardsBar.png"
+            "name": "cardsHist.png"
         },
         {
             "name": "classBar.png"
@@ -573,7 +599,7 @@
             "name": "numberizedSatisfactionSurvey.csv"
         },
         {
-            "name": "summaryModel.txt"
+            "name": "originalLM.txt"
         },
         {
             "name": "Age_hist.png"
@@ -612,9 +638,6 @@
             "name": "discretizeddata.csv"
         },
         {
-            "name": "itemFrequencyPlot.png"
-        },
-        {
             "name": "modeldata.csv"
         },
         {
@@ -631,12 +654,6 @@
         },
         {
             "assigned_to": "rhfrench",
-            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
-            "name": "airline_analysis.R",
-            "task_status": "completed"
-        },
-        {
-            "assigned_to": "rhfrench",
             "desc": "Utilizing SVM to model the data and look for insights",
             "name": "svmModeling.R",
             "task_status": "validating"
@@ -645,12 +662,6 @@
             "assigned_to": "rncasagr",
             "desc": "Analyze correlation between satisfaction and each of the following: Day of Month, Flight date, Flight time in minutes, Flight Distance. Create an appropriate visualization to show any correlations.",
             "name": "flight_information.R",
-            "task_status": "completed"
-        },
-        {
-            "assigned_to": "rncasagr",
-            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
-            "name": "summaryLM.R",
             "task_status": "completed"
         },
         {
@@ -667,12 +678,6 @@
         },
         {
             "assigned_to": "rncasagr",
-            "desc": "Create a linear model with the newly cleaned and summarized data for comparison to the original model",
-            "name": "linearModel.R",
-            "task_status": "validating"
-        },
-        {
-            "assigned_to": "rncasagr",
             "desc": "Clean the raw data in accordance with the group's decisions as follows: Remove the non-numeric Satisfaction entries that seem to be errors and account for the NULL values in a separate variable for future modelling.",
             "name": "cleanData.R",
             "task_status": "completed"
@@ -681,12 +686,6 @@
             "assigned_to": "zefeng",
             "desc": "Created a new data frame based the Satisfaction level and the geographic location. Cleaned and visualized the data by States as well as reported the findings. ",
             "name": "Geography_Zhang.R",
-            "task_status": "completed"
-        },
-        {
-            "assigned_to": "zefeng",
-            "desc": "Here we  used Arules to look at the offered variables' effect on satisfaction level.",
-            "name": "associationrulesmining.R",
             "task_status": "completed"
         },
         {
@@ -736,8 +735,44 @@
             "desc": "Factorize variables",
             "name": "dSatisfactionSurveyPart4.R",
             "task_status": "completed"
+        },
+        {
+            "name": "statusBar.png"
+        },
+        {
+            "assigned_to": "rhfrench",
+            "desc": "-Airline Status\r\n-% of Flight with other Airlines\r\n-Airline Code\r\n-Airline Name\r\n-No. of other\r\n-Loyalty Cards\r\n-Class\r\n-Type of Travel(7)\r\n",
+            "name": "airline_analysis.R",
+            "task_status": "completed"
+        },
+        {
+            "name": "svmHist.png"
+        },
+        {
+            "name": "BarFlightDate.png"
+        },
+        {
+            "name": "barFlightTime.png"
+        },
+        {
+            "name": "barFlightDistance.png"
+        },
+        {
+            "assigned_to": "zefeng",
+            "desc": "Here we  used Arules to look at the offered variables' effect on satisfaction level.",
+            "name": "associationrulesmining.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "rncasagr",
+            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
+            "name": "linearModel.R",
+            "task_status": "completed"
+        },
+        {
+            "name": "finalLM.txt"
         }
     ],
-    "updated_at": "2018-11-29 16:49:41",
+    "updated_at": "2018-12-03 17:21:21",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
