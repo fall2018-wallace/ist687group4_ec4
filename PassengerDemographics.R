@@ -15,19 +15,19 @@ summary(passengerdf$Age)
 #as.numeric...true=1, false=0
 #The number of female passengers are more than males, since dummy variable 1 is assigned to females
 passengerdf['GenderDummy'] <- as.numeric(passengerdf$Gender=="Female")
-Gender <- ggplot(passengerdf,aes(GenderDummy)) + geom_bar(aes(fill="light blue"))
+Gender <- ggplot(passengerdf,aes(GenderDummy)) + geom_bar(aes(color="blue", fill="light blue"))
 Gender
 
 #Histogram of number of flights 
 #The overall flights that the customers have taken is not much. The graoh is a right skewed graph, mainly less than 25 flights
-NoOfFlights <- ggplot(passengerdf, aes(No.of.Flights.p.a.))+ geom_histogram()
+NoOfFlights <- ggplot(passengerdf, aes(No.of.Flights.p.a.))+ geom_histogram(color="blue", fill="light blue")
 NoOfFlights
 
 
 #Histogram of the amount of shopping done at the airport
 #This data is right skewed and on an average, people spent between 0 to 100 dollars
 ShoppingAmt <- ggplot(passengerdf, aes(Shopping.Amount.at.Airport))+ 
-  geom_histogram() + 
+  geom_histogram(color="blue", fill="light blue") + 
   scale_x_continuous(limits = c(0,500)) +
   scale_y_continuous(limits = c(0,10000))
 ShoppingAmt
