@@ -38,6 +38,21 @@ plot(rules.new.2,method="graph",main="Graph for 4 rules")
 #[5] {Airline.Status=Blue}                                  => {binarySat=Low} 0.3991500 0.5831131  1.191340
 
 
+#Run the apriori command to predict happy customers
+rulesHigh <- apriori(dSatisfactionX,parameter = list(support=0.3,confidence=0.5),appearance = list(default="lhs",rhs="binarySat=High"))
+summary(rulesHigh)
+inspect(rulesHigh)
+
+#Rank and comment
+#Use following code allowed to rank the resulting rules
+rules.old <- rulesHigh[order(-quality(rulesHigh)$lift),]
+inspect(head(rules.old,5))  
+#Write code to visualize the two highest satisfaction rule
+rules.old.1<-head(rules.old,1)
+plot(rules.old.1,method="graph",main="Graph for 3 rules")
+rules.old.2<-rules.old[2]
+plot(rules.old.2,method="graph",main="Graph for 4 rules")
+
 #lhs                                 rhs                support confidence     lift count
 #[1] {dPrice.Sensitivity=Average,                                                            
 #Type.of.Travel=Business travel} => {binarySat=High} 0.3144142  0.7199929 1.410258 40838
