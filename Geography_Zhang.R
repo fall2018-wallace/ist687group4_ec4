@@ -37,10 +37,6 @@ oStateMap <- oStateMap+expand_limits(x = us$long, y = us$lat)
 oStateMap <- oStateMap+coord_map() +ggtitle ("Map of the Origine State")
 oStateMap
 
-ggplot(map_origin,aes (x=reorder(Origin.State,-average_sat),y=average_sat))+
-  geom_col (fill="blue", color="black") + 
-  theme(axis.text = element_text(angle = 90, hjust=1))
-
 #Create a color coded map, based on the Destination State
 map_destination <- surveyGeo %>% 
   group_by(Destination.State) %>% 
