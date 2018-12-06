@@ -30,7 +30,7 @@ surveyGeo$Origin.State<- tolower(surveyGeo$Origin.State)
 oStateMap <- ggplot(surveyGeo, aes(map_id =Origin.State))  
 oStateMap <- oStateMap+  geom_map(map = us, aes(fill=surveyGeo$Satisfaction)) 
 oStateMap <- oStateMap + expand_limits(x = us$long, y = us$lat)
-oStateMap <- oStateMap + coord_map() +ggtitle ("Map of the Origine State")
+oStateMap <- oStateMap + coord_map() +ggtitle ("Map of the Origin State")
 oStateMap
 
 
