@@ -17,7 +17,7 @@ statusBar
 
 
 
-otherFlightsHist <- hist(satisfactionSurvey$X..of.Flight.with.other.Airlines)
+otherFlightsHist <- hist(satisfactionSurvey$X..of.Flight.with.other.Airlines, color="blue", fill="light blue" )
 
 
 
@@ -27,7 +27,7 @@ codesBar
 
 
 
-cardsHist <- hist(satisfactionSurvey$No..of.other.Loyalty.Cards)
+cardsHist <- hist(satisfactionSurvey$No..of.other.Loyalty.Cards, color="blue", fill="light blue")
 
 
 
