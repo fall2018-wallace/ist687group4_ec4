@@ -707,12 +707,6 @@
             "task_status": "completed"
         },
         {
-            "assigned_to": "abhishek27297",
-            "desc": "",
-            "name": "FeatureEnggTree.R",
-            "task_status": "completed"
-        },
-        {
             "assigned_to": "tshetty",
             "desc": "Analysis on the attributes describing passenger demographics was done in this r code. The attribute 'Gender' was converted to dummy variables 0 and  1 for male and female. Created graphs to better understand each attribute.",
             "name": "PassengerDemographics.R",
@@ -771,8 +765,14 @@
         },
         {
             "name": "finalLM.txt"
+        },
+        {
+            "assigned_to": "abhishek27297",
+            "desc": "Here we transform our data for creating the decision tree model.",
+            "name": "FeatureEnggTree.R",
+            "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-03 17:21:21",
+    "updated_at": "2018-12-04 20:50:58",
     "url": "https://github.com/fall2018-saltz/ist687group4"
 }
