@@ -24,25 +24,34 @@ library(maps)
 #Generate a color coded map
 #Create a color coded map, based on the Origin State
 
+library(dplyr)
+map_origin <- surveyGeo %>% 
+  group_by(Origin.State) %>% 
+  summarise(average_sat=mean(Satisfaction))
+  
 us <- map_data("state")
-surveyGeo$Origin.State<- tolower(surveyGeo$Origin.State)
+map_origin$Origin.State<- tolower(map_origin$Origin.State)
 
-oStateMap <- ggplot(surveyGeo, aes(map_id =Origin.State))  
-oStateMap <- oStateMap+  geom_map(map = us, aes(fill=surveyGeo$Satisfaction)) 
-oStateMap <- oStateMap + expand_limits(x = us$long, y = us$lat)
-oStateMap <- oStateMap + coord_map() +ggtitle ("Map of the Origine State")
+oStateMap <- ggplot(map_origin, aes(map_id =map_origin$Origin.State))  
+oStateMap <- oStateMap+geom_map(map = us, aes(fill=map_origin$average_sat)) 
+oStateMap <- oStateMap+expand_limits(x = us$long, y = us$lat)
+oStateMap <- oStateMap+coord_map() +ggtitle ("Map of the Origine State")
 oStateMap
 
-
-#1.Among origine States, States in the West Coast and MidWest have a better satisfacgtion level than the States in the South and the Easte Coast 
-#2.States including Arizona, North Dakoda, Minnesoda, New York and New Jersery have the lowest satisfaction level. 
+ggplot(map_origin,aes (x=reorder(Origin.State,-average_sat),y=average_sat))+
+  geom_col (fill="blue", color="black") + 
+  theme(axis.text = element_text(angle = 90, hjust=1))
 
 #Create a color coded map, based on the Destination State
-surveyGeo$Destination.State<- tolower(surveyGeo$Destination.State)
-dStateMap <- ggplot(surveyGeo, aes(map_id =Destination.State))  
-dStateMap <- dStateMap +  geom_map(map = us, aes(fill=surveyGeo$Satisfaction)) 
-dStateMap <- dStateMap + expand_limits(x = us$long, y = us$lat)
-dStateMap <- dStateMap + coord_map() + ggtitle("Map of Destination State")
-dStateMap
-#1.Among destination States, Arizona, Nevada,Utah, Wyoming, Kansas, Geogia, North Carolina, Massachusetts and Ohio have the higest satisfaction level.
-#2.However, States including Florida, South Carolina, West Virgenia, Iowa and South Dakota have the lowerest satisfaction level. 
+map_destination <- surveyGeo %>% 
+  group_by(Destination.State) %>% 
+  summarise(average_sat=mean(Satisfaction))
+
+us <- map_data("state")
+map_destination$Destination.State<- tolower(map_destination$Destination.State)
+
+oStateMap <- ggplot(map_destination, aes(map_id =map_destination$Destination.State))  
+oStateMap <- oStateMap+geom_map(map = us, aes(fill=map_destination$average_sat)) 
+oStateMap <- oStateMap+expand_limits(x = us$long, y = us$lat)
+oStateMap <- oStateMap+coord_map() +ggtitle ("Map of the Destination State")
+oStateMap
