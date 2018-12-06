@@ -25,7 +25,7 @@ summary(delay.df$Scheduled.Departure.Hour)
 #SO it ranges from 1am to 23pm
 #Further let's look at how this variable is distributed
 h1 <- ggplot(aes(Scheduled.Departure.Hour),data = delay.df) +
-  geom_histogram(binwidth = 1)
+  geom_histogram(binwidth = 1,color="blue", fill="light blue")
 
 #We see most of our data has departure times between 5am and 8pm
 #and generally this variable looks to be normally distributed
@@ -39,7 +39,7 @@ summary(delay.df$Departure.Delay.in.Minutes)
 
 h2 <- ggplot(aes(Departure.Delay.in.Minutes),
              data = subset(delay.df,!is.na(delay.df$Departure.Delay.in.Minutes))) +
-  geom_histogram()
+  geom_histogram(color="blue", fill="light blue")
 
 #The plot confirms our surmise, as it is right skewed
 #Hence some of the flights have delay for than 500mins
@@ -70,7 +70,7 @@ summary(delay.df$Arrival.Delay.in.Minutes)
 
 h4 <- ggplot(aes(Arrival.Delay.in.Minutes),
              data = subset(delay.df,!is.na(delay.df$Arrival.Delay.in.Minutes))) +
-  geom_histogram() 
+  geom_histogram(color="blue", fill="light blue") 
 #A very similar distribution as departure delay, taking a closer look as before
 
 h4 <- h4 + scale_x_continuous(limits = c(0,quantile(delay.df$Departure.Delay.in.Minutes,
