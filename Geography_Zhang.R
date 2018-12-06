@@ -55,3 +55,7 @@ oStateMap <- oStateMap+geom_map(map = us, aes(fill=map_destination$average_sat))
 oStateMap <- oStateMap+expand_limits(x = us$long, y = us$lat)
 oStateMap <- oStateMap+coord_map() +ggtitle ("Map of the Destination State")
 oStateMap
+
+ggplot(map_destination,aes (x=reorder(Destination.State,-average_sat),y=average_sat))+
+  geom_col (fill="purple", color="black") + 
+  theme(axis.text = element_text(angle = 90, hjust=1))
