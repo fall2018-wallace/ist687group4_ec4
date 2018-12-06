@@ -23,7 +23,6 @@ library(maps)
 
 #Generate a color coded map
 #Create a color coded map, based on the Origin State
-
 library(dplyr)
 map_origin <- surveyGeo %>% 
   group_by(Origin.State) %>% 
