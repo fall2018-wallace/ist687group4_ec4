@@ -45,10 +45,10 @@ map_destination <- surveyGeo %>%
 us <- map_data("state")
 map_destination$Destination.State<- tolower(map_destination$Destination.State)
 
-oStateMap <- ggplot(map_destination, aes(map_id =map_destination$Destination.State))  
-oStateMap <- oStateMap+geom_map(map = us, aes(fill=map_destination$average_sat)) 
-oStateMap <- oStateMap+expand_limits(x = us$long, y = us$lat)
-oStateMap <- oStateMap+coord_map() +ggtitle ("Map of the Destination State")
-oStateMap
+dStateMap <- ggplot(map_destination, aes(map_id =map_destination$Destination.State))  
+dStateMap <- dStateMap+geom_map(map = us, aes(fill=map_destination$average_sat)) 
+dStateMap <- dStateMap+expand_limits(x = us$long, y = us$lat)
+dStateMap <- dStateMap+coord_map() +ggtitle ("Map of the Destination State")
+dStateMap
 
 
