@@ -27,7 +27,7 @@ codesBar
 
 
 
-cardsHist <- hist(satisfactionSurvey$No..of.other.Loyalty.Cards, border="blue", col="ligh blue")
+cardsHist <- hist(satisfactionSurvey$No..of.other.Loyalty.Cards)
 
 
 
