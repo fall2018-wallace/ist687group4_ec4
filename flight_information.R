@@ -9,7 +9,7 @@ mean <- data.frame(tapply(as.numeric(satisfactionSurvey$Satisfaction), satisfact
 colnames(mean) <- "Satisfaction"
 mean$DayOfMonth <- rownames(mean)
 # Plot results
-barMeanDayOfMonth <- ggplot(mean, aes(x=DayOfMonth, y=Satisfaction, group = 1)) + geom_col() 
+barMeanDayOfMonth <- ggplot(mean, aes(x=DayOfMonth, y=Satisfaction, group = 1)) + geom_col(color="blue", fill="light blue") 
 
 # Create a function to put the flight dates into buckets of one week
 defineWeekBuckets <- function(inputVector) 
@@ -44,7 +44,7 @@ mean <- data.frame(tapply(as.numeric(satisfactionSurvey$Satisfaction), satisfact
 colnames(mean) <- "Satisfaction"
 mean$WeekEndDate <- rownames(mean)
 # Plot results
-barMeanFlightDate <- ggplot(mean, aes(x=WeekEndDate, y=Satisfaction, group = 1)) + geom_col() + 
+barMeanFlightDate <- ggplot(mean, aes(x=WeekEndDate, y=Satisfaction, group = 1)) + geom_col(color="blue", fill="light blue") + 
   theme(axis.text.x = element_text(angle=90, hjust=1))
 
 # Create a function to put the flight time into buckets of 100 minute intervals
@@ -77,7 +77,7 @@ mean$MinuteRange <- rownames(mean)
 # the exploratory analysis and determine how to best address them at a later point)
 mean <- mean[-8,]
 # Plot results
-barMeanFlightMinutes <- ggplot(mean, aes(x=MinuteRange, y=Satisfaction, group = 1)) + geom_col() 
+barMeanFlightMinutes <- ggplot(mean, aes(x=MinuteRange, y=Satisfaction, group = 1)) + geom_col(color="blue", fill="light blue") 
 
 # Create a function to put the flight distance into buckets of 500 mile intervals
 defineMileBuckets <- function(inputVector) 
@@ -109,6 +109,6 @@ mean <- data.frame(tapply(as.numeric(satisfactionSurvey$Satisfaction), satisfact
 colnames(mean) <- "Satisfaction"
 mean$DistanceRange <- rownames(mean)
 # Plot results
-barMeanFlightMiles <- ggplot(mean, aes(x=DistanceRange, y=Satisfaction, group = 1)) + geom_col() + 
+barMeanFlightMiles <- ggplot(mean, aes(x=DistanceRange, y=Satisfaction, group = 1)) + geom_col(color="blue", fill="light blue") + 
   theme(axis.text.x = element_text(angle=90, hjust=1))
 
