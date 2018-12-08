@@ -25,7 +25,7 @@ summary(delay.df$Scheduled.Departure.Hour)
 #SO it ranges from 1am to 23pm
 #Further let's look at how this variable is distributed
 h1 <- ggplot(aes(Scheduled.Departure.Hour),data = delay.df) +
-  geom_histogram(binwidth = 1)
+  geom_histogram(binwidth = 1,color="blue", fill="light blue")
 
 #We see most of our data has departure times between 5am and 8pm
 #and generally this variable looks to be normally distributed
@@ -39,7 +39,7 @@ summary(delay.df$Departure.Delay.in.Minutes)
 
 h2 <- ggplot(aes(Departure.Delay.in.Minutes),
              data = subset(delay.df,!is.na(delay.df$Departure.Delay.in.Minutes))) +
-  geom_histogram()
+  geom_histogram(color="blue", fill="light blue")
 
 #The plot confirms our surmise, as it is right skewed
 #Hence some of the flights have delay for than 500mins
@@ -70,7 +70,7 @@ summary(delay.df$Arrival.Delay.in.Minutes)
 
 h4 <- ggplot(aes(Arrival.Delay.in.Minutes),
              data = subset(delay.df,!is.na(delay.df$Arrival.Delay.in.Minutes))) +
-  geom_histogram() 
+  geom_histogram(color="blue", fill="light blue") 
 #A very similar distribution as departure delay, taking a closer look as before
 
 h4 <- h4 + scale_x_continuous(limits = c(0,quantile(delay.df$Departure.Delay.in.Minutes,
@@ -82,11 +82,8 @@ h4 <- h4 + scale_x_continuous(limits = c(0,quantile(delay.df$Departure.Delay.in.
 #Next looking at flights cancelled variable
 unique(delay.df$Flight.cancelled)
 #So we see flights cancelled is a categorical variable taking values 'YES' and 'NO'
-#So we look at the proportion of delayed flights by transforming our variable
-#into a dummy variable which can be further used for modelling as well
-
-delay.df['Flight.cancelled.dummy'] <- as.numeric(delay.df$Flight.cancelled=='Yes')
-print(paste('Number of cancelled flights=',sum(delay.df$Flight.cancelled.dummy==1)))
+#So we look at the proportion of delayed flights by using the table function
+table(delay.df$Flight.cancelled)
 #Thus there are around 2000 flights that have been cancelled
 #However we have seen a similar number before
 #These are the NA values may be related to previously encountered NAs in
