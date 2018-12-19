@@ -551,6 +551,17 @@
             ],
             "source": "linearModel.R",
             "target": "finalLM.txt"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "output": "satisfactionSurvey",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleanData.R",
+            "target": "Sampling.R"
         }
     ],
     "nodes": [
@@ -732,10 +743,12 @@
             "name": "svmModeling.R"
         },
         {
+            "assigned_to": "adjadhav",
             "desc": "Sampling 75% random data",
-            "name": "Sampling.R"
+            "name": "Sampling.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-19 21:41:19",
+    "updated_at": "2018-12-19 21:43:46",
     "url": "https://github.com/fall2018-wallace/ist687group4_ec4"
 }
