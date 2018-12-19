@@ -750,12 +750,6 @@
         },
         {
             "assigned_to": "adjadhav",
-            "desc": "Here we build our decision tree model and make inference using the same.",
-            "name": "treeModel.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "adjadhav",
             "desc": "Utilizing SVM to model the data and look for insights",
             "name": "svmModeling.R",
             "task_status": "in progress"
@@ -768,8 +762,14 @@
         },
         {
             "name": "sampleCSV.csv"
+        },
+        {
+            "assigned_to": "adjadhav",
+            "desc": "Here we build our decision tree model and make inference using the same.",
+            "name": "treeModel.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-19 23:19:32",
+    "updated_at": "2018-12-19 23:33:03",
     "url": "https://github.com/fall2018-wallace/ist687group4_ec4"
 }
