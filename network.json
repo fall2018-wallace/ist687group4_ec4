@@ -483,28 +483,6 @@
         {
             "ports": [
                 {
-                    "input": "satisfactionSurvey",
-                    "output": "satisfactionSurvey",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "numberizeSatisfaction.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "ssClean",
-                    "output": "satisfactionSurvey",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleanData.R",
-            "target": "svmModeling.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "satisfactionSurvey",
                     "type": "csv"
                 }
@@ -576,17 +554,6 @@
         {
             "ports": [
                 {
-                    "input": "satisfactionSurvey",
-                    "output": "satisfactionSurvey",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "Sampling.R",
-            "target": "numberizeSatisfaction.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "ssClean",
                     "output": "satisfactionSurvey",
                     "type": "r_obj"
@@ -594,6 +561,17 @@
             ],
             "source": "Sampling.R",
             "target": "svmModeling.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "satisfactionSurvey",
+                    "output": "satisfactionSurvey",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "Sampling.R",
+            "target": "numberizeSatisfaction.R"
         }
     ],
     "nodes": [
@@ -687,8 +665,10 @@
             "name": "flight_information.R"
         },
         {
+            "assigned_to": "adjadhav",
             "desc": "Coerce the Satisfaction variable to be numeric and define a binary satisfaction level to do further exploratory analysis on the group of values",
-            "name": "numberizeSatisfaction.R"
+            "name": "numberizeSatisfaction.R",
+            "task_status": "in progress"
         },
         {
             "desc": "Discretize the following variables for use in future association rules mining:\r\nScheduled.Departure.Hour\r\nDeparture.Delay.in.Minutes\r\nArrival.Delay.in.Minutes\r\nFlight.time.in.minutes\r\nFlight.Distance",
@@ -790,6 +770,6 @@
             "name": "sampleCSV.csv"
         }
     ],
-    "updated_at": "2018-12-19 22:35:54",
+    "updated_at": "2018-12-19 23:19:32",
     "url": "https://github.com/fall2018-wallace/ist687group4_ec4"
 }
