@@ -583,6 +583,17 @@
             ],
             "source": "Sampling.R",
             "target": "numberizeSatisfaction.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "ssClean",
+                    "output": "satisfactionSurvey",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "Sampling.R",
+            "target": "svmModeling.R"
         }
     ],
     "nodes": [
@@ -779,6 +790,6 @@
             "name": "sampleCSV.csv"
         }
     ],
-    "updated_at": "2018-12-19 22:34:43",
+    "updated_at": "2018-12-19 22:35:54",
     "url": "https://github.com/fall2018-wallace/ist687group4_ec4"
 }
