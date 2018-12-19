@@ -712,8 +712,10 @@
             "name": "DiscretizedData2.R"
         },
         {
+            "assigned_to": "adjadhav",
             "desc": "In this r code, we will create a logistic regression model to determine which variables are statistically significant to the satisfaction variable.",
-            "name": "logisticRegression.R"
+            "name": "logisticRegression.R",
+            "task_status": "in progress"
         },
         {
             "desc": "Factorize variables",
@@ -756,12 +758,16 @@
             "name": "FeatureEnggTree.R"
         },
         {
+            "assigned_to": "adjadhav",
             "desc": "Here we build our decision tree model and make inference using the same.",
-            "name": "treeModel.R"
+            "name": "treeModel.R",
+            "task_status": "in progress"
         },
         {
+            "assigned_to": "adjadhav",
             "desc": "Utilizing SVM to model the data and look for insights",
-            "name": "svmModeling.R"
+            "name": "svmModeling.R",
+            "task_status": "in progress"
         },
         {
             "assigned_to": "adjadhav",
@@ -773,6 +779,6 @@
             "name": "sampleCSV.csv"
         }
     ],
-    "updated_at": "2018-12-19 22:16:32",
+    "updated_at": "2018-12-19 22:34:43",
     "url": "https://github.com/fall2018-wallace/ist687group4_ec4"
 }
