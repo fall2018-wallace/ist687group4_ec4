@@ -1,3 +1,3 @@
 
-satisfactionSurvey <- dataset[sample(nrow(dataset),0.75*nrow(dataset)),]
+satisfactionSurvey <- satisfactionSurvey[sample(nrow(satisfactionSurvey),0.75*nrow(satisfactionSurvey)),]
 satisfactionSurvey
