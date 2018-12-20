@@ -714,10 +714,6 @@
             "task_status": "in progress"
         },
         {
-            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
-            "name": "linearModel.R"
-        },
-        {
             "name": "finalLM.txt"
         },
         {
@@ -782,8 +778,14 @@
             "desc": "Here we transform our data for creating the decision tree model.",
             "name": "FeatureEnggTree.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "Create a linear model with all applicable variables to see which are most strongly correlated to the dependent variable",
+            "name": "linearModel.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-12-20 00:30:50",
+    "updated_at": "2018-12-20 00:34:18",
     "url": "https://github.com/fall2018-wallace/ist687group4_ec4"
 }
