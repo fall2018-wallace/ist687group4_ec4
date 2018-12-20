@@ -657,10 +657,6 @@
             "name": "modeldata.csv"
         },
         {
-            "desc": "Discritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
-            "name": "discritizingPart1.R"
-        },
-        {
             "desc": "Analyze correlation between satisfaction and each of the following: Day of Month, Flight date, Flight time in minutes, Flight Distance. Create an appropriate visualization to show any correlations.",
             "name": "flight_information.R"
         },
@@ -772,8 +768,14 @@
             "desc": "Factorize variables",
             "name": "dSatisfactionSurveyPart4.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "Discritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
+            "name": "discritizingPart1.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-12-20 00:26:37",
+    "updated_at": "2018-12-20 00:26:43",
     "url": "https://github.com/fall2018-wallace/ist687group4_ec4"
 }
