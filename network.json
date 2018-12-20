@@ -687,10 +687,6 @@
             "name": "delay_analysis.R"
         },
         {
-            "desc": "Here we combine our discretized columns and produce a new csv file.",
-            "name": "combine.R"
-        },
-        {
             "desc": "Here we select and transform variables from all the available variables for modelling",
             "name": "FeatureEngg.R"
         },
@@ -768,8 +764,14 @@
             "desc": "Sampling 75% random data",
             "name": "Sampling.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "Here we combine our discretized columns and produce a new csv file.",
+            "name": "combine.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-12-20 00:13:28",
+    "updated_at": "2018-12-20 00:26:25",
     "url": "https://github.com/fall2018-wallace/ist687group4_ec4"
 }
