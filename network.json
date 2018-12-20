@@ -755,12 +755,6 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "adjadhav",
-            "desc": "Sampling 75% random data",
-            "name": "Sampling.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "sampleCSV.csv"
         },
         {
@@ -768,8 +762,14 @@
             "desc": "Here we build our decision tree model and make inference using the same.",
             "name": "treeModel.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "adjadhav",
+            "desc": "Sampling 75% random data",
+            "name": "Sampling.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-19 23:33:03",
+    "updated_at": "2018-12-20 00:13:05",
     "url": "https://github.com/fall2018-wallace/ist687group4_ec4"
 }
