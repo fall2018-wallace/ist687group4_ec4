@@ -691,10 +691,6 @@
             "name": "PassengerDemographics.R"
         },
         {
-            "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
-            "name": "DiscretizedData2.R"
-        },
-        {
             "assigned_to": "adjadhav",
             "desc": "In this r code, we will create a logistic regression model to determine which variables are statistically significant to the satisfaction variable.",
             "name": "logisticRegression.R",
@@ -774,8 +770,14 @@
             "desc": "Discritize:\r\n-Age\r\n-Price Sensitivity\r\n-Year of First Flight\r\n-Number of Flights\r\n-No of flights with other airlines",
             "name": "discritizingPart1.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "Discretize the attributes for data mining.\r\nAttributes: NoOfLoyaltyCards, ShoppingAMt, EatingandDrinking, DayOfMonth\r\n",
+            "name": "DiscretizedData2.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-12-20 00:26:43",
+    "updated_at": "2018-12-20 00:26:52",
     "url": "https://github.com/fall2018-wallace/ist687group4_ec4"
 }
