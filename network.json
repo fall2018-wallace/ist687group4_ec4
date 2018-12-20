@@ -705,10 +705,6 @@
             "task_status": "in progress"
         },
         {
-            "desc": "Factorize variables",
-            "name": "dSatisfactionSurveyPart4.R"
-        },
-        {
             "name": "statusBar.png"
         },
         {
@@ -770,8 +766,14 @@
             "desc": "Here we combine our discretized columns and produce a new csv file.",
             "name": "combine.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "Factorize variables",
+            "name": "dSatisfactionSurveyPart4.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-12-20 00:26:25",
+    "updated_at": "2018-12-20 00:26:37",
     "url": "https://github.com/fall2018-wallace/ist687group4_ec4"
 }
